@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en-GB" data-subject="chem">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1E5F86">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<link rel="icon" href="../../assets/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Study">
+<title>Acids &amp; pH · Chemistry</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap">
+
+
+</head>
+<body data-lesson="acids-bases-ph-v1">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--muted)"/></marker></defs></svg>
+<header class="bar">
+  <div class="bar-in">
+    <div class="bar-top">
+      <div class="brandwrap"><a class="back" href="../">← Chemistry</a><span class="brand">Acids &amp; pH</span></div>
+      <div class="prog" role="progressbar" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="progfill"></i></div>
+      <span class="progtxt" id="progtxt">0 of 5 sections</span>
+      <button class="btn quiet" id="openSettings" aria-haspopup="dialog">Settings</button>
+    </div>
+    <nav class="tabs" aria-label="Lesson sections" id="tabs"></nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+<!-- ============ START ============ -->
+<section class="screen stack" data-sec="start" data-name="Start">
+  <p class="eyebrow">AQA A-level Chemistry · 3.1.12 Acids and bases</p>
+  <h1>pH of weak acids, water and strong bases</h1>
+  <p>This is a short lesson in <b>6 small sections</b>, about 4–5 minutes each. Learn one idea, check it, then stop whenever you like. Your place and answers are saved in this browser, so you can come back later.</p>
+  <div id="resumeBox" hidden class="tip"><b>Welcome back</b><span id="resumeTxt"></span> <button class="btn solid" id="resumeBtn" style="margin-top:.5rem">Carry on where I stopped</button></div>
+  <div class="map" id="map"></div>
+  <div class="warn"><b>Spotted in the notes</b>The methanoic acid example on page 15 gives pH = 4.46. That's wrong: the square root step was skipped. The correct answer is <b>pH = 2.23</b>. Section B walks through it.</div>
+  <div class="card">
+    <h3>How the labels work</h3>
+    <div class="row"><span class="tag notes">Class notes</span><span class="small">Taken from the printed notes.</span></div>
+    <div class="row"><span class="tag orig">From the notes</span><span class="small">A worked example from the notes, set as a question to try first.</span></div>
+    <div class="row"><span class="tag new">New question</span><span class="small">AQA-style practice written for this lesson.</span></div>
+    <div class="row"><span class="tag extra">Extra help</span><span class="small">Explanations added to fill gaps. Not extra content to learn.</span></div>
+    <p class="small muted">You'll need a calculator with a log button. You can type answers like <b>5.13e-14</b> or <b>5.13x10^-14</b>.</p>
+  </div>
+  <div class="card"><h3>Prefer slides?</h3><p class="small">The same lesson as a PowerPoint, with questions on yellow slides and answers on green ones. It opens in PowerPoint, Keynote or Google Slides.</p><div class="row"><a class="btn" href="Acids-bases-pH-lesson.pptx" download style="text-decoration:none">Download the PowerPoint</a></div></div>
+  <div class="pager"><a class="btn quiet" href="../" style="text-decoration:none">← Chemistry</a><button class="btn solid" data-go="A">Start section A →</button></div>
+</section>
+
+<!-- ============ A ============ -->
+<section class="screen stack" data-sec="A" data-name="A · Weak acids &amp; Kₐ" data-blurb="What Kₐ means, and the two shortcuts that make weak-acid sums easy." hidden>
+  <p class="eyebrow">Section A · about 5 minutes</p>
+  <h2>Weak acids and K<sub>a</sub></h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>A weak acid only partially dissociates</h3><span class="tag notes">Class notes</span></div>
+    <p>Ethanoic acid is a weak acid. It dissociates like this:</p>
+    <div class="eqbox"><span class="eq">CH<sub>3</sub>COOH<sub>(aq)</sub> ⇌ CH<sub>3</sub>COO<sup>−</sup><sub>(aq)</sub> + H<sup>+</sup><sub>(aq)</sub></span></div>
+    <p>Because it only partially dissociates, the position of equilibrium is <b>way over to the left</b>. Most of the acid stays as whole HA molecules, so we <b>don't know [H<sup>+</sup>]</b> straight away.</p>
+    <div class="fig narrow">
+      <svg viewBox="0 0 520 190" role="img" aria-labelledby="bkT">
+        <title id="bkT">A beaker after adding 4 HA: 3 HA molecules stay whole, and 1 splits into H plus and A minus.</title>
+        <text x="140" y="22" font-size="15" font-weight="700" style="fill:var(--ink)">4HA added</text>
+        <path d="M60 40 V170 H240 V40" fill="none" stroke="var(--ink)" stroke-width="3"/>
+        <path d="M60 62 Q105 54 150 62 T240 62" fill="none" stroke="var(--leaf)" stroke-width="2"/>
+        <g font-size="16" font-weight="700" style="fill:var(--ink)"><text x="80" y="100">HA</text><text x="110" y="140">HA</text><text x="150" y="160">HA</text><text x="175" y="98" style="fill:var(--leaf)">H⁺</text><text x="190" y="128" style="fill:var(--leaf)">A⁻</text></g>
+        <g font-size="14" style="fill:var(--ink)"><text x="270" y="70">4HA ⇌ 3HA + H⁺ + A⁻</text><text x="270" y="105">[HA] ≠ [H⁺]</text><text x="270" y="140">[H⁺] = [A⁻]</text></g>
+      </svg>
+    </div>
+    <p class="small muted">The picture exaggerates. In a real weak acid far fewer than 1 in 4 molecules split.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The acid dissociation constant, K<sub>a</sub></h3><span class="tag notes">Class notes</span></div>
+    <p>Let HA be any weak acid: <b>HA ⇌ H<sup>+</sup> + A<sup>−</sup></b>. Like any equilibrium it has a K<sub>c</sub> expression. Because this one is specifically an <b>acid</b> dissociating, it is called <b>K<sub>a</sub></b>:</p>
+    <div class="eqbox"><span class="eq">K<sub>a</sub> = <span class="frac"><span>[H<sup>+</sup>][A<sup>−</sup>]</span><span>[HA]</span></span></span></div>
+    <p>K<sub>a</sub> shows <b>how much the acid dissociates</b>. A bigger K<sub>a</sub> means more dissociation and a stronger acid.</p>
+    <p><b>Two shortcuts</b> <span class="tag notes">Handwritten notes</span></p>
+    <ol class="clean">
+      <li><b>[H<sup>+</sup>] = [A<sup>−</sup>]</b>, because one H<sup>+</sup> forms for every A<sup>−</sup>. So the top becomes [H<sup>+</sup>]<sup>2</sup>.</li>
+      <li><b>[HA] ≈ initial [HA]</b>, because so little dissociates.</li>
+    </ol>
+    <div class="eqbox"><span class="eq">K<sub>a</sub> = <span class="frac"><span>[H<sup>+</sup>]<sup>2</sup></span><span>[HA]</span></span> &nbsp;→&nbsp; [H<sup>+</sup>] = √(K<sub>a</sub> × [HA])</span></div>
+    <div class="tip"><b>Extra help · the ICE box behind shortcut 2</b>
+      <div class="tablewrap" style="margin-top:.4rem"><table class="ice"><thead><tr><th></th><th>HA</th><th>H⁺</th><th>A⁻</th></tr></thead>
+      <tbody><tr><td>Initial</td><td>c</td><td>0</td><td>0</td></tr><tr><td>Change</td><td>−x</td><td>+x</td><td>+x</td></tr><tr><td>Equilibrium</td><td>c − x ≈ c</td><td>x</td><td>x</td></tr></tbody></table></div>
+      <p style="margin-top:.4rem">x is tiny compared with c, so c − x is almost exactly c. That's why you can use the starting concentration for [HA].</p></div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>K<sub>a</sub> and pK<sub>a</sub> values</h3><span class="tag notes">Class notes</span></div>
+    <div class="tablewrap"><table class="notes"><thead><tr><th>Acid</th><th>K<sub>a</sub> (mol dm<sup>−3</sup>)</th><th>pK<sub>a</sub> <span class="small muted">(worked out)</span></th></tr></thead>
+      <tbody><tr><td>CH<sub>3</sub>COOH</td><td>1.76 × 10<sup>−5</sup></td><td>4.75</td></tr><tr><td>C<sub>6</sub>H<sub>5</sub>COOH</td><td>6.46 × 10<sup>−5</sup></td><td>4.19</td></tr><tr><td>HCOOH</td><td>1.77 × 10<sup>−4</sup></td><td>3.75</td></tr></tbody></table></div>
+    <div class="map" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <div class="eqbox"><span class="eq">pK<sub>a</sub> = −log<sub>10</sub> K<sub>a</sub></span></div>
+      <div class="eqbox"><span class="eq">K<sub>a</sub> = 10<sup>−pK<sub>a</sub></sup></span></div>
+    </div>
+    <p>pK<sub>a</sub> is more user-friendly because it mirrors the pH scale. <b>The stronger the acid, the lower the pH and the lower the pK<sub>a</sub>.</b></p>
+    <ul class="clean"><li>You will be given any value of K<sub>a</sub> needed in an exam question.</li><li>Most exam questions say if an acid is weak, but remember: <b>all carboxylic acids are weak acids</b>.</li></ul>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check A</h3>
+  <div class="card mcq" data-q="A1" data-label="A · Kₐ expression for methanoic acid" data-answer="b">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Which is the K<sub>a</sub> expression for methanoic acid, HCOOH?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="This is upside down. Products go on top.">[HCOOH] ÷ ([H⁺][HCOO⁻])</button>
+      <button data-o="b" data-fb="Correct. Products on top, the undissociated acid underneath.">[H⁺][HCOO⁻] ÷ [HCOOH]</button>
+      <button data-o="c" data-fb="Products are multiplied, not added.">([H⁺] + [HCOO⁻]) ÷ [HCOOH]</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card num" data-q="A2" data-label="A · pKₐ of benzoic acid" data-answer="4.19" data-tol="0.006">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Calculate the pK<sub>a</sub> of benzoic acid, K<sub>a</sub> = 6.46 × 10<sup>−5</sup> mol dm<sup>−3</sup>. Give 2 decimal places.</p>
+    <div class="answer-line"><span>pK<sub>a</sub> =</span><input type="text" class="numin" aria-label="pKa"><button class="btn" data-check>Check</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["pKₐ = −log₁₀ Kₐ","Type into your calculator: −log(6.46 × 10⁻⁵)","= 4.19"]'><button class="btn quiet" data-hint>Show a hint</button></div></div>
+  <div class="card num" data-q="A3" data-label="A · Kₐ from pKₐ" data-answer="6.31e-5" data-rtol="0.01" data-traps='[[4.19,4.21,"That’s the pKₐ again. Use Kₐ = 10^−pKₐ."],[15000,16000,"You used 10^+pKₐ. The power must be negative: 10^−4.20."]]'>
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">A weak acid has pK<sub>a</sub> = 4.20. Calculate K<sub>a</sub>.</p>
+    <div class="answer-line"><span>K<sub>a</sub> =</span><input type="text" class="numin" aria-label="Ka"><span class="small">mol dm<sup>−3</sup></span><button class="btn" data-check>Check</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["Kₐ = 10^−pKₐ","10^−4.20 on your calculator (the 10ˣ button, often shift + log)","= 6.31 × 10⁻⁵ mol dm⁻³"]'><button class="btn quiet" data-hint>Show a hint</button></div></div>
+  <div class="card mcq" data-q="A4" data-label="A · Strongest acid in the table" data-answer="c">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Using the table, which acid is the strongest?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Ethanoic acid has the smallest Kₐ (largest pKₐ), so it is the weakest of the three.">CH₃COOH</button>
+      <button data-o="b" data-fb="Benzoic acid is in the middle.">C₆H₅COOH</button>
+      <button data-o="c" data-fb="Correct. Methanoic acid has the largest Kₐ and the lowest pKₐ, so it dissociates the most.">HCOOH</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="A">Mark section A done</button><span class="small muted">You can take a break here.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="start">← Start</button><button class="btn" data-go="B">Section B →</button></div>
+</section>
+
+<!-- ============ B ============ -->
+<section class="screen stack" data-sec="B" data-name="B · Weak acid pH" data-blurb="The 5-step method and the methanoic acid example, corrected." hidden>
+  <p class="eyebrow">Section B · about 5 minutes</p>
+  <h2>Calculating the pH of a weak acid</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The 5-step method</h3><span class="tag notes">Class notes</span></div>
+    <ol class="clean">
+      <li>Write out the dissociation of the weak acid.</li>
+      <li>Construct a K<sub>a</sub> expression for the acid.</li>
+      <li>Simplify the K<sub>a</sub> expression using [H<sup>+</sup>]<sup>2</sup>.</li>
+      <li>Rearrange the expression to get [H<sup>+</sup>] on its own.</li>
+      <li>Substitute the value of [H<sup>+</sup>] into the pH equation.</li>
+    </ol>
+    <div class="eqbox"><span class="eq">[H<sup>+</sup>]<sup>2</sup> = K<sub>a</sub>[HA] &nbsp;→&nbsp; [H<sup>+</sup>] = √(K<sub>a</sub>[HA]) &nbsp;→&nbsp; pH = −log<sub>10</sub>[H<sup>+</sup>]</span></div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card num" data-q="B1" data-label="B · Methanoic acid example (notes p15)" data-answer="2.23" data-tol="0.015" data-traps='[[4.45,4.47,"That’s the answer printed in the notes, but it’s wrong. They forgot to square-root Kₐ × [HA]. Take the square root of 3.45 × 10⁻⁵ first."],[0.000034,0.0000350,"That’s Kₐ × [HA] = [H⁺]². Square-root it to get [H⁺], then take −log."]]'>
+    <div class="card-h"><span class="tag orig">From the notes</span><span class="marks">Try it first</span></div>
+    <p class="qtext">Calculate the pH of a solution of HCOOH of concentration 0.195 mol dm<sup>−3</sup>. The value of K<sub>a</sub> for methanoic acid is 1.77 × 10<sup>−4</sup>.</p>
+    <div class="answer-line"><span>pH =</span><input type="text" class="numin" aria-label="pH"><button class="btn" data-check>Check</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["[H⁺] = √(Kₐ × [HA])","1.77 × 10⁻⁴ × 0.195 = 3.45 × 10⁻⁵. Now square-root it.","[H⁺] = 5.87 × 10⁻³, so pH = −log(5.87 × 10⁻³)"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>Worked solution</h3><span class="tag notes">Class notes, corrected</span></div>
+    <ol class="clean steps" data-steps>
+      <li><b>1 · Dissociation.</b> HCOOH<sub>(aq)</sub> ⇌ HCOO<sup>−</sup><sub>(aq)</sub> + H<sup>+</sup><sub>(aq)</sub></li>
+      <li><b>2 · K<sub>a</sub> expression.</b> K<sub>a</sub> = [H<sup>+</sup>][HCOO<sup>−</sup>] ÷ [HCOOH]</li>
+      <li><b>3 · Simplify.</b> One H<sup>+</sup> forms for every one HCOO<sup>−</sup>, so [H<sup>+</sup>] = [HCOO<sup>−</sup>] and K<sub>a</sub> = [H<sup>+</sup>]<sup>2</sup> ÷ [HCOOH]</li>
+      <li><b>Substitute.</b> 1.77 × 10<sup>−4</sup> = [H<sup>+</sup>]<sup>2</sup> ÷ 0.195</li>
+      <li><b>4 · Rearrange.</b> [H<sup>+</sup>]<sup>2</sup> = 1.77 × 10<sup>−4</sup> × 0.195 = 3.45 × 10<sup>−5</sup>, so [H<sup>+</sup>] = √(3.45 × 10<sup>−5</sup>) = <b>5.87 × 10<sup>−3</sup> mol dm<sup>−3</sup></b></li>
+      <li><b>5 · pH.</b> pH = −log<sub>10</sub>(5.87 × 10<sup>−3</sup>) = <b>2.23</b></li>
+    </ol>
+    <div class="row"><button class="btn" data-stepnext>Show next step</button><button class="btn quiet" data-stepall>Show all</button></div>
+    <div class="warn"><b>Correction to the notes</b>The notes write [H<sup>+</sup>] = 3.45 × 10<sup>−5</sup> and get pH = 4.46. But 3.45 × 10<sup>−5</sup> is [H<sup>+</sup>]<sup>2</sup>: the square root was never taken. <b>Sense check:</b> a 0.195 mol dm<sup>−3</sup> acid with pH 4.46 would barely be acidic at all. The right answer is <b>pH = 2.23</b>.</div>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check B</h3>
+  <div class="card num" data-q="B2" data-label="B · pH of 0.100 ethanoic acid" data-answer="2.88" data-tol="0.015" data-traps='[[5.75,5.77,"You forgot the square root. Kₐ × [HA] is [H⁺]²."],[1,1,"That’s treating it as a strong acid. Ethanoic acid is weak, so use Kₐ."]]'>
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[3 marks]</span></div>
+    <p class="qtext">Calculate the pH of 0.100 mol dm<sup>−3</sup> ethanoic acid. K<sub>a</sub> = 1.76 × 10<sup>−5</sup> mol dm<sup>−3</sup>.</p>
+    <div class="answer-line"><span>pH =</span><input type="text" class="numin" aria-label="pH"><button class="btn" data-check>Check</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["[H⁺] = √(Kₐ × [HA]) = √(1.76 × 10⁻⁵ × 0.100)","[H⁺] = √(1.76 × 10⁻⁶) = 1.33 × 10⁻³ mol dm⁻³","pH = −log(1.33 × 10⁻³) = 2.88"]'><button class="btn quiet" data-hint>Show a hint</button></div></div>
+  <div class="card num" data-q="B3" data-label="B · pH of 0.0200 benzoic acid" data-answer="2.94" data-tol="0.015">
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[3 marks]</span></div>
+    <p class="qtext">Calculate the pH of 0.0200 mol dm<sup>−3</sup> benzoic acid, C<sub>6</sub>H<sub>5</sub>COOH. Use the K<sub>a</sub> from the table in Section A.</p>
+    <div class="answer-line"><span>pH =</span><input type="text" class="numin" aria-label="pH"><button class="btn" data-check>Check</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["Kₐ for benzoic acid = 6.46 × 10⁻⁵","[H⁺] = √(6.46 × 10⁻⁵ × 0.0200) = 1.14 × 10⁻³","pH = −log(1.14 × 10⁻³) = 2.94"]'><button class="btn quiet" data-hint>Show a hint</button></div></div>
+  <div class="card mcq" data-q="B4" data-label="B · Why [HA] ≈ initial [HA]" data-answer="a">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Why can we use the starting concentration of the acid for [HA] in the K<sub>a</sub> expression?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Correct. Very little dissociates, so [HA] at equilibrium is almost the same as at the start.">The acid only partially dissociates, so hardly any HA is used up</button>
+      <button data-o="b" data-fb="That would be a strong acid. Then there would be no HA left at all.">The acid fully dissociates</button>
+      <button data-o="c" data-fb="[H⁺] = [A⁻] is the other shortcut. It lets you write [H⁺]², but it isn't the reason for this one.">Because [H⁺] = [A⁻]</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="B">Mark section B done</button><span class="small muted">A good place for a break.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="A">← Section A</button><button class="btn" data-go="C">Section C →</button></div>
+</section>
+
+<!-- ============ C ============ -->
+<section class="screen stack" data-sec="C" data-name="C · Water &amp; Kw" data-blurb="Why pure water is neutral, and why its pH drops when it's hot." hidden>
+  <p class="eyebrow">Section C · about 5 minutes</p>
+  <h2>The ionisation of water and K<sub>w</sub></h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>From K<sub>c</sub> to K<sub>w</sub></h3><span class="tag notes">Class notes</span></div>
+    <ol class="clean steps" data-steps>
+      <li>Water exists in equilibrium: <b>H<sub>2</sub>O<sub>(l)</sub> ⇌ H<sup>+</sup><sub>(aq)</sub> + OH<sup>−</sup><sub>(aq)</sub></b></li>
+      <li>Like all equilibria it has a K<sub>c</sub>: <span class="eq">K<sub>c</sub> = <span class="frac"><span>[H<sup>+</sup>][OH<sup>−</sup>]</span><span>[H<sub>2</sub>O]</span></span></span></li>
+      <li>The equilibrium is very far to the left, so <b>[H<sub>2</sub>O] is effectively constant</b>. Rearrange: K<sub>c</sub>[H<sub>2</sub>O] = [H<sup>+</sup>][OH<sup>−</sup>]</li>
+      <li>Two constants multiplied together make a new constant: <b>K<sub>w</sub> = [H<sup>+</sup>][OH<sup>−</sup>]</b></li>
+    </ol>
+    <div class="row"><button class="btn" data-stepnext>Show next step</button><button class="btn quiet" data-stepall>Show all</button></div>
+    <div class="eqbox"><span class="eq">K<sub>w</sub> = [H<sup>+</sup>][OH<sup>−</sup>] = 1 × 10<sup>−14</sup> mol<sup>2</sup> dm<sup>−6</sup> at 298 K</span></div>
+    <p>K<sub>w</sub> is called the <b>ionic product of water</b>. The only value you need to recall is the one at 298 K.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Pure water is always neutral</h3><span class="tag notes">Class notes</span></div>
+    <div class="fig narrow">
+      <svg viewBox="0 0 520 170" role="img" aria-labelledby="wT">
+        <title id="wT">A beaker of 1000 water molecules: 999 stay as water and 1 splits into H plus and OH minus.</title>
+        <text x="110" y="20" font-size="15" font-weight="700" style="fill:var(--ink)">1000H₂O</text>
+        <path d="M60 35 V160 H220 V35" fill="none" stroke="var(--ink)" stroke-width="3"/>
+        <path d="M60 55 Q100 48 140 55 T220 55" fill="none" stroke="var(--leaf)" stroke-width="2"/>
+        <g font-size="16" font-weight="700" style="fill:var(--ink)"><text x="75" y="105">999H₂O</text><text x="160" y="90" style="fill:var(--leaf)">H⁺</text><text x="160" y="140" style="fill:var(--leaf)">OH⁻</text></g>
+        <g font-size="14" style="fill:var(--ink)"><text x="250" y="60">[H₂O] ≠ [H⁺]</text><text x="250" y="90">[H⁺] = [OH⁻]</text><text x="250" y="120">K_w = [H⁺]²</text><text x="250" y="150">[H⁺] = √K_w</text></g>
+      </svg>
+    </div>
+    <p>In pure water <b>[H<sup>+</sup>] = [OH<sup>−</sup>] at all times</b>, so pure water is always neutral. <span class="tag notes">Handwritten</span> So in pure water K<sub>w</sub> = [H<sup>+</sup>]<sup>2</sup>, which gives:</p>
+    <div class="eqbox"><span class="eq">[H<sup>+</sup>] = √K<sub>w</sub> &nbsp;→&nbsp; pH = −log<sub>10</sub>[H<sup>+</sup>]</span></div>
+    <p class="small muted">The notes write "Ka[H₂O]" on page 18. It should be K<sub>c</sub>[H<sub>2</sub>O]: water isn't an acid dissociating in this context.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card picker" data-read data-order="t273 t298 t323 t373">
+    <div class="card-h"><h3>How pH changes with temperature</h3><span class="tag notes">Class notes</span></div>
+    <div class="eqbox"><span class="eq">H<sub>2</sub>O<sub>(l)</sub> ⇌ H<sup>+</sup><sub>(aq)</sub> + OH<sup>−</sup><sub>(aq)</sub> &nbsp; ΔH = +57.3 kJ mol<sup>−1</sup></span></div>
+    <p>The forward reaction is <b>endothermic</b> (bonds are broken). At temperatures above 298 K the equilibrium <b>shifts to the right</b>, in the endothermic direction, to oppose the temperature rise. So [H<sup>+</sup>] and [OH<sup>−</sup>] go up, K<sub>w</sub> goes up, and <b>pH goes down</b>.</p>
+    <p><b>Pick a temperature:</b></p>
+    <div class="chips" role="group" aria-label="Temperature">
+      <button data-pick="t273" aria-pressed="false">273 K</button><button data-pick="t298" aria-pressed="false">298 K</button><button data-pick="t323" aria-pressed="false">323 K</button><button data-pick="t373" aria-pressed="false">373 K</button>
+    </div>
+    <div class="fb explain picker-out" aria-live="polite">Pick a temperature to see K<sub>w</sub>, [H<sup>+</sup>] and the pH of pure water.</div>
+    <template data-key="t273"><b>273 K (0 °C)</b> · K<sub>w</sub> = 0.114 × 10<sup>−14</sup><br>[H<sup>+</sup>] = √K<sub>w</sub> = 3.38 × 10<sup>−8</sup> → <b>pH = 7.47</b>. Still neutral, because [H<sup>+</sup>] = [OH<sup>−</sup>].</template>
+    <template data-key="t298"><b>298 K (25 °C)</b> · K<sub>w</sub> = 1 × 10<sup>−14</sup> (the value to remember)<br>[H<sup>+</sup>] = 1 × 10<sup>−7</sup> → <b>pH = 7.00</b>. Neutral.</template>
+    <template data-key="t323"><b>323 K (50 °C)</b> · K<sub>w</sub> = 5.476 × 10<sup>−14</sup><br>[H<sup>+</sup>] = √K<sub>w</sub> = 2.34 × 10<sup>−7</sup> → <b>pH = 6.63</b>. Still neutral.</template>
+    <template data-key="t373"><b>373 K (100 °C)</b> · K<sub>w</sub> = 51.300 × 10<sup>−14</sup><br>[H<sup>+</sup>] = 7.16 × 10<sup>−7</sup> → <b>pH = 6.14</b>. Still neutral, because [H<sup>+</sup>] = [OH<sup>−</sup>].</template>
+    <div class="row"><button class="btn" data-walk>Step through the temperatures</button></div>
+    <div class="tip"><b>The key sentence</b>This does not mean that water becomes acidic at 373 K. It means that at 373 K the <b>neutral point</b> of water is pH 6.14, not pH 7.</div>
+    <p class="small muted">K<sub>w</sub> values are from the table in the notes. The pH values at 273 K and 323 K are worked out from them. Be ready to use a different K<sub>w</sub> if an exam question gives one.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check C</h3>
+  <div class="card mcq" data-q="C1" data-label="C · Pure water at 373 K" data-answer="b">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Pure water at 373 K has a pH of 6.14. This water is…</p>
+    <div class="opts">
+      <button data-o="a" data-fb="pH below 7 doesn't mean acidic here. In pure water [H⁺] still equals [OH⁻].">acidic, because its pH is below 7</button>
+      <button data-o="b" data-fb="Correct. [H⁺] = [OH⁻], so it's neutral. The neutral point has moved to 6.14.">neutral, because [H⁺] = [OH⁻]</button>
+      <button data-o="c" data-fb="[OH⁻] went up too, by exactly as much as [H⁺]. They stay equal.">alkaline, because [OH⁻] increased</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card num" data-q="C2" data-label="C · pH of pure water at 323 K" data-answer="6.63" data-tol="0.015" data-traps='[[13.26,13.27,"You took −log of Kw itself. In pure water [H⁺] = √Kw, so square-root first."]]'>
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[2 marks]</span></div>
+    <p class="qtext">At 323 K, K<sub>w</sub> = 5.476 × 10<sup>−14</sup> mol<sup>2</sup> dm<sup>−6</sup>. Calculate the pH of pure water at 323 K.</p>
+    <div class="answer-line"><span>pH =</span><input type="text" class="numin" aria-label="pH"><button class="btn" data-check>Check</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["Pure water: [H⁺] = [OH⁻], so Kw = [H⁺]²","[H⁺] = √(5.476 × 10⁻¹⁴) = 2.34 × 10⁻⁷","pH = −log(2.34 × 10⁻⁷) = 6.63"]'><button class="btn quiet" data-hint>Show a hint</button></div></div>
+  <div class="card" data-q="C3" data-label="C · Explain the temperature effect">
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[3 marks]</span></div>
+    <p class="qtext">Explain why the pH of pure water decreases as the temperature increases.</p>
+    <textarea aria-label="Your answer"></textarea>
+    <button class="btn" data-model>Compare with model answer</button>
+    <div class="reveal-body" hidden><ol class="clean">
+      <li>The dissociation of water is <b>endothermic</b> (ΔH = +57.3 kJ mol<sup>−1</sup>). ✔</li>
+      <li>So as temperature rises, the <b>equilibrium shifts to the right</b> to oppose the increase, and [H<sup>+</sup>] increases. ✔</li>
+      <li>pH = −log[H<sup>+</sup>], so a <b>higher [H<sup>+</sup>] means a lower pH</b>. The water is still neutral, because [H<sup>+</sup>] = [OH<sup>−</sup>]. ✔</li></ol></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="C">Mark section C done</button><span class="small muted">Halfway. Take a break if you need one.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="B">← Section B</button><button class="btn" data-go="D">Section D →</button></div>
+</section>
+
+<!-- ============ D ============ -->
+<section class="screen stack" data-sec="D" data-name="D · Strong bases" data-blurb="Metal hydroxides: find [OH⁻] first, then use Kw." hidden>
+  <p class="eyebrow">Section D · about 4 minutes</p>
+  <h2>The pH of strong bases</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Strong bases fully dissociate</h3><span class="tag notes">Class notes</span></div>
+    <p>Strong bases are <b>metal hydroxides</b> <span class="tag notes">Handwritten</span>. Their solutions contain OH<sup>−</sup> ions. When a base reacts with an acid, the H<sup>+</sup> from the acid combines with the OH<sup>−</sup> to form water. It is the OH<sup>−</sup> ions that let bases act as <b>proton acceptors</b>.</p>
+    <p><b>Strong bases fully dissociate</b> to release OH<sup>−</sup> ions. For NaOH the equilibrium lies <b>entirely</b> to the right:</p>
+    <div class="eqbox"><span class="eq">NaOH<sub>(aq)</sub> → Na<sup>+</sup><sub>(aq)</sub> + OH<sup>−</sup><sub>(aq)</sub></span></div>
+    <div class="fig narrow">
+      <svg viewBox="0 0 520 170" role="img" aria-labelledby="mT">
+        <title id="mT">A beaker after adding 4 MOH: it all splits into 4 M plus and 4 OH minus. Nothing stays whole.</title>
+        <text x="110" y="20" font-size="15" font-weight="700" style="fill:var(--ink)">4MOH added</text>
+        <path d="M60 35 V160 H220 V35" fill="none" stroke="var(--ink)" stroke-width="3"/>
+        <path d="M60 55 Q100 48 140 55 T220 55" fill="none" stroke="var(--leaf)" stroke-width="2"/>
+        <g font-size="15" font-weight="700" style="fill:var(--ink)"><text x="72" y="85">M⁺</text><text x="110" y="85" style="fill:var(--leaf)">OH⁻</text><text x="170" y="88">M⁺</text><text x="72" y="118">M⁺</text><text x="130" y="122">M⁺</text><text x="170" y="120" style="fill:var(--leaf)">OH⁻</text><text x="85" y="150" style="fill:var(--leaf)">OH⁻</text><text x="165" y="150" style="fill:var(--leaf)">OH⁻</text></g>
+        <g font-size="14" style="fill:var(--ink)"><text x="250" y="60">MOH → M⁺ + OH⁻</text><text x="250" y="90">4MOH → 4M⁺ + 4OH⁻</text><text x="250" y="120">[MOH] = [OH⁻]</text></g>
+      </svg>
+    </div>
+    <div class="tip"><b>Extra help · compare the beakers</b>A weak acid beaker is mostly whole HA molecules. A strong base beaker has none left whole: every MOH gives one OH<sup>−</sup>. That's why [OH<sup>−</sup>] simply equals the concentration of the base.</div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card num" data-q="D1" data-label="D · NaOH example (notes p20)" data-answer="13.29" data-tol="0.015" data-traps='[[0.70,0.72,"That’s −log[OH⁻]. You need [H⁺] first: [H⁺] = Kw ÷ [OH⁻]."]]'>
+    <div class="card-h"><span class="tag orig">From the notes</span><span class="marks">Try it first</span></div>
+    <p class="qtext">Calculate the pH of a solution of NaOH of concentration 0.195 mol dm<sup>−3</sup> (298 K).</p>
+    <div class="answer-line"><span>pH =</span><input type="text" class="numin" aria-label="pH"><button class="btn" data-check>Check</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["NaOH fully dissociates, so [OH⁻] = 0.195","[H⁺] = Kw ÷ [OH⁻] = 1 × 10⁻¹⁴ ÷ 0.195","[H⁺] = 5.128 × 10⁻¹⁴, so pH = 13.29"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>Method 1: using K<sub>w</sub></h3><span class="tag notes">Class notes</span></div>
+    <ol class="clean steps" data-steps>
+      <li><b>(1) Use [NaOH] to work out [OH<sup>−</sup>].</b> NaOH fully dissociates, so [OH<sup>−</sup>] = 0.195 mol dm<sup>−3</sup>.</li>
+      <li><b>(2) Substitute [OH<sup>−</sup>] into K<sub>w</sub> = [H<sup>+</sup>][OH<sup>−</sup>].</b> 1 × 10<sup>−14</sup> = [H<sup>+</sup>] × 0.195</li>
+      <li><b>(3) Rearrange to find [H<sup>+</sup>].</b> [H<sup>+</sup>] = 1 × 10<sup>−14</sup> ÷ 0.195 = <b>5.128 × 10<sup>−14</sup> mol dm<sup>−3</sup></b></li>
+      <li><b>(4) Substitute into the pH equation.</b> pH = −log<sub>10</sub>(5.128 × 10<sup>−14</sup>) = <b>13.29</b></li>
+    </ol>
+    <div class="row"><button class="btn" data-stepnext>Show next step</button><button class="btn quiet" data-stepall>Show all</button></div>
+    <div class="eqbox"><span class="eq">[H<sup>+</sup>] = <span class="frac"><span>K<sub>w</sub></span><span>[OH<sup>−</sup>]</span></span></span></div>
+    <p class="small muted">The notes say there are two methods. Method 2 is on a page that hasn't been added yet.</p>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check D</h3>
+  <div class="card num" data-q="D2" data-label="D · pH of 0.0500 KOH" data-answer="12.70" data-tol="0.015" data-traps='[[1.29,1.31,"That’s −log[OH⁻] (sometimes called pOH). Find [H⁺] = Kw ÷ [OH⁻] first."]]'>
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[2 marks]</span></div>
+    <p class="qtext">Calculate the pH of 0.0500 mol dm<sup>−3</sup> potassium hydroxide, KOH, at 298 K.</p>
+    <div class="answer-line"><span>pH =</span><input type="text" class="numin" aria-label="pH"><button class="btn" data-check>Check</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["KOH is a metal hydroxide, so [OH⁻] = 0.0500","[H⁺] = 1 × 10⁻¹⁴ ÷ 0.0500 = 2.00 × 10⁻¹³","pH = −log(2.00 × 10⁻¹³) = 12.70"]'><button class="btn quiet" data-hint>Show a hint</button></div></div>
+  <div class="card mcq" data-q="D3" data-label="D · Why Kw is needed" data-answer="c">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Why do we need K<sub>w</sub> to find the pH of a strong base?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Strong bases fully dissociate. That's why [OH⁻] = [base].">Because strong bases only partially dissociate</button>
+      <button data-o="b" data-fb="Kₐ is for weak acids, not bases.">Because Kₐ is unknown</button>
+      <button data-o="c" data-fb="Correct. pH is −log[H⁺], and we only know [OH⁻]. Kw = [H⁺][OH⁻] links the two.">pH needs [H⁺], but we only know [OH⁻]</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="D">Mark section D done</button><span class="small muted">Next: putting it all together.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="C">← Section C</button><button class="btn" data-go="E">Section E →</button></div>
+</section>
+
+<!-- ============ E ============ -->
+<section class="screen stack" data-sec="E" data-name="E · Which equation?" data-blurb="One map of where every equation belongs." hidden>
+  <p class="eyebrow">Section E · about 4 minutes</p>
+  <h2>Which equation belongs where?</h2>
+
+  <div class="card picker" data-read>
+    <div class="card-h"><h3>What's in the beaker?</h3><span class="tag extra">Extra help</span></div>
+    <p>Every pH question ends with <b>pH = −log<sub>10</sub>[H<sup>+</sup>]</b>. The only question is <b>how you get [H<sup>+</sup>]</b>, and that depends on what's in the beaker. Pick one:</p>
+    <div class="doors chips" role="group" aria-label="What is in the beaker">
+      <button data-pick="sa" aria-pressed="false"><span class="d-k">Strong acid</span><span class="d-s">e.g. HCl</span></button>
+      <button data-pick="wa" aria-pressed="false"><span class="d-k">Weak acid</span><span class="d-s">e.g. CH₃COOH</span></button>
+      <button data-pick="pw" aria-pressed="false"><span class="d-k">Pure water</span><span class="d-s">any temperature</span></button>
+      <button data-pick="sb" aria-pressed="false"><span class="d-k">Strong base</span><span class="d-s">e.g. NaOH</span></button>
+      <button data-pick="mix" aria-pressed="false"><span class="d-k">Acid + base mixed</span><span class="d-s">volumes given</span></button>
+    </div>
+    <div class="fb explain picker-out" aria-live="polite">Pick what's in the beaker to see its route to pH.</div>
+    <template data-key="sa"><p><b>Strong acid: fully dissociates</b> (HCl → H⁺ + Cl⁻)</p><div class="route"><span class="st">[acid]</span><span class="ar">→</span><span class="st">[H⁺] = [acid]</span><span class="ar">→</span><span class="st end">pH = −log[H⁺]</span></div><p class="small">e.g. 0.0250 mol dm⁻³ HCl: pH = −log(0.0250) = 1.60. <span class="muted">(Strong acids are on earlier pages of the notes.)</span></p></template>
+    <template data-key="wa"><p><b>Weak acid: partially dissociates</b> (you'll be given Kₐ)</p><div class="route"><span class="st">Kₐ = [H⁺]² ÷ [HA]</span><span class="ar">→</span><span class="st">[H⁺] = √(Kₐ[HA])</span><span class="ar">→</span><span class="st end">pH = −log[H⁺]</span></div><p class="small">e.g. 0.195 mol dm⁻³ HCOOH, Kₐ = 1.77 × 10⁻⁴: [H⁺] = 5.87 × 10⁻³, pH = 2.23.</p></template>
+    <template data-key="pw"><p><b>Pure water: [H⁺] = [OH⁻]</b></p><div class="route"><span class="st">Kw = [H⁺]²</span><span class="ar">→</span><span class="st">[H⁺] = √Kw</span><span class="ar">→</span><span class="st end">pH = −log[H⁺]</span></div><p class="small">e.g. 373 K, Kw = 51.3 × 10⁻¹⁴: [H⁺] = 7.16 × 10⁻⁷, pH = 6.14 (still neutral).</p></template>
+    <template data-key="sb"><p><b>Strong base: fully dissociates</b> (metal hydroxide)</p><div class="route"><span class="st">[OH⁻] = [base]</span><span class="ar">→</span><span class="st">[H⁺] = Kw ÷ [OH⁻]</span><span class="ar">→</span><span class="st end">pH = −log[H⁺]</span></div><p class="small">e.g. 0.195 mol dm⁻³ NaOH: [H⁺] = 5.128 × 10⁻¹⁴, pH = 13.29.</p></template>
+    <template data-key="mix"><p><b>Acid and base mixed: moles first</b></p><div class="route"><span class="st">n = c × V for each</span><span class="ar">→</span><span class="st">ICE box: which is in excess?</span><span class="ar">→</span><span class="st">c = n ÷ total V</span><span class="ar">→</span><span class="st">then the acid or base route</span><span class="ar">→</span><span class="st end">pH</span></div><p class="small">Section F has worked questions like this.</p></template>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Everything on one page</h3><span class="tag extra">Extra help</span></div>
+    <div class="tablewrap"><table class="notes">
+      <thead><tr><th>In the beaker</th><th>Get [H<sup>+</sup>] with</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td><b>Strong acid</b></td><td>[H<sup>+</sup>] = [acid]</td><td>Fully dissociates</td></tr>
+        <tr><td><b>Weak acid</b></td><td>[H<sup>+</sup>] = √(K<sub>a</sub>[HA])</td><td>Partially dissociates; [H<sup>+</sup>] = [A<sup>−</sup>]</td></tr>
+        <tr><td><b>Pure water</b></td><td>[H<sup>+</sup>] = √K<sub>w</sub></td><td>[H<sup>+</sup>] = [OH<sup>−</sup>]</td></tr>
+        <tr><td><b>Strong base</b></td><td>[H<sup>+</sup>] = K<sub>w</sub> ÷ [OH<sup>−</sup>]</td><td>Fully dissociates; [OH<sup>−</sup>] = [base]</td></tr>
+      </tbody></table></div>
+    <p><b>Going backwards:</b> [H<sup>+</sup>] = 10<sup>−pH</sup> &nbsp;·&nbsp; K<sub>a</sub> = 10<sup>−pK<sub>a</sub></sup></p>
+    <p><b>Where the notes' examples land:</b></p>
+    <div class="phscale" role="img" aria-label="pH scale from 0 to 14 marking methanoic acid at 2.23, hot pure water at 6.14, pure water at 298 K at 7.00, and sodium hydroxide at 13.29">
+      <span class="phm" style="left:calc(2.23/14*100%)">HCOOH<br>2.23</span>
+      <span class="phm" style="left:calc(6.14/14*100%)">water 373 K<br>6.14</span>
+      <span class="phm low" style="left:calc(7/14*100%)">water 298 K<br>7.00</span>
+      <span class="phm r" style="left:calc(13.29/14*100%)">NaOH<br>13.29</span>
+      <div class="phbar"></div>
+      <div class="phticks"><span>0</span><span>2</span><span>4</span><span>6</span><span>8</span><span>10</span><span>12</span><span>14</span></div>
+    </div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check E</h3>
+  <div class="card matcher" data-q="E1" data-label="E · Match the situation to the equation" data-win="You can pick the right route every time.">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">For each solution, choose the first equation you'd use to find [H<sup>+</sup>].</p>
+    <div class="match">
+      <span class="m-l">0.10 mol dm⁻³ HCl</span><select aria-label="Equation for HCl" data-answer="sa"><option value="">Choose…</option><option value="sa">[H⁺] = [acid]</option><option value="wa">[H⁺] = √(Kₐ[HA])</option><option value="pw">[H⁺] = √Kw</option><option value="sb">[H⁺] = Kw ÷ [OH⁻]</option><option value="n">n = cV first</option></select>
+      <span class="m-l">0.10 mol dm⁻³ CH₃COOH</span><select aria-label="Equation for ethanoic acid" data-answer="wa"><option value="">Choose…</option><option value="sa">[H⁺] = [acid]</option><option value="wa">[H⁺] = √(Kₐ[HA])</option><option value="pw">[H⁺] = √Kw</option><option value="sb">[H⁺] = Kw ÷ [OH⁻]</option><option value="n">n = cV first</option></select>
+      <span class="m-l">Pure water at 323 K</span><select aria-label="Equation for pure water" data-answer="pw"><option value="">Choose…</option><option value="sa">[H⁺] = [acid]</option><option value="wa">[H⁺] = √(Kₐ[HA])</option><option value="pw">[H⁺] = √Kw</option><option value="sb">[H⁺] = Kw ÷ [OH⁻]</option><option value="n">n = cV first</option></select>
+      <span class="m-l">0.10 mol dm⁻³ KOH</span><select aria-label="Equation for KOH" data-answer="sb"><option value="">Choose…</option><option value="sa">[H⁺] = [acid]</option><option value="wa">[H⁺] = √(Kₐ[HA])</option><option value="pw">[H⁺] = √Kw</option><option value="sb">[H⁺] = Kw ÷ [OH⁻]</option><option value="n">n = cV first</option></select>
+      <span class="m-l">25 cm³ HCl + 20 cm³ NaOH</span><select aria-label="Equation for the mixture" data-answer="n"><option value="">Choose…</option><option value="sa">[H⁺] = [acid]</option><option value="wa">[H⁺] = √(Kₐ[HA])</option><option value="pw">[H⁺] = √Kw</option><option value="sb">[H⁺] = Kw ÷ [OH⁻]</option><option value="n">n = cV first</option></select>
+    </div>
+    <div class="row"><button class="btn" data-mcheck>Check my matches</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+  </div>
+
+  <div class="done-row"><button class="btn solid" data-complete="E">Mark section E done</button><span class="small muted">Next: exam-style questions.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="D">← Section D</button><button class="btn" data-go="F">Section F →</button></div>
+</section>
+
+<!-- ============ F ============ -->
+<section class="screen stack" data-sec="F" data-name="F · Exam practice" data-blurb="AQA-style questions mixing n = cV and ICE boxes with pH, worked step by step." hidden>
+  <p class="eyebrow">Section F · do one question at a time</p>
+  <h2>Exam practice: moles, ICE boxes and pH</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The two tools</h3><span class="tag extra">Extra help</span></div>
+    <div class="eqbox"><span class="eq">n = c × V &nbsp;&nbsp;·&nbsp;&nbsp; c = <span class="frac"><span>n</span><span>V</span></span> &nbsp;&nbsp;(V in dm<sup>3</sup> = cm<sup>3</sup> ÷ 1000)</span></div>
+    <p><b>ICE box</b> = <b>I</b>nitial, <b>C</b>hange, <b>E</b>nd. When an acid and a base are mixed, H<sup>+</sup> + OH<sup>−</sup> → H<sub>2</sub>O reacts <b>1 : 1</b>. The smaller amount is used up completely. Whatever is <b>left over</b> decides the pH.</p>
+    <div class="tablewrap"><table class="ice"><thead><tr><th>moles</th><th>H⁺</th><th>OH⁻</th></tr></thead>
+      <tbody><tr><td>Initial</td><td>n = cV</td><td>n = cV</td></tr><tr><td>Change</td><td>− smaller</td><td>− smaller</td></tr><tr><td>End</td><td>leftover?</td><td>leftover?</td></tr></tbody></table></div>
+    <div class="warn"><b>Two classic slips</b>1. Forgetting to convert cm<sup>3</sup> to dm<sup>3</sup>. 2. Dividing the leftover moles by only one volume. After mixing, use the <b>total</b> volume.</div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <!-- Q1 -->
+  <div class="card multi" data-q="F1" data-label="F · Q1 Diluted ethanoic acid" data-win="All four steps right.">
+    <div class="card-h"><span class="tag new">Question 1</span><span class="marks">[4 marks]</span></div>
+    <p class="qtext">25.0 cm<sup>3</sup> of 0.400 mol dm<sup>−3</sup> ethanoic acid is diluted with water to make 250 cm<sup>3</sup> of solution. K<sub>a</sub> = 1.76 × 10<sup>−5</sup> mol dm<sup>−3</sup>. Calculate the pH of the diluted solution.</p>
+    <div class="gridrow"><label for="f1a">Moles of acid</label><input id="f1a" type="text" data-answer="0.0100" data-rtol="0.01"><span class="small">mol</span></div>
+    <div class="gridrow"><label for="f1b">New [HA]</label><input id="f1b" type="text" data-answer="0.0400" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="f1c">[H⁺]</label><input id="f1c" type="text" data-answer="8.39e-4" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="f1d">pH</label><input id="f1d" type="text" data-answer="3.08" data-tol="0.015"></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["n = c × V. Volume in dm³: 25.0 cm³ = 0.0250 dm³","Dilution doesn’t change the moles. New c = n ÷ 0.250 dm³","Weak acid route: [H⁺] = √(Kₐ × [HA])"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean">
+      <li><b>Moles:</b> n = 0.400 × (25.0 ÷ 1000) = <b>0.0100 mol</b></li>
+      <li><b>New concentration:</b> c = 0.0100 ÷ (250 ÷ 1000) = <b>0.0400 mol dm<sup>−3</sup></b>. Dilution spreads the same moles through more water.</li>
+      <li><b>[H<sup>+</sup>]:</b> √(1.76 × 10<sup>−5</sup> × 0.0400) = √(7.04 × 10<sup>−7</sup>) = <b>8.39 × 10<sup>−4</sup> mol dm<sup>−3</sup></b></li>
+      <li><b>pH</b> = −log(8.39 × 10<sup>−4</sup>) = <b>3.08</b></li></ol></div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="card multi" data-q="F2" data-label="F · Q2 HCl + NaOH, acid in excess" data-win="ICE box and pH all correct.">
+    <div class="card-h"><span class="tag new">Question 2</span><span class="marks">[4 marks]</span></div>
+    <p class="qtext">25.0 cm<sup>3</sup> of 0.150 mol dm<sup>−3</sup> hydrochloric acid is mixed with 20.0 cm<sup>3</sup> of 0.100 mol dm<sup>−3</sup> sodium hydroxide. Calculate the pH of the resulting solution.</p>
+    <p class="small"><b>Fill the ICE box (moles).</b> Type 0 if none is left.</p>
+    <div class="tablewrap"><table class="ice"><thead><tr><th></th><th>H⁺</th><th>OH⁻</th></tr></thead><tbody>
+      <tr><td>Initial</td><td><input type="text" aria-label="Initial moles H+" data-answer="3.75e-3" data-rtol="0.01"></td><td><input type="text" aria-label="Initial moles OH-" data-answer="2.00e-3" data-rtol="0.01"></td></tr>
+      <tr><td>Change</td><td><input type="text" aria-label="Change in moles H+" data-answer="-2.00e-3" data-rtol="0.01"></td><td><input type="text" aria-label="Change in moles OH-" data-answer="-2.00e-3" data-rtol="0.01"></td></tr>
+      <tr><td>End</td><td><input type="text" aria-label="End moles H+" data-answer="1.75e-3" data-rtol="0.01"></td><td><input type="text" aria-label="End moles OH-" data-answer="0" data-tol="1e-9"></td></tr></tbody></table></div>
+    <div class="gridrow"><label for="f2a">[H⁺] after mixing</label><input id="f2a" type="text" data-answer="0.0389" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="f2b">pH</label><input id="f2b" type="text" data-answer="1.41" data-tol="0.015"></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["Initial: n(H⁺) = 0.150 × 0.0250; n(OH⁻) = 0.100 × 0.0200","They react 1:1, so take the smaller amount (2.00 × 10⁻³) from both. Changes are negative.","Leftover H⁺ ÷ total volume (45.0 cm³ = 0.0450 dm³)"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean">
+      <li><b>Initial moles:</b> H<sup>+</sup> = 0.150 × 0.0250 = 3.75 × 10<sup>−3</sup> mol. OH<sup>−</sup> = 0.100 × 0.0200 = 2.00 × 10<sup>−3</sup> mol.</li>
+      <li><b>Change:</b> H<sup>+</sup> + OH<sup>−</sup> → H<sub>2</sub>O is 1 : 1, so all 2.00 × 10<sup>−3</sup> mol of OH<sup>−</sup> reacts with 2.00 × 10<sup>−3</sup> mol of H<sup>+</sup>.</li>
+      <li><b>End:</b> H<sup>+</sup> left = 3.75 × 10<sup>−3</sup> − 2.00 × 10<sup>−3</sup> = <b>1.75 × 10<sup>−3</sup> mol</b>. OH<sup>−</sup> left = 0. The acid is in excess.</li>
+      <li><b>Concentration:</b> total volume = 25.0 + 20.0 = 45.0 cm<sup>3</sup> = 0.0450 dm<sup>3</sup>. [H<sup>+</sup>] = 1.75 × 10<sup>−3</sup> ÷ 0.0450 = <b>0.0389 mol dm<sup>−3</sup></b></li>
+      <li><b>pH</b> = −log(0.0389) = <b>1.41</b></li></ol></div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="card multi" data-q="F3" data-label="F · Q3 HCl + NaOH, base in excess" data-win="Excess base handled perfectly.">
+    <div class="card-h"><span class="tag new">Question 3</span><span class="marks">[5 marks]</span></div>
+    <p class="qtext">15.0 cm<sup>3</sup> of 0.200 mol dm<sup>−3</sup> hydrochloric acid is added to 25.0 cm<sup>3</sup> of 0.180 mol dm<sup>−3</sup> sodium hydroxide at 298 K. Calculate the pH of the resulting solution. K<sub>w</sub> = 1.00 × 10<sup>−14</sup> mol<sup>2</sup> dm<sup>−6</sup>.</p>
+    <div class="tablewrap"><table class="ice"><thead><tr><th>moles</th><th>H⁺</th><th>OH⁻</th></tr></thead><tbody>
+      <tr><td>Initial</td><td><input type="text" aria-label="Initial moles H+" data-answer="3.00e-3" data-rtol="0.01"></td><td><input type="text" aria-label="Initial moles OH-" data-answer="4.50e-3" data-rtol="0.01"></td></tr>
+      <tr><td>Change</td><td><input type="text" aria-label="Change in moles H+" data-answer="-3.00e-3" data-rtol="0.01"></td><td><input type="text" aria-label="Change in moles OH-" data-answer="-3.00e-3" data-rtol="0.01"></td></tr>
+      <tr><td>End</td><td><input type="text" aria-label="End moles H+" data-answer="0" data-tol="1e-9"></td><td><input type="text" aria-label="End moles OH-" data-answer="1.50e-3" data-rtol="0.01"></td></tr></tbody></table></div>
+    <div class="gridrow"><label for="f3a">[OH⁻] after mixing</label><input id="f3a" type="text" data-answer="0.0375" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="f3b">[H⁺]</label><input id="f3b" type="text" data-answer="2.67e-13" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="f3c">pH</label><input id="f3c" type="text" data-answer="12.57" data-tol="0.015"></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["n(H⁺) = 0.200 × 0.0150; n(OH⁻) = 0.180 × 0.0250","This time OH⁻ is left over, so it’s a strong-base route.","[OH⁻] = leftover ÷ 0.0400 dm³, then [H⁺] = Kw ÷ [OH⁻]"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean">
+      <li><b>Initial moles:</b> H<sup>+</sup> = 0.200 × 0.0150 = 3.00 × 10<sup>−3</sup>. OH<sup>−</sup> = 0.180 × 0.0250 = 4.50 × 10<sup>−3</sup>.</li>
+      <li><b>Change:</b> 3.00 × 10<sup>−3</sup> mol of each react (1 : 1). H<sup>+</sup> is used up.</li>
+      <li><b>End:</b> OH<sup>−</sup> left = 4.50 × 10<sup>−3</sup> − 3.00 × 10<sup>−3</sup> = <b>1.50 × 10<sup>−3</sup> mol</b>. The base is in excess.</li>
+      <li><b>[OH<sup>−</sup>]</b> = 1.50 × 10<sup>−3</sup> ÷ 0.0400 dm<sup>3</sup> (15.0 + 25.0 cm<sup>3</sup>) = <b>0.0375 mol dm<sup>−3</sup></b></li>
+      <li><b>[H<sup>+</sup>]</b> = K<sub>w</sub> ÷ [OH<sup>−</sup>] = 1.00 × 10<sup>−14</sup> ÷ 0.0375 = <b>2.67 × 10<sup>−13</sup> mol dm<sup>−3</sup></b></li>
+      <li><b>pH</b> = −log(2.67 × 10<sup>−13</sup>) = <b>12.57</b></li></ol></div>
+  </div>
+
+  <!-- Q4 -->
+  <div class="card multi" data-q="F4" data-label="F · Q4 Methanoic acid from a mass" data-win="Mass to pH, all correct.">
+    <div class="card-h"><span class="tag new">Question 4</span><span class="marks">[4 marks]</span></div>
+    <p class="qtext">0.900 g of methanoic acid (HCOOH, M<sub>r</sub> = 46.0) is dissolved in water and made up to 250 cm<sup>3</sup>. K<sub>a</sub> = 1.77 × 10<sup>−4</sup> mol dm<sup>−3</sup>. Calculate the pH of the solution.</p>
+    <div class="gridrow"><label for="f4a">Moles</label><input id="f4a" type="text" data-answer="0.01957" data-rtol="0.01"><span class="small">mol</span></div>
+    <div class="gridrow"><label for="f4b">[HCOOH]</label><input id="f4b" type="text" data-answer="0.0783" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="f4c">[H⁺]</label><input id="f4c" type="text" data-answer="3.72e-3" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="f4d">pH</label><input id="f4d" type="text" data-answer="2.43" data-tol="0.015"></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["Moles from mass: n = mass ÷ Mᵣ","c = n ÷ V, with V = 0.250 dm³","[H⁺] = √(Kₐ × c), then pH = −log[H⁺]"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean">
+      <li><b>Moles:</b> n = 0.900 ÷ 46.0 = <b>0.0196 mol</b> (1.957 × 10<sup>−2</sup>)</li>
+      <li><b>Concentration:</b> c = 0.01957 ÷ 0.250 = <b>0.0783 mol dm<sup>−3</sup></b></li>
+      <li><b>[H<sup>+</sup>]</b> = √(1.77 × 10<sup>−4</sup> × 0.0783) = √(1.385 × 10<sup>−5</sup>) = <b>3.72 × 10<sup>−3</sup> mol dm<sup>−3</sup></b></li>
+      <li><b>pH</b> = −log(3.72 × 10<sup>−3</sup>) = <b>2.43</b></li></ol>
+      <p class="small muted">Keep unrounded values in your calculator until the end, to avoid rounding errors.</p></div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="card multi" data-q="F5" data-label="F · Q5 Kₐ from pH (ICE box)" data-win="You can work backwards too.">
+    <div class="card-h"><span class="tag new">Question 5</span><span class="marks">[4 marks]</span></div>
+    <p class="qtext">A 0.0500 mol dm<sup>−3</sup> solution of a weak acid HA has a pH of 3.02. Calculate K<sub>a</sub> and pK<sub>a</sub> for the acid.</p>
+    <p class="small"><b>ICE box (concentrations, mol dm⁻³).</b> Find [H⁺] = 10<sup>−pH</sup> first.</p>
+    <div class="tablewrap"><table class="ice"><thead><tr><th></th><th>HA</th><th>H⁺</th><th>A⁻</th></tr></thead><tbody>
+      <tr><td>Initial</td><td class="given">0.0500</td><td class="given">0</td><td class="given">0</td></tr>
+      <tr><td>Change</td><td><input type="text" aria-label="Change HA" data-answer="-9.55e-4" data-rtol="0.01"></td><td><input type="text" aria-label="Change H+" data-answer="9.55e-4" data-rtol="0.01"></td><td><input type="text" aria-label="Change A-" data-answer="9.55e-4" data-rtol="0.01"></td></tr>
+      <tr><td>Equilibrium</td><td><input type="text" aria-label="Equilibrium HA" data-answer="0.0495" data-rtol="0.012"></td><td><input type="text" aria-label="Equilibrium H+" data-answer="9.55e-4" data-rtol="0.01"></td><td><input type="text" aria-label="Equilibrium A-" data-answer="9.55e-4" data-rtol="0.01"></td></tr></tbody></table></div>
+    <div class="gridrow"><label for="f5a">K<sub>a</sub></label><input id="f5a" type="text" data-answer="1.84e-5" data-rtol="0.021"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="f5b">pK<sub>a</sub></label><input id="f5b" type="text" data-answer="4.735" data-tol="0.012"></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["[H⁺] = 10^−3.02 = 9.55 × 10⁻⁴","[A⁻] = [H⁺], and HA goes down by the same amount. 0.0500 − 0.000955 ≈ 0.0490 (or just use 0.0500).","Kₐ = [H⁺]² ÷ [HA], then pKₐ = −log Kₐ"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean">
+      <li><b>[H<sup>+</sup>]</b> = 10<sup>−3.02</sup> = <b>9.55 × 10<sup>−4</sup> mol dm<sup>−3</sup></b></li>
+      <li><b>ICE:</b> H<sup>+</sup> and A<sup>−</sup> each go up by 9.55 × 10<sup>−4</sup>, and HA goes down by the same. At equilibrium [HA] = 0.0490, which is ≈ 0.0500 (the usual approximation).</li>
+      <li><b>K<sub>a</sub></b> = (9.55 × 10<sup>−4</sup>)<sup>2</sup> ÷ 0.0500 = <b>1.82 × 10<sup>−5</sup> mol dm<sup>−3</sup></b> (using 0.0490 gives 1.86 × 10<sup>−5</sup>; both are accepted)</li>
+      <li><b>pK<sub>a</sub></b> = −log(1.82 × 10<sup>−5</sup>) = <b>4.74</b></li></ol></div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="card multi" data-q="F6" data-label="F · Q6 NaOH at 323 K" data-win="Temperature twist handled.">
+    <div class="card-h"><span class="tag new">Question 6</span><span class="marks">[5 marks]</span></div>
+    <p class="qtext">(a) 50.0 cm<sup>3</sup> of 0.0800 mol dm<sup>−3</sup> NaOH is diluted to 200 cm<sup>3</sup> at 323 K. At 323 K, K<sub>w</sub> = 5.476 × 10<sup>−14</sup> mol<sup>2</sup> dm<sup>−6</sup>. Calculate the pH of the diluted solution. [4]</p>
+    <div class="gridrow"><label for="f6a">Moles of NaOH</label><input id="f6a" type="text" data-answer="4.00e-3" data-rtol="0.01"><span class="small">mol</span></div>
+    <div class="gridrow"><label for="f6b">[OH⁻]</label><input id="f6b" type="text" data-answer="0.0200" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="f6c">[H⁺]</label><input id="f6c" type="text" data-answer="2.74e-12" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="f6d">pH</label><input id="f6d" type="text" data-answer="11.56" data-tol="0.015"></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <p class="qtext" style="margin-top:.5rem">(b) Explain why this pH is lower than the pH of the same solution at 298 K. [1]</p>
+    <div class="hintbox" data-hints='["n = 0.0800 × 0.0500, then divide by 0.200 dm³","Use the Kw given for 323 K, not 1 × 10⁻¹⁴","(b) Kw is bigger at 323 K. What does that do to [H⁺] = Kw ÷ [OH⁻]?"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean">
+      <li><b>Moles:</b> 0.0800 × 0.0500 = <b>4.00 × 10<sup>−3</sup> mol</b></li>
+      <li><b>[OH<sup>−</sup>]</b> = 4.00 × 10<sup>−3</sup> ÷ 0.200 = <b>0.0200 mol dm<sup>−3</sup></b> (strong base, so [OH<sup>−</sup>] = [NaOH])</li>
+      <li><b>[H<sup>+</sup>]</b> = 5.476 × 10<sup>−14</sup> ÷ 0.0200 = <b>2.74 × 10<sup>−12</sup> mol dm<sup>−3</sup></b></li>
+      <li><b>pH</b> = −log(2.74 × 10<sup>−12</sup>) = <b>11.56</b> (at 298 K it would be 12.30)</li>
+      <li><b>(b)</b> K<sub>w</sub> is <b>larger at 323 K</b> (water's dissociation is endothermic), so [H<sup>+</sup>] = K<sub>w</sub> ÷ [OH<sup>−</sup>] is larger, and the pH is lower. ✔</li></ol></div>
+  </div>
+
+  <div class="done-row"><button class="btn solid" data-complete="F">Mark section F done</button><span class="small muted">Nearly there. The summary is next.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="E">← Section E</button><button class="btn" data-go="S">Summary &amp; quiz →</button></div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="screen stack" data-sec="S" data-name="Summary &amp; quiz" data-blurb="Equation sheet, flashcards and a final quiz." hidden>
+  <p class="eyebrow">Wrap-up · about 4 minutes</p>
+  <h2>Equation sheet</h2>
+  <div class="card" data-read>
+    <ul class="clean">
+      <li><b>Every route ends with</b> pH = −log<sub>10</sub>[H<sup>+</sup>]. Backwards: [H<sup>+</sup>] = 10<sup>−pH</sup>.</li>
+      <li><b>Weak acid:</b> K<sub>a</sub> = [H<sup>+</sup>][A<sup>−</sup>] ÷ [HA] = [H<sup>+</sup>]<sup>2</sup> ÷ [HA], so [H<sup>+</sup>] = √(K<sub>a</sub>[HA]).</li>
+      <li><b>pK<sub>a</sub></b> = −log K<sub>a</sub>; K<sub>a</sub> = 10<sup>−pK<sub>a</sub></sup>. Stronger acid → lower pK<sub>a</sub>.</li>
+      <li><b>Water:</b> K<sub>w</sub> = [H<sup>+</sup>][OH<sup>−</sup>] = 1 × 10<sup>−14</sup> mol<sup>2</sup> dm<sup>−6</sup> at 298 K. Pure water: [H<sup>+</sup>] = √K<sub>w</sub>.</li>
+      <li><b>Hotter water:</b> endothermic, so K<sub>w</sub> rises and pH falls, but it stays neutral.</li>
+      <li><b>Strong base:</b> [OH<sup>−</sup>] = [base], then [H<sup>+</sup>] = K<sub>w</sub> ÷ [OH<sup>−</sup>].</li>
+      <li><b>Mixing:</b> n = cV, ICE box, leftover ÷ <b>total</b> volume.</li>
+    </ul>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3>Flashcards</h3>
+  <div class="flashdeck stack"><script type="application/json">[
+    ["What does 'weak acid' mean?","It only partially dissociates. The equilibrium lies far to the left."],
+    ["Write the Kₐ expression for HA ⇌ H⁺ + A⁻.","Kₐ = [H⁺][A⁻] ÷ [HA]"],
+    ["The two weak-acid shortcuts?","[H⁺] = [A⁻], and [HA] ≈ initial [HA]. So [H⁺] = √(Kₐ[HA])."],
+    ["pKₐ from Kₐ, and back?","pKₐ = −log Kₐ;  Kₐ = 10^−pKₐ"],
+    ["Kw expression and value at 298 K?","Kw = [H⁺][OH⁻] = 1 × 10⁻¹⁴ mol² dm⁻⁶"],
+    ["Why does the pH of pure water fall when heated?","Dissociation is endothermic, so the equilibrium shifts right, [H⁺] rises and pH falls. It is still neutral."],
+    ["pH of a strong base: the route?","[OH⁻] = [base], [H⁺] = Kw ÷ [OH⁻], pH = −log[H⁺]"],
+    ["Mixing acid and base: first step?","n = cV for each, then an ICE box to find what's left over. Divide by the TOTAL volume."]
+  ]</script>
+    <div class="flash" aria-live="polite"><span class="side fl-side"></span><div class="face fl-face"></div></div>
+    <div class="row"><button class="btn" data-flip>Show answer</button><button class="btn quiet" data-fprev>← Previous</button><button class="btn quiet" data-fnext>Next →</button></div>
+  </div>
+
+  <h3>Final quiz</h3>
+  <p class="small muted">Six quick questions, all new, covering every section.</p>
+  <div class="card mcq" data-q="Q1" data-label="Quiz · Strong vs weak" data-answer="b"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">1. Which statement about a weak acid is correct?</p>
+    <div class="opts"><button data-o="a" data-fb="Weak is about dissociation, not concentration.">It has a low concentration</button><button data-o="b" data-fb="Correct. It only partially dissociates.">It only partially dissociates</button><button data-o="c" data-fb="That describes a strong acid.">It fully dissociates</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q2" data-label="Quiz · pKₐ comparison" data-answer="a"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">2. Acid X has pKₐ 3.2 and acid Y has pKₐ 4.8. Which is stronger?</p>
+    <div class="opts"><button data-o="a" data-fb="Correct. Lower pKₐ means a stronger acid.">X</button><button data-o="b" data-fb="A higher pKₐ means a weaker acid.">Y</button><button data-o="c" data-fb="pKₐ tells you directly: lower is stronger.">You can't tell</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q3" data-label="Quiz · [H⁺] of weak acid" data-answer="c"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">3. For a weak acid, [H⁺] =</p>
+    <div class="opts"><button data-o="a" data-fb="That's the strong acid route.">[HA]</button><button data-o="b" data-fb="That's [H⁺]². Don't forget the square root.">Kₐ × [HA]</button><button data-o="c" data-fb="Correct.">√(Kₐ × [HA])</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q4" data-label="Quiz · Kw units" data-answer="b"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">4. The units of K<sub>w</sub> are…</p>
+    <div class="opts"><button data-o="a" data-fb="That's the unit for Kₐ or a concentration.">mol dm⁻³</button><button data-o="b" data-fb="Correct. Two concentrations multiplied: (mol dm⁻³)².">mol² dm⁻⁶</button><button data-o="c" data-fb="Kw has units, because it's two concentrations multiplied.">no units</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q5" data-label="Quiz · strong base route" data-answer="a"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">5. 0.010 mol dm⁻³ NaOH at 298 K has [H⁺] =</p>
+    <div class="opts"><button data-o="a" data-fb="Correct. 1 × 10⁻¹⁴ ÷ 0.010 = 1 × 10⁻¹², so pH = 12.">1 × 10⁻¹² mol dm⁻³</button><button data-o="b" data-fb="That's [OH⁻], not [H⁺].">0.010 mol dm⁻³</button><button data-o="c" data-fb="That's √Kw, which is for pure water only.">1 × 10⁻⁷ mol dm⁻³</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q6" data-label="Quiz · mixing volumes" data-answer="c"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">6. 20 cm³ of acid is mixed with 30 cm³ of alkali. To find the leftover concentration, divide the leftover moles by…</p>
+    <div class="opts"><button data-o="a" data-fb="After mixing, the ions are spread through all the liquid, not just the acid.">0.020 dm³</button><button data-o="b" data-fb="That's just the alkali's volume.">0.030 dm³</button><button data-o="c" data-fb="Correct. Total volume, in dm³.">0.050 dm³</button></div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="S">Mark lesson finished</button><button class="btn" data-go="R">Go to revision list</button></div>
+  <div class="pager"><button class="btn quiet" data-go="F">← Section F</button><a class="btn quiet" href="../" style="text-decoration:none">Back to Chemistry</a></div>
+</section>
+
+<!-- ============ REVISION ============ -->
+<section class="screen stack" data-sec="R" data-name="Revision" hidden>
+  <p class="eyebrow">Revision mode</p>
+  <h2>What to look at again</h2>
+  <p>Questions you got wrong, or marked "Not yet" or "Partly", appear here. Tap one to jump straight to it.</p>
+  <div id="revList" class="stack"></div>
+  <div class="card">
+    <h3>Your progress</h3>
+    <div id="progList" class="stack small"></div>
+  </div>
+  <div class="row"><button class="btn quiet" id="resetBtn">Clear all my progress</button><span id="resetConfirm" hidden class="row"><span class="small">Clear everything?</span><button class="btn" id="resetYes">Yes, clear</button><button class="btn quiet" id="resetNo">Keep it</button></span></div>
+</section>
+</main>
+
+<dialog id="settings" aria-labelledby="setH">
+  <h2 id="setH" style="font-size:1.25rem; margin-bottom:.5rem">Settings</h2>
+  <div class="set"><label id="szL">Text size</label><div class="chips" role="group" aria-labelledby="szL" data-setting="size"><button data-v="m">Normal</button><button data-v="l">Large</button><button data-v="xl">Extra large</button></div></div>
+  <div class="set"><label id="spL">Line spacing</label><div class="chips" role="group" aria-labelledby="spL" data-setting="spacing"><button data-v="normal">Normal</button><button data-v="wide">Wide</button></div></div>
+  <div class="set"><label id="fcL">Calm view</label><p class="small muted">Hides "extra help" labels and read-aloud links.</p><div class="chips" role="group" aria-labelledby="fcL" data-setting="focus"><button data-v="off">Off</button><button data-v="on">On</button></div></div>
+  <div class="set"><label id="mtL">Motion</label><div class="chips" role="group" aria-labelledby="mtL" data-setting="motion"><button data-v="on">Gentle</button><button data-v="off">None</button></div></div>
+  <div class="set"><label id="sdL">Sound effects</label><p class="small muted">Soft tones when you reveal or get an answer right.</p><div class="chips" role="group" aria-labelledby="sdL" data-setting="sound"><button data-v="off">Off</button><button data-v="on">On</button></div></div>
+  <div class="row" style="justify-content:flex-end; margin-top:.75rem"><button class="btn solid" id="closeSettings">Done</button></div>
+</dialog>
+
+<script src="../../assets/lesson.js"></script>
+</body>
+</html>

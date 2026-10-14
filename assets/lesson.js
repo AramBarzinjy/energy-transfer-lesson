@@ -85,13 +85,16 @@ $$('.mcq').forEach(card=>{ const fb=$('.fb',card), ans=card.dataset.answer;
     result(card,ok); })); });
 
 /* numeric answers */
-function parseNum(v){ v=String(v).replace(/[,\s%]/g,'').replace(/[×x]10\^?/i,'e'); const n=parseFloat(v); return isNaN(n)?null:n; }
-$$('.num').forEach(card=>{ const inp=$('input.numin',card), fb=$('.fb',card), a=parseFloat(card.dataset.answer), tol=parseFloat(card.dataset.tol||'0.01');
+const SUP={'⁰':'0','¹':'1','²':'2','³':'3','⁴':'4','⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9','⁻':'-'};
+function parseNum(v){ v=String(v).replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹⁻]/g,c=>SUP[c]).replace(/[−–]/g,'-').replace(/[,\s%]/g,'').replace(/(mol)?dm-?3$/i,'').replace(/[×x*]10\^?/i,'e').replace(/E/,'e');
+  if(!/^[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?$/.test(v)) return null; const n=parseFloat(v); return isNaN(n)?null:n; }
+function close(n,a,el){ const tol = el.dataset.rtol ? Math.abs(a)*parseFloat(el.dataset.rtol) : parseFloat(el.dataset.tol||'0.01'); return Math.abs(n-a)<=tol+1e-30; }
+$$('.num').forEach(card=>{ const inp=$('input.numin',card), fb=$('.fb',card), a=parseFloat(card.dataset.answer);
   const also=(card.dataset.also||'').split(',').filter(Boolean).map(Number);
   const traps=card.dataset.traps?JSON.parse(card.dataset.traps):[];
   const check=()=>{ const n=parseNum(inp.value); fb.hidden=false; fb.classList.add('anim');
     if(n===null){fb.className='fb nope'; fb.innerHTML='<span class="verdict">Type a number first.</span>'; return;}
-    let ok=Math.abs(n-a)<=tol || also.some(x=>Math.abs(n-x)<0.001); let msg='';
+    let ok=close(n,a,card) || also.some(x=>Math.abs(n-x)<=Math.abs(x)*0.001+1e-30); let msg='';
     if(!ok){ const t=traps.find(t=>n>=t[0]-1e-9&&n<=t[1]+1e-9); msg=t?t[2]:'Check your working, or use a hint below.'; }
     fb.className='fb '+(ok?'good':'nope'); fb.innerHTML='<span class="verdict">'+(ok?'✓ Correct':'✗ Not quite')+'</span> '+(ok?'Well done. Open the worked answer if you want to check your method.':msg);
     result(card,ok); };
@@ -103,6 +106,15 @@ $$('.matcher').forEach(card=>{ const fb=$('.fb',card);
     sels.forEach(s=>{ const ok=s.value===s.dataset.answer; if(ok) right++; s.style.borderColor= s.value ? (ok?'var(--ok)':'var(--bad)') : ''; });
     const ok=right===sels.length; fb.hidden=false; fb.className='fb anim '+(ok?'good':'nope');
     fb.innerHTML='<span class="verdict">'+(ok?'✓ All correct':'✗ '+right+' of '+sels.length+' correct')+'</span> '+(ok?(card.dataset.win||''):'Green borders are right; change the red ones and check again.');
+    result(card,ok); }); });
+
+/* several numeric boxes checked together (ICE boxes, multi-step answers) */
+$$('.multi').forEach(card=>{ const fb=$('.fb',card);
+  $('[data-gcheck]',card).addEventListener('click',()=>{ const ins=$$('input[data-answer]',card); let right=0, empty=0;
+    ins.forEach(i=>{ const n=parseNum(i.value); if(n===null){ if(i.value.trim()==='') empty++; i.style.borderColor=i.value.trim()?'var(--bad)':''; return; }
+      const ok=close(n,parseFloat(i.dataset.answer),i); if(ok) right++; i.style.borderColor=ok?'var(--ok)':'var(--bad)'; });
+    const ok=right===ins.length; fb.hidden=false; fb.className='fb anim '+(ok?'good':'nope');
+    fb.innerHTML='<span class="verdict">'+(ok?'✓ All correct':'✗ '+right+' of '+ins.length+' correct')+'</span> '+(ok?(card.dataset.win||'Well done.'):(empty?'Fill in every box. ':'')+'Green boxes are right; check the red ones, or use a hint. You can type 5.13e-14 or 5.13x10^-14.');
     result(card,ok); }); });
 
 /* graduated hints */
@@ -121,7 +133,7 @@ $$('[data-steps]').forEach(ol=>{ const items=$$('li',ol); items.forEach(li=>li.h
   all.onclick=()=>{ items.forEach(li=>li.hidden=false); i=items.length; upd(); }; upd(); });
 
 /* picker: tap a label or part of a diagram to see its explanation; optional guided walk */
-$$('.picker').forEach(pk=>{ const data=json(pk); const out=$('.picker-out',pk); const order=data._order||[]; let w=-1;
+$$('.picker').forEach(pk=>{ const data=json(pk)||{}; $$('template[data-key]',pk).forEach(t=>data[t.dataset.key]=t.innerHTML); const out=$('.picker-out',pk); const order=data._order||(pk.dataset.order?pk.dataset.order.split(' '):[]); let w=-1; if(!data._intro) data._intro=out.innerHTML;
   const walkBtn=$('[data-walk]',pk);
   function pick(k){ if(!data[k]) return; out.innerHTML=data[k]; out.classList.remove('anim'); void out.offsetWidth; out.classList.add('anim');
     $$('.chips [data-pick]',pk).forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.pick===k)));

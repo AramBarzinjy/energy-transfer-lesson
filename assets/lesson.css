@@ -158,3 +158,49 @@ table.notes{border-collapse:collapse; width:100%; font-size:.95em}
 table.notes th,table.notes td{border:1px solid var(--line); padding:.5rem .6rem; text-align:left; vertical-align:top}
 table.notes th{background:var(--leaf-soft)}
 .tablewrap{overflow-x:auto}
+
+/* Chemistry folder accent: same design, deep blue instead of leaf green */
+:root[data-subject="chem"]{--leaf:#1E5F86; --leaf-soft:#E1EDF5; --ok:#1E5F86}
+@media (prefers-color-scheme: dark){:root[data-subject="chem"]:not([data-theme="light"]){--leaf:#7CB9E0; --leaf-soft:#172E3D; --ok:#7CB9E0}}
+:root[data-subject="chem"][data-theme="dark"]{--leaf:#7CB9E0; --leaf-soft:#172E3D; --ok:#7CB9E0}
+
+/* equations */
+.eq{font-family:var(--font-display); font-weight:700; display:inline-flex; align-items:center; gap:.4em; flex-wrap:wrap; justify-content:center}
+.frac{display:inline-flex; flex-direction:column; align-items:center; vertical-align:middle; line-height:1.25}
+.frac > span:first-child{border-bottom:2px solid currentColor; padding:0 .3em .1em}
+.frac > span:last-child{padding:.1em .3em 0}
+.eqbox{display:flex; justify-content:center; padding:.8rem; background:var(--leaf-soft); border-radius:10px; font-size:1.15em; overflow-x:auto}
+/* route chips for the equation map */
+.route{display:flex; flex-wrap:wrap; align-items:center; gap:.4rem}
+.route .st{background:var(--surface); border:1.5px solid var(--leaf); border-radius:10px; padding:.35rem .6rem; font-weight:700}
+.route .st.end{background:var(--leaf); color:var(--surface)}
+.route .ar{color:var(--muted); font-weight:700}
+.doors{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.5rem}
+.doors button{font:inherit; text-align:left; padding:.7rem .8rem; border-radius:10px; border:1.5px solid var(--line); background:var(--surface); color:var(--ink); cursor:pointer; display:flex; flex-direction:column; gap:.15rem}
+.doors button[aria-pressed="true"]{border-color:var(--leaf); background:var(--leaf-soft)}
+.doors .d-k{font-weight:700} .doors .d-s{font-size:.85em; color:var(--muted)}
+/* ICE boxes */
+.ice{border-collapse:collapse; width:100%; font-size:.95em}
+.ice th,.ice td{border:1px solid var(--line); padding:.4rem .5rem; text-align:center}
+.ice th{background:var(--leaf-soft)}
+.ice td:first-child,.ice th:first-child{text-align:left; font-weight:700}
+.ice input{width:100%; min-width:5.5rem; padding:.35rem .4rem; text-align:center}
+.ice .given{font-variant-numeric:tabular-nums}
+.gridrow{display:flex; flex-wrap:wrap; gap:.5rem 1rem; align-items:center}
+.gridrow label{font-weight:700}
+.gridrow input{max-width:11rem}
+/* pH scale */
+.phscale{position:relative; margin:2.6rem 0 2.8rem}
+.phbar{height:14px; border-radius:99px; background:linear-gradient(90deg,var(--heat-soft),var(--bg) 50%,var(--leaf-soft)); border:1px solid var(--line)}
+.phticks{display:flex; justify-content:space-between; font-size:.75rem; color:var(--muted); margin-top:.2rem; font-variant-numeric:tabular-nums}
+.phm{position:absolute; top:-2.3rem; transform:translateX(-50%); font-size:.72rem; font-weight:700; text-align:center; white-space:nowrap; line-height:1.2}
+.phm::after{content:""; display:block; width:2px; height:.9rem; background:var(--ink); margin:.15rem auto 0}
+.phm.low{top:auto; bottom:-2.5rem} .phm.low::after{display:none} .phm.low::before{content:""; display:block; width:2px; height:.9rem; background:var(--ink); margin:0 auto .15rem}
+.phm.r{transform:translateX(-88%); text-align:right} .phm.r::after{margin-right:6%; margin-left:auto}
+.phm.l{transform:translateX(-12%); text-align:left} .phm.l::after{margin-left:6%}
+.phscale{margin-inline:.25rem}
+.card-h{flex-wrap:wrap}
+.gridrow{display:grid; grid-template-columns:minmax(6.5rem,9rem) minmax(0,12rem) auto; gap:.5rem; align-items:center; justify-content:start}
+.gridrow input{max-width:none; width:100%}
+@media (max-width:520px){ .ice input{min-width:4.2rem; padding:.3rem .25rem} .ice th,.ice td{padding:.3rem} .gridrow{grid-template-columns:6rem minmax(0,1fr) auto} }
+@media (max-width:520px){ .ice td:first-child,.ice th:first-child{font-size:.8em} }
