@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1F6B4E">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<link rel="icon" href="../assets/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Study">
+<title>Biology Topics</title>
+<link rel="stylesheet" href="../assets/lesson.css">
+<link rel="stylesheet" href="../assets/shelf.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap">
+</head>
+<body>
+<main class="shelf">
+  <a class="back crumb" href="../">← All subjects</a>
+  <p class="eyebrow">AQA A-level Biology</p>
+  <h1>Biology</h1>
+  <p class="muted">Each topic is separate. Your progress in each one is saved on this device.</p>
+  <div class="grid" id="topics"></div>
+</main>
+<script>
+/* To add a topic: add one entry here and a folder with its index.html and PowerPoint. */
+const TOPICS=[
+  {slug:'energy-transfer', key:'energy-transfer-v1', title:'Energy transfer between trophic levels', blurb:'GPP and NPP, why energy is lost along food chains, and % efficiency.', pptx:'Energy-transfer-lesson.pptx', sections:5},
+  {slug:'nutrient-cycles', key:'nutrient-cycles-v1', title:'Nutrient cycles: the nitrogen cycle', blurb:'Saprobionts, ammonification, nitrification, nitrogen fixation and denitrification.', pptx:'Nutrient-cycles-lesson.pptx', sections:5}
+];
+const wrap=document.getElementById('topics');
+TOPICS.forEach((t,i)=>{
+  let done=0, started=false;
+  try{const s=JSON.parse(localStorage.getItem(t.key)||'null'); if(s){started=true; done=Object.values(s.done||{}).filter(Boolean).length;}}catch(e){}
+  const pct=Math.round(Math.min(done,t.sections)/t.sections*100);
+  const status=done>=t.sections?'✓ Finished':started?done+' of '+t.sections+' sections done':'Not started';
+  const el=document.createElement('div'); el.className='tile';
+  el.innerHTML='<span class="num">TOPIC '+(i+1)+'</span><h3>'+t.title+'</h3><p class="small muted">'+t.blurb+'</p>'+
+    '<div class="bar2" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+pct+'"><i style="width:'+pct+'%"></i></div><span class="meta">'+status+'</span>'+
+    '<div class="actions"><a class="btn solid" style="text-decoration:none" href="'+t.slug+'/">'+(started?'Continue':'Open lesson')+'</a><a class="btn quiet" style="text-decoration:none" href="'+t.slug+'/'+t.pptx+'" download>PowerPoint</a></div>';
+  wrap.appendChild(el);
+});
+const soon=document.createElement('div'); soon.className='tile soon';
+soon.innerHTML='<span class="num">NEXT</span><h3>More topics coming soon</h3><p class="small muted">New topics will appear here as they are added.</p>';
+wrap.appendChild(soon);
+</script>
+</body>
+</html>

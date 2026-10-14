@@ -1,0 +1,17 @@
+/* Library screens (home and subject folders), built on lesson.css tokens. */
+.shelf{max-width:780px; margin:0 auto; padding-inline:16px; padding-block:2rem 4rem; display:flex; flex-direction:column; gap:1.25rem}
+.crumb{font-size:.9rem}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1rem}
+.tile{display:flex; flex-direction:column; gap:.6rem; padding:1.25rem; border-radius:var(--radius); border:1px solid var(--line); background:var(--surface); color:var(--ink); text-decoration:none; min-width:0}
+a.tile:hover{border-color:var(--leaf)}
+a.tile:focus-visible{outline:3px solid var(--focus); outline-offset:2px}
+.tile h2,.tile h3{font-size:1.2em}
+.folder{width:56px; height:44px}
+.tile .meta{font-size:.85rem; color:var(--muted)}
+.tile .bar2{height:6px; border-radius:99px; background:var(--line); overflow:hidden}
+.tile .bar2 i{display:block; height:100%; background:var(--leaf)}
+.tile.soon{border-style:dashed; background:transparent}
+.tile .actions{display:flex; gap:.5rem; flex-wrap:wrap; margin-top:auto}
+.tile .actions a{font-size:.88rem}
+.num{font-family:var(--font-display); font-weight:700; color:var(--leaf); font-size:.9rem; letter-spacing:.04em}
+.hint-ios{font-size:.85rem; color:var(--muted)}
