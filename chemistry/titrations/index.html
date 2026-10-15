@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en-GB" data-subject="chem">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1E5F86">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<link rel="icon" href="../../assets/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Study">
+<title>Titrations · Chemistry</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap">
+
+
+</head>
+<body data-lesson="titrations-v1">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--muted)"/></marker></defs></svg>
+<header class="bar">
+  <div class="bar-in">
+    <div class="bar-top">
+      <div class="brandwrap"><a class="back" href="../">← Chemistry</a><span class="brand">Titrations</span></div>
+      <div class="prog" role="progressbar" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="progfill"></i></div>
+      <span class="progtxt" id="progtxt">0 of 5 sections</span>
+      <button class="btn quiet" id="openSettings" aria-haspopup="dialog">Settings</button>
+    </div>
+    <nav class="tabs" aria-label="Lesson sections" id="tabs"></nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+<!-- ============ START ============ -->
+<section class="screen stack" data-sec="start" data-name="Start">
+  <p class="eyebrow">AQA A-level Chemistry · 3.1.12 Acids and bases</p>
+  <h1>Titrations, pH curves and indicators</h1>
+  <p>This is a short lesson in <b>5 small sections</b>, about 4–6 minutes each. Learn one idea, check it, then stop whenever you like. Your place and answers are saved in this browser, so you can come back later.</p>
+  <div id="resumeBox" hidden class="tip"><b>Welcome back</b><span id="resumeTxt"></span> <button class="btn solid" id="resumeBtn" style="margin-top:.5rem">Carry on where I stopped</button></div>
+  <div class="map" id="map"></div>
+  <div class="warn"><b>Spotted in the notes</b>The worked example on page 26 says the titre is <b>24.0 cm³</b>, but the graph and the calculation both use <b>25.0 cm³</b>. With 25.0 cm³ the answer of 0.276 mol dm⁻³ is right. Section D explains this.</div>
+  <div class="card">
+    <h3>How the labels work</h3>
+    <div class="row"><span class="tag notes">Class notes</span><span class="small">Taken from the printed notes.</span></div>
+    <div class="row"><span class="tag orig">Original question</span><span class="small">An exam question or worked example from the notes.</span></div>
+    <div class="row"><span class="tag new">New question</span><span class="small">AQA-style practice written for this lesson.</span></div>
+    <div class="row"><span class="tag extra">Extra help</span><span class="small">Explanations added to fill gaps. Not extra content to learn.</span></div>
+    <p class="small muted">Every pH curve here is worked out from real equilibrium maths, so you can trust its shape. You'll need a calculator.</p>
+  </div>
+  <div class="card"><h3>Prefer slides?</h3><p class="small">The same lesson as a PowerPoint, with questions on yellow slides and answers on blue ones. It opens in PowerPoint, Keynote or Google Slides.</p><div class="row"><a class="btn" href="Titrations-lesson.pptx" download style="text-decoration:none">Download the PowerPoint</a></div></div>
+  <div class="pager"><a class="btn quiet" href="../" style="text-decoration:none">← Chemistry</a><button class="btn solid" data-go="A">Start section A →</button></div>
+</section>
+
+<!-- ============ A ============ -->
+<section class="screen stack" data-sec="A" data-name="A · Titration method" data-blurb="Standard solutions, the equipment, the 5 steps and the pH-meter method." hidden>
+  <p class="eyebrow">Section A · about 5 minutes</p>
+  <h2>Acid–base titrations</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>What a titration is for</h3><span class="tag notes">Class notes</span></div>
+    <ul class="clean">
+      <li>A titration finds the <b>concentration</b> of a solution, e.g. an acid, by reacting it with an alkali in the presence of an <b>indicator</b>.</li>
+      <li>One of the reagents must be a <b>standard solution</b>: its exact concentration is known. So if a precise volume is measured out, its <b>moles can be calculated</b> (n = c × V).</li>
+    </ul>
+    <div class="fig narrow">
+      <svg viewBox="0 0 460 300" role="img" aria-labelledby="eqT">
+        <title id="eqT">Titration equipment: a burette of acid clamped to a stand above a conical flask of alkali on a white tile, with a pipette beside it.</title>
+        <g stroke="var(--ink)" stroke-width="2" fill="none">
+          <path d="M300 30 V265"/><rect x="250" y="265" width="120" height="10" fill="var(--line)"/>
+          <path d="M300 95 H262"/>
+          <rect x="246" y="20" width="16" height="160" fill="var(--surface)"/><rect x="247" y="70" width="14" height="110" fill="var(--leaf-soft)" stroke="none"/>
+          <path d="M254 180 V196"/><path d="M247 188 H261"/>
+          <path d="M240 205 H268 L295 255 H213 Z" fill="var(--surface)"/><path d="M225 238 H284 L295 255 H213 Z" fill="var(--sun-soft)" stroke="none"/>
+          <rect x="196" y="256" width="116" height="8" fill="var(--bg)"/>
+          <path d="M70 260 L150 40" stroke-width="3"/><ellipse cx="110" cy="150" rx="7" ry="16" transform="rotate(20 110 150)" fill="var(--surface)"/>
+        </g>
+        <g font-size="14" style="fill:var(--ink)">
+          <text x="166" y="50">burette</text><text x="166" y="140">acid</text><text x="310" y="60">stand</text>
+          <text x="310" y="225">conical flask</text><text x="310" y="245">(alkali)</text><text x="318" y="285">white tile</text><text x="20" y="200">pipette</text>
+        </g>
+      </svg>
+    </div>
+    <p class="small muted">The white tile makes the colour change easier to see.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>The steps in a titration</h3><span class="tag notes">Class notes</span></div>
+    <ol class="clean steps" data-steps>
+      <li><b>Fill a burette</b> with the acid.</li>
+      <li><b>Accurately measure 25 cm³</b> of the alkali standard solution using a <b>pipette</b>, and transfer it to a conical flask.</li>
+      <li>Add a <b>few drops of a suitable indicator</b> to the alkali.</li>
+      <li><b>Slowly add the acid</b> from the burette, <b>swirling constantly</b>. As soon as the indicator changes colour, the alkali has been neutralised, so stop. Record the volume of acid added.</li>
+      <li><b>Repeat</b> until you get two results <b>within 0.1 cm³</b> of each other (concordant). The mean of these two is the <b>average titre</b>.</li>
+    </ol>
+    <div class="row"><button class="btn" data-stepnext>Show next step</button><button class="btn quiet" data-stepall>Show all</button></div>
+    <p>Once you have an average titre, you can calculate the unknown concentration (Section D).</p>
+    <p class="small muted">The notes call the acid "of known concentration" in step 1 and the alkali the "standard solution" in step 2. In a real titration only one of them is known: the other is the one you're finding.</p>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The alternative: a pH meter</h3><span class="tag notes">Class notes</span></div>
+    <p>Instead of an indicator, use a <b>pH meter</b> <span class="tag notes">Handwritten: "not probe"</span> to measure how the pH changes as base is added to acid.</p>
+    <ol class="clean">
+      <li>Measure the pH of the acid solution and record it.</li>
+      <li>Add 1 cm³ of the base solution.</li>
+      <li>Stir the mixture.</li>
+      <li>Measure the pH and record it.</li>
+      <li>Repeat until the base is in excess.</li>
+      <li>Add base in <b>smaller increments near the end point</b>.</li>
+    </ol>
+    <div class="tablewrap"><table class="notes"><thead><tr><th>Vol of NaOH added to HCl (cm³)</th><th>pH</th></tr></thead><tbody><tr><td>0</td><td>1.03</td></tr><tr><td>1</td><td>1.09</td></tr><tr><td>2</td><td>1.14</td></tr><tr><td>3</td><td>1.21</td></tr></tbody></table></div>
+    <p>Plot volume of base added on the <b>x-axis</b> and pH on the <b>y-axis</b> to get a pH curve (Section B).</p>
+    <div class="tip"><b>Exam point</b><b style="display:inline;text-transform:none;letter-spacing:0;font-size:1em">Calibrate the pH meter</b>: after storage it may not read accurately. Place it in a solution of <b>known pH</b> and adjust the meter to match.</div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check A</h3>
+  <div class="card mcq" data-q="A1" data-label="A · What a standard solution is" data-answer="b">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">What is a standard solution?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Concentration, not pH, is what matters. It must be exactly known.">A solution with a pH of 7</button>
+      <button data-o="b" data-fb="Correct. Knowing its exact concentration lets you work out moles from a measured volume.">A solution whose exact concentration is known</button>
+      <button data-o="c" data-fb="Any acid or base could be the standard. What makes it standard is that its concentration is known exactly.">The acid in the burette</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card num" data-q="A2" data-label="A · Average titre from results" data-answer="24.40" data-tol="0.006" data-traps='[[24.78,24.79,"You included the rough titre. Rough runs are never used."],[24.56,24.57,"You averaged three runs, but 24.90 isn’t within 0.10 cm³ of the others. Only use concordant results."]]'>
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[1 mark]</span></div>
+    <p class="qtext">A student's titres were: rough 25.40 cm³, run 1 24.90 cm³, run 2 24.35 cm³, run 3 24.45 cm³. Calculate the average titre.</p>
+    <div class="answer-line"><input type="text" class="numin" aria-label="Average titre"><span class="small">cm³</span><button class="btn" data-check>Check</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["Ignore the rough titre.","Which two runs are within 0.10 cm³ of each other?","Runs 2 and 3: (24.35 + 24.45) ÷ 2"]'><button class="btn quiet" data-hint>Show a hint</button></div></div>
+  <div class="card" data-q="A3" data-label="A · Why calibrate the pH meter">
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[2 marks]</span></div>
+    <p class="qtext">Explain why, and how, a pH meter is calibrated before use.</p>
+    <textarea aria-label="Your answer"></textarea>
+    <button class="btn" data-model>Compare with model answer</button>
+    <div class="reveal-body" hidden><ol class="clean"><li><b>Why:</b> after storage the meter may not give an accurate reading. ✔</li><li><b>How:</b> place it in a solution of known pH (a buffer) and adjust the meter to read that value. ✔</li></ol></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="A">Mark section A done</button><span class="small muted">You can take a break here.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="start">← Start</button><button class="btn" data-go="B">Section B →</button></div>
+</section>
+
+<!-- ============ B ============ -->
+<section class="screen stack" data-sec="B" data-name="B · pH curves" data-blurb="The four curve shapes, and how to read start, end and equivalence." hidden>
+  <p class="eyebrow">Section B · about 6 minutes</p>
+  <h2>pH titration curves</h2>
+
+  <div class="card curvelab" data-read>
+    <div class="card-h"><h3>Explore the four shapes</h3><span class="tag notes">Class notes · p24</span></div>
+    <p>All four use 25.0 cm³ of 0.100 mol dm⁻³ solution in the flask and 0.100 mol dm⁻³ in the burette. Pick a pair:</p>
+    <div class="chips" role="group" aria-label="Acid and base pair">
+      <button data-pair="sasb">Strong acid + strong base</button><button data-pair="sawb">Strong acid + weak base</button><button data-pair="wasb">Weak acid + strong base</button><button data-pair="wawb">Weak acid + weak base</button>
+    </div>
+    <div class="chips" role="group" aria-label="Which way round"><button data-dir="acid">Base added to acid</button><button data-dir="base">Acid added to base</button></div>
+    <div class="fig narrow lab-fig"></div>
+    <div class="fb explain lab-out" aria-live="polite"></div>
+    <p class="small muted">The red box marks the vertical section. The dashed line is pH 7.</p>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Key points about pH curves</h3><span class="tag notes">Class notes</span></div>
+    <ul class="clean">
+      <li>pH <b>doesn't change in a linear way</b>. Almost-horizontal sections mean adding base has very little effect. <b>Vertical sections</b> mean a tiny amount of base causes a large change in pH.</li>
+      <li>The <b>starting point</b> depends on the strength of the <b>acid</b>: strong acid starts ~pH 1, weak acid ~pH 3.</li>
+      <li>The <b>end point</b> of the curve depends on the strength of the <b>base</b>: strong base ends ~pH 13, weak base ~pH 9.</li>
+      <li>The <b>mid-point of the vertical section</b> is the <b>equivalence point</b>. Its volume is the average titre, which you use in calculations.</li>
+      <li>The length of the vertical section helps you choose an indicator (Section C).</li>
+    </ul>
+    <p class="small"><span class="tag notes">Handwritten notes</span> Weak acid + weak base: <b>no vertical section</b>. Weak acid + strong base: the flat part early on is where a <b>buffer solution forms</b>.</p>
+    <div class="warn"><b>Careful with "end point"</b>One handwritten note says "the end point is where the vertical section is". In the notes' own definitions (Section C), the <b>equivalence point</b> is the middle of the vertical section, and the <b>end point</b> is when the indicator changes colour. With the right indicator they happen at the same time.</div>
+    <div class="tip"><b>Reading a curve backwards</b>If the pH <b>falls</b>, acid is being added to a base. Then the <b>start</b> tells you the base's strength (~13 strong, ~11 weak) and the <b>end</b> tells you the acid's (~1 strong, ~3–5 weak).</div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check B</h3>
+  <div class="card mcq" data-q="B1" data-label="B · Curve starting at pH 3" data-answer="c">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Base is added to an acid. The curve starts at pH 2.9 and ends at pH 12.5. Which pair is it?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="A strong acid would start near pH 1.">Strong acid + strong base</button>
+      <button data-o="b" data-fb="A weak base would end near pH 9, and a strong acid would start near pH 1.">Strong acid + weak base</button>
+      <button data-o="c" data-fb="Correct. Starting ~3 means a weak acid; ending ~13 means a strong base.">Weak acid + strong base</button>
+      <button data-o="d" data-fb="A weak base would only end near pH 9.">Weak acid + weak base</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="B2" data-label="B · Meaning of the vertical section" data-answer="a">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">What does the vertical section of a pH curve show?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Correct. Near equivalence a drop or two of base changes the pH enormously.">A very small volume of base causes a large change in pH</button>
+      <button data-o="b" data-fb="That's the almost-horizontal parts.">Adding base has very little effect on pH</button>
+      <button data-o="c" data-fb="The equivalence point is only the mid-point of the vertical section. It isn't always at pH 7.">The solution is exactly pH 7</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="B3" data-label="B · Equivalence pH of weak acid + strong base" data-answer="b">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Use the explorer. For weak acid + strong base, the equivalence point is at about…</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Only strong acid + strong base gives exactly pH 7 at equivalence.">pH 7.0</button>
+      <button data-o="b" data-fb="Correct. About pH 8.7, above 7. The salt formed is slightly alkaline.">pH 8.7</button>
+      <button data-o="c" data-fb="That's around where a strong acid + weak base reaches equivalence.">pH 5.3</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="B">Mark section B done</button><span class="small muted">A good place for a break.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="A">← Section A</button><button class="btn" data-go="C">Section C →</button></div>
+</section>
+
+<!-- ============ C ============ -->
+<section class="screen stack" data-sec="C" data-name="C · Indicators" data-blurb="Equivalence point vs end point, and how to pick an indicator." hidden>
+  <p class="eyebrow">Section C · about 5 minutes</p>
+  <h2>Indicators</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Two key terms</h3><span class="tag notes">Class notes</span></div>
+    <p>Indicators show when a neutralisation is complete. They're one colour in acid and another in base.</p>
+    <dl class="def"><dt>Equivalence point</dt><dd>When exactly enough acid has been added to neutralise the base (or vice versa). The mid-point of the vertical section of the graph.</dd></dl>
+    <dl class="def"><dt>End point</dt><dd>The exact volume of acid or base that needs to be added to make an indicator change colour.</dd></dl>
+    <p>Choose an indicator so that the <b>equivalence point and end point happen at the same time</b>.</p>
+    <div class="tip"><b>Extra help · "neutral"</b>The notes say the colour change shows the mixture is "neutral". In this topic that means <b>exactly neutralised</b> (equivalence), which isn't always pH 7. For a weak acid + strong base it's about pH 8.7.</div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Indicator table</h3><span class="tag notes">Class notes · p27</span></div>
+    <div class="tablewrap"><table class="notes">
+      <thead><tr><th>Indicator</th><th>pK<sub>a</sub></th><th>Colour change</th><th>Changes over about…</th></tr></thead>
+      <tbody>
+        <tr><td><b>Methyl orange</b></td><td>3.7</td><td>red → yellow</td><td>pH 3.1–4.4</td></tr>
+        <tr><td>Bromophenol blue</td><td>4.0</td><td>yellow → blue</td><td>pH 3.0–4.6</td></tr>
+        <tr><td>Methyl red</td><td>5.1</td><td>red → yellow</td><td>pH 4.4–6.2</td></tr>
+        <tr><td>Bromothymol blue</td><td>7.0</td><td>yellow → blue</td><td>pH 6.0–7.6</td></tr>
+        <tr><td><b>Phenolphthalein</b></td><td>9.3</td><td>colourless → red (pink)</td><td>pH 8.3–10.0</td></tr>
+      </tbody></table></div>
+    <p class="small muted">pK<sub>a</sub> and colours are from the notes. The ranges are approximate, read from the notes' chart. Notes p28: phenolphthalein changes at about pH 10, methyl orange at about pH 4.5.</p>
+    <div class="eqbox" style="font-family:var(--font-display);font-weight:700;text-align:center">A suitable indicator changes colour somewhere on the vertical section of a pH titration curve.</div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card curvelab" data-indicators="on" data-read>
+    <div class="card-h"><h3>Test an indicator</h3><span class="tag notes">Class notes · p28–29</span></div>
+    <p>Pick a curve, then an indicator. The shaded band is where the indicator changes colour.</p>
+    <div class="chips" role="group" aria-label="Acid and base pair">
+      <button data-pair="sasb">Strong acid + strong base</button><button data-pair="wasb">Weak acid + strong base</button><button data-pair="sawb">Strong acid + weak base</button><button data-pair="wawb">Weak acid + weak base</button>
+    </div>
+    <div class="chips" role="group" aria-label="Indicator"><button data-ind="mo">Methyl orange</button><button data-ind="pp">Phenolphthalein</button><button data-ind="mr">Methyl red</button><button data-ind="btb">Bromothymol blue</button><button data-ind="">None</button></div>
+    <div class="chips" role="group" aria-label="Which way round" hidden><button data-dir="acid">Base added to acid</button></div>
+    <div class="fig narrow lab-fig"></div>
+    <div class="fb explain lab-out" aria-live="polite"></div>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The four verdicts</h3><span class="tag notes">Handwritten notes</span></div>
+    <div class="tablewrap"><table class="notes">
+      <thead><tr><th>Titration</th><th>Suitable indicator</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td><b>Strong acid – strong base</b></td><td>Both</td><td>Both change colour on the vertical section.</td></tr>
+        <tr><td><b>Weak acid – strong base</b></td><td>Only phenolphthalein</td><td>It changes colour on the vertical section.</td></tr>
+        <tr><td><b>Strong acid – weak base</b></td><td>Only methyl orange</td><td>It changes colour on the vertical section.</td></tr>
+        <tr><td><b>Weak acid – weak base</b></td><td>Neither</td><td>No vertical section: the pH change is too gradual.</td></tr>
+      </tbody></table></div>
+    <div class="tip"><b>Memory hook</b>The <b>strong</b> partner sets where the steep part is. Strong <b>base</b> → steep part high up → <b>phenolphthalein</b> (high range). Strong <b>acid</b> → steep part low down → <b>methyl orange</b> (low range).</div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check C</h3>
+  <div class="card matcher" data-q="C1" data-label="C · Match titration to indicator" data-win="You can pick the right indicator every time.">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Choose the right indicator for each titration.</p>
+    <div class="match">
+      <span class="m-l">HCl + NaOH</span><select aria-label="Indicator for HCl and NaOH" data-answer="both"><option value="">Choose…</option><option value="both">Either</option><option value="pp">Phenolphthalein only</option><option value="mo">Methyl orange only</option><option value="none">Neither</option></select>
+      <span class="m-l">CH₃COOH + NaOH</span><select aria-label="Indicator for ethanoic acid and NaOH" data-answer="pp"><option value="">Choose…</option><option value="both">Either</option><option value="pp">Phenolphthalein only</option><option value="mo">Methyl orange only</option><option value="none">Neither</option></select>
+      <span class="m-l">HCl + NH₃</span><select aria-label="Indicator for HCl and ammonia" data-answer="mo"><option value="">Choose…</option><option value="both">Either</option><option value="pp">Phenolphthalein only</option><option value="mo">Methyl orange only</option><option value="none">Neither</option></select>
+      <span class="m-l">CH₃COOH + NH₃</span><select aria-label="Indicator for ethanoic acid and ammonia" data-answer="none"><option value="">Choose…</option><option value="both">Either</option><option value="pp">Phenolphthalein only</option><option value="mo">Methyl orange only</option><option value="none">Neither</option></select>
+    </div>
+    <div class="row"><button class="btn" data-mcheck>Check my matches</button></div>
+    <div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card" data-q="C2" data-label="C · Explain indicator choice">
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[2 marks]</span></div>
+    <p class="qtext">Explain why methyl orange is not a suitable indicator for titrating ethanoic acid with sodium hydroxide.</p>
+    <textarea aria-label="Your answer"></textarea>
+    <button class="btn" data-model>Compare with model answer</button>
+    <div class="reveal-body" hidden><ol class="clean"><li>Methyl orange changes colour at about pH 3–4.5. ✔</li><li>The vertical section for a weak acid + strong base is at about pH 7–11, so methyl orange would change colour <b>before</b> the equivalence point. It isn't on the vertical section. ✔</li></ol></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="C">Mark section C done</button><span class="small muted">Halfway. Take a break if you need one.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="B">← Section B</button><button class="btn" data-go="D">Section D →</button></div>
+</section>
+
+<!-- ============ D ============ -->
+<section class="screen stack" data-sec="D" data-name="D · Calculations" data-blurb="The 4-step titration calculation, ratios, and linking back to pH." hidden>
+  <p class="eyebrow">Section D · about 6 minutes</p>
+  <h2>Titration calculations</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The 4 steps</h3><span class="tag notes">Class notes</span></div>
+    <div class="route"><span class="st">1 · Balanced equation</span><span class="ar">→</span><span class="st">2 · n = c × V for the known solution</span><span class="ar">→</span><span class="st">3 · Use the ratio</span><span class="ar">→</span><span class="st end">4 · c = n ÷ V for the unknown</span></div>
+    <p class="small muted">Volumes in dm³: cm³ ÷ 1000.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card num" data-q="D1" data-label="D · HNO₃ example (notes p26)" data-answer="0.276" data-tol="0.0015" data-traps='[[0.287,0.288,"That uses 24.0 cm³, the titre printed in the notes’ text. But the graph and the notes’ own calculation use 25.0 cm³ (see the worked solution)."],[0.0068,0.0070,"That’s the moles. Now divide by the volume of HNO₃ in dm³."]]'>
+    <div class="card-h"><span class="tag orig">From the notes</span><span class="marks">Try it first</span></div>
+    <p class="qtext">30 cm³ of NaOH solution of concentration 0.23 mol dm⁻³ was titrated against HNO₃ of unknown concentration. The equivalence point on the titration curve is at 25.0 cm³. Calculate the concentration of the HNO₃.</p>
+    <div class="curvefig fig narrow" data-flask="base" data-vf="30" data-cb="0.23" data-kb="s" data-ca="0.276" data-ka="s" data-max="50" data-label="pH curve: HNO3 added to 30 cm3 of 0.23 mol per dm3 NaOH, equivalence at 25.0 cm3"></div>
+    <p class="small muted">Curve redrawn for this exact reaction (HNO₃ added to NaOH), so the pH falls. The notes' sketch shows a different shape.</p>
+    <div class="answer-line"><span>[HNO₃] =</span><input type="text" class="numin" aria-label="Concentration of HNO3"><span class="small">mol dm⁻³</span><button class="btn" data-check>Check</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["NaOH + HNO₃ → NaNO₃ + H₂O (1 : 1)","n(NaOH) = 0.23 × (30 ÷ 1000) = 0.0069 mol = n(HNO₃)","c = 0.0069 ÷ (25.0 ÷ 1000)"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked solution</button>
+    <div class="reveal-body" hidden><ol class="clean">
+      <li><b>Balanced equation:</b> NaOH(aq) + HNO₃(aq) → NaNO₃(aq) + H₂O(l) <span class="muted small">(the notes write H₂O(s): water here is a liquid)</span></li>
+      <li><b>Moles of the known:</b> n(NaOH) = 0.23 × (30 ÷ 1000) = <b>0.0069 mol</b></li>
+      <li><b>Ratio:</b> 1 : 1, so 0.0069 mol of HNO₃ reacted.</li>
+      <li><b>Concentration:</b> c = 0.0069 ÷ (25.00 ÷ 1000) = <b>0.276 mol dm⁻³</b></li></ol>
+      <div class="warn"><b>About the notes</b>The text says "the average titre … was 24.0 cm³", but the circled reading on the graph and the division both use 25.00 cm³. 25.0 is the intended value. With 24.0 you'd get 0.288 mol dm⁻³.</div></div>
+  </div>
+
+  <h3 style="margin-top:.5rem">Exam practice: calculations</h3>
+  <div class="card multi" data-q="D2" data-label="D · Q1 Sulfuric acid (1 : 2 ratio)" data-win="Ratio handled correctly.">
+    <div class="card-h"><span class="tag new">Question 1</span><span class="marks">[4 marks]</span></div>
+    <p class="qtext">25.0 cm³ of 0.100 mol dm⁻³ NaOH is exactly neutralised by 20.0 cm³ of sulfuric acid. Calculate the concentration of the sulfuric acid.<br><span class="small">H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O</span></p>
+    <div class="gridrow"><label for="d2a">n(NaOH)</label><input id="d2a" type="text" data-answer="2.50e-3" data-rtol="0.01"><span class="small">mol</span></div>
+    <div class="gridrow"><label for="d2b">n(H₂SO₄)</label><input id="d2b" type="text" data-answer="1.25e-3" data-rtol="0.01"><span class="small">mol</span></div>
+    <div class="gridrow"><label for="d2c">[H₂SO₄]</label><input id="d2c" type="text" data-answer="0.0625" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["n = c × V for the NaOH (25.0 cm³ = 0.0250 dm³)","The ratio is 1 H₂SO₄ : 2 NaOH, so halve the NaOH moles.","c = n ÷ 0.0200 dm³"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean"><li>n(NaOH) = 0.100 × 0.0250 = <b>2.50 × 10⁻³ mol</b></li><li>Ratio 1 : 2, so n(H₂SO₄) = 2.50 × 10⁻³ ÷ 2 = <b>1.25 × 10⁻³ mol</b></li><li>c = 1.25 × 10⁻³ ÷ 0.0200 = <b>0.0625 mol dm⁻³</b></li></ol><p class="small muted">The classic slip is forgetting the 2 : 1 and getting 0.125.</p></div>
+  </div>
+
+  <div class="card multi" data-q="D3" data-label="D · Q2 Concordant titres to concentration and pH" data-win="Titres, concentration and pH all right.">
+    <div class="card-h"><span class="tag new">Question 2</span><span class="marks">[5 marks]</span></div>
+    <p class="qtext">Hydrochloric acid of unknown concentration was titrated against 25.0 cm³ portions of 0.0950 mol dm⁻³ NaOH. The titres were: rough 22.65 cm³, then 22.30, 22.40 and 22.35 cm³. Calculate (a) the average titre, (b) the concentration of the HCl and (c) the pH of the HCl.</p>
+    <div class="gridrow"><label for="d3a">Average titre</label><input id="d3a" type="text" data-answer="22.35" data-tol="0.006"><span class="small">cm³</span></div>
+    <div class="gridrow"><label for="d3b">n(NaOH)</label><input id="d3b" type="text" data-answer="2.375e-3" data-rtol="0.01"><span class="small">mol</span></div>
+    <div class="gridrow"><label for="d3c">[HCl]</label><input id="d3c" type="text" data-answer="0.106" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="d3d">pH of HCl</label><input id="d3d" type="text" data-answer="0.97" data-tol="0.015"></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["All three non-rough titres are within 0.10 cm³ of each other, so average all three.","n(NaOH) = 0.0950 × 0.0250; the ratio is 1 : 1","HCl is a strong acid, so [H⁺] = [HCl] and pH = −log[H⁺]"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean"><li><b>Average titre:</b> (22.30 + 22.40 + 22.35) ÷ 3 = <b>22.35 cm³</b> (the rough titre is ignored)</li><li>n(NaOH) = 0.0950 × 0.0250 = <b>2.375 × 10⁻³ mol</b> = n(HCl) (1 : 1)</li><li>[HCl] = 2.375 × 10⁻³ ÷ 0.02235 = <b>0.106 mol dm⁻³</b></li><li><b>pH:</b> strong acid, so [H⁺] = 0.106 and pH = −log(0.106) = <b>0.97</b></li></ol></div>
+  </div>
+
+  <div class="card multi" data-q="D4" data-label="D · Q3 Ethanoic acid: titration then pH" data-win="Titration and weak-acid pH combined.">
+    <div class="card-h"><span class="tag new">Question 3</span><span class="marks">[6 marks]</span></div>
+    <p class="qtext">A 25.0 cm³ sample of ethanoic acid needed 18.60 cm³ of 0.120 mol dm⁻³ NaOH to reach the end point, using phenolphthalein. (a) Calculate the concentration of the ethanoic acid. (b) Calculate its pH. K<sub>a</sub> = 1.76 × 10⁻⁵ mol dm⁻³. (c) Explain why phenolphthalein was used.</p>
+    <div class="gridrow"><label for="d4a">n(NaOH)</label><input id="d4a" type="text" data-answer="2.232e-3" data-rtol="0.01"><span class="small">mol</span></div>
+    <div class="gridrow"><label for="d4b">[CH₃COOH]</label><input id="d4b" type="text" data-answer="0.0893" data-rtol="0.01"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="d4c">[H⁺]</label><input id="d4c" type="text" data-answer="1.25e-3" data-rtol="0.012"><span class="small">mol dm⁻³</span></div>
+    <div class="gridrow"><label for="d4d">pH</label><input id="d4d" type="text" data-answer="2.90" data-tol="0.015"></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["n(NaOH) = 0.120 × 0.01860; CH₃COOH + NaOH is 1 : 1","c(acid) = n ÷ 0.0250","Weak acid: [H⁺] = √(Kₐ × c), then pH = −log[H⁺]"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean"><li>n(NaOH) = 0.120 × 0.01860 = <b>2.232 × 10⁻³ mol</b> = n(CH₃COOH)</li><li>c = 2.232 × 10⁻³ ÷ 0.0250 = <b>0.0893 mol dm⁻³</b></li><li>[H⁺] = √(1.76 × 10⁻⁵ × 0.0893) = <b>1.25 × 10⁻³ mol dm⁻³</b></li><li>pH = −log(1.25 × 10⁻³) = <b>2.90</b></li><li><b>(c)</b> Weak acid + strong base: the vertical section is at about pH 7–11, and phenolphthalein changes colour within it (pH 8.3–10). ✔</li></ol></div>
+  </div>
+
+  <div class="done-row"><button class="btn solid" data-complete="D">Mark section D done</button><span class="small muted">Next: the exam questions from the notes.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="C">← Section C</button><button class="btn" data-go="E">Section E →</button></div>
+</section>
+
+<!-- ============ E ============ -->
+<section class="screen stack" data-sec="E" data-name="E · Exam questions" data-blurb="The three exam questions from the notes, redrawn and worked step by step." hidden>
+  <p class="eyebrow">Section E · exam questions from the notes</p>
+  <h2>Exam questions</h2>
+  <p class="small muted">Graphs are redrawn from the equilibrium maths to match the originals as closely as possible.</p>
+
+  <div class="card" data-q="E1" data-label="Q8(a) Suggest acid and alkali">
+    <div class="card-h"><span class="tag orig">Original question · Q8</span><span class="marks">(2)</span></div>
+    <p class="qtext">The graph was obtained from an experiment in which an acid was reacted with an alkali.</p>
+    <div class="curvefig fig narrow" data-flask="base" data-vf="25" data-cb="0.1" data-kb="1.8e-5" data-ca="0.1" data-ka="s" data-max="50" data-noeq data-label="pH starts at about 11, flattens near 9, drops steeply around 25 cm3 to about 3, then levels near 1.5"></div>
+    <p class="qtext">(a) Suggest possible formulae for an acid and an alkali that could be used to produce the curve shown in the graph.</p>
+    <textarea aria-label="Your answer" placeholder="Acid: …   Alkali: …"></textarea>
+    <div class="hintbox" data-hints='["The pH falls, so acid is being added to the alkali. The start tells you about the alkali.","Starts ~11 and flattens ~9: a weak alkali. Ends ~1.5: a strong acid."]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden>
+      <p><b>Acid:</b> HNO₃ (or HCl) ✔ &nbsp; <b>Alkali:</b> NH₃ ✔ <span class="small muted">(your notes' answer, HNO₃ and NH₃, is correct)</span></p>
+      <ol class="clean"><li><b>Which way round?</b> pH falls, so acid is added to alkali.</li><li><b>Start ≈ 11, flat part ≈ 9:</b> a strong alkali would start near 13, so this is a <b>weak alkali</b> → ammonia.</li><li><b>Ends ≈ 1–2:</b> only a <b>strong acid</b> gets that low → HNO₃ or HCl.</li></ol>
+    </div>
+  </div>
+
+  <div class="card multi" data-q="E2" data-label="OCR glycolic acid (a)(i)–(ii)" data-win="Read the graph and calculated correctly.">
+    <div class="card-h"><span class="tag orig">Original question · OCR 2011</span><span class="marks">[3]</span></div>
+    <p class="qtext">Glycolic acid, HOCH₂COOH, and thioglycolic acid, HSCH₂COOH, are weak acids.<br>(a) Glycolic acid reacts with bases, such as aqueous sodium hydroxide, NaOH(aq), to form salts. A student pipetted 25.0 cm³ of 0.125 mol dm⁻³ glycolic acid into a conical flask. The student added NaOH(aq) from a burette. A pH meter and data logger were used to measure continuously the pH of the contents of the conical flask. The pH curve that the student obtained is shown below.</p>
+    <div class="curvefig fig narrow" data-flask="acid" data-vf="25" data-ca="0.125" data-ka="1.48e-4" data-cb="0.142" data-kb="s" data-max="50" data-noeq data-label="pH starts near 2.4, rises gently to about 4.5, then rises steeply at about 22 cm3 to about 11, ending near 13"></div>
+    <p class="qtext">1 mol of glycolic acid reacts with 1 mol of sodium hydroxide.<br>(i) Write the equation for the reaction that takes place in the titration. [1]</p>
+    <textarea aria-label="Your equation"></textarea>
+    <p class="qtext">(ii) Determine the concentration, in mol dm⁻³, of the NaOH. [2]</p>
+    <div class="gridrow"><label for="e2a">Titre read from graph</label><input id="e2a" type="text" data-answer="22.0" data-tol="0.55"><span class="small">cm³</span></div>
+    <div class="gridrow"><label for="e2b">[NaOH]</label><input id="e2b" type="text" data-answer="0.1415" data-rtol="0.025"><span class="small">mol dm⁻³</span></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["Equation: acid + NaOH → sodium salt + water. The COOH loses its H.","The equivalence point is the middle of the vertical section, at about 22 cm³.","n(acid) = 0.125 × 0.0250; c(NaOH) = n ÷ titre in dm³"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean">
+      <li><b>(i)</b> HOCH₂COOH + NaOH → HOCH₂COONa + H₂O ✔ <span class="small muted">(ionic version: HOCH₂COOH + OH⁻ → HOCH₂COO⁻ + H₂O)</span></li>
+      <li><b>(ii) Read the graph:</b> the vertical section's mid-point is at about <b>22.0 cm³</b>.</li>
+      <li>n(glycolic acid) = 0.125 × 0.0250 = <b>3.125 × 10⁻³ mol</b> = n(NaOH) (1 : 1) ✔</li>
+      <li>c(NaOH) = 3.125 × 10⁻³ ÷ 0.0220 = <b>0.142 mol dm⁻³</b> ✔</li></ol>
+      <p class="small muted">This question is from OCR, not AQA, but the skills are identical. The titre is read from the photo as about 22 cm³: a reading of 22.0–22.5 cm³ gives 0.139–0.142 mol dm⁻³, and either would be accepted.</p></div>
+  </div>
+
+  <div class="card matcher" data-q="E3" data-label="Q4(a)(i) Match curves A–D" data-win="All three curves identified.">
+    <div class="card-h"><span class="tag orig">Original question · Q4</span><span class="marks">(3)</span></div>
+    <p class="qtext">(a) Titration curves labelled A, B, C and D for combinations of different acids and bases are shown below. All solutions have a concentration of 0.1 mol dm⁻³.</p>
+    <div class="map" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div><p class="small"><b>A</b></p><div class="curvefig" data-flask="acid" data-vf="25" data-ca="0.1" data-ka="s" data-cb="0.1" data-kb="s" data-noeq data-label="Curve A: starts near pH 1, rises steeply at 25 cm3, ends near 12.5"></div></div>
+      <div><p class="small"><b>B</b></p><div class="curvefig" data-flask="acid" data-vf="25" data-ca="0.1" data-ka="s" data-cb="0.1" data-kb="1.8e-5" data-noeq data-label="Curve B: starts near pH 1, rises at 25 cm3, ends only near 9"></div></div>
+      <div><p class="small"><b>C</b></p><div class="curvefig" data-flask="base" data-vf="25" data-cb="0.1" data-kb="s" data-ca="0.1" data-ka="1.76e-5" data-noeq data-label="Curve C: starts near pH 13, falls at 25 cm3, ends only near 5"></div></div>
+      <div><p class="small"><b>D</b></p><div class="curvefig" data-flask="base" data-vf="25" data-cb="0.1" data-kb="s" data-ca="0.1" data-ka="s" data-noeq data-label="Curve D: starts near pH 13, falls steeply at 25 cm3, ends near 1.5"></div></div>
+    </div>
+    <p class="qtext">(i) Select from A, B, C and D the curve produced by the addition of</p>
+    <div class="match">
+      <span class="m-l">ammonia to 25 cm³ of hydrochloric acid</span><select aria-label="Curve for ammonia added to hydrochloric acid" data-answer="B"><option value="">Choose…</option><option>A</option><option>B</option><option>C</option><option>D</option></select>
+      <span class="m-l">ethanoic acid to 25 cm³ of sodium hydroxide</span><select aria-label="Curve for ethanoic acid added to sodium hydroxide" data-answer="C"><option value="">Choose…</option><option>A</option><option>B</option><option>C</option><option>D</option></select>
+      <span class="m-l">sodium hydroxide to 25 cm³ of hydrochloric acid</span><select aria-label="Curve for sodium hydroxide added to hydrochloric acid" data-answer="A"><option value="">Choose…</option><option>A</option><option>B</option><option>C</option><option>D</option></select>
+    </div>
+    <div class="row"><button class="btn" data-mcheck>Check my matches</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean">
+      <li><b>Ammonia to HCl → B.</b> Starts low (acid in the flask, strong, ~pH 1) and ends only ~9 (a weak base in excess).</li>
+      <li><b>Ethanoic acid to NaOH → C.</b> Starts high (strong base in the flask, ~13) and ends only ~5 (a weak acid in excess).</li>
+      <li><b>NaOH to HCl → A.</b> Starts ~1 (strong acid) and ends ~12–13 (strong base). Long vertical section.</li></ol>
+      <p class="small muted">Method: decide what's in the flask from the <b>start</b>, then what's being added from the <b>end</b>. D is strong acid added to strong base.</p></div>
+  </div>
+
+  <div class="done-row"><button class="btn solid" data-complete="E">Mark section E done</button><span class="small muted">Nearly there. The summary is next.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="D">← Section D</button><button class="btn" data-go="S">Summary &amp; quiz →</button></div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="screen stack" data-sec="S" data-name="Summary &amp; quiz" data-blurb="Summary, flashcards and a final quiz." hidden>
+  <p class="eyebrow">Wrap-up · about 4 minutes</p>
+  <h2>Summary</h2>
+  <div class="card" data-read>
+    <ul class="clean">
+      <li><b>Titration</b> finds an unknown concentration using a <b>standard solution</b> (exact concentration known).</li>
+      <li>Pipette 25 cm³ into a conical flask, add indicator, add from the burette while swirling, stop at the colour change. Repeat to <b>concordant titres (within 0.1 cm³)</b>.</li>
+      <li><b>pH meter</b> method: add base in small steps, stir, record pH. Smaller steps near the end point. <b>Calibrate</b> with a solution of known pH.</li>
+      <li><b>Curve start</b> = acid strength (~1 strong, ~3 weak). <b>Curve end</b> = base strength (~13 strong, ~9 weak).</li>
+      <li><b>Equivalence point</b> = mid-point of the vertical section. <b>End point</b> = indicator changes colour.</li>
+      <li>A <b>suitable indicator</b> changes colour on the vertical section. Phenolphthalein for strong bases, methyl orange for strong acids, either for strong + strong, neither for weak + weak.</li>
+      <li><b>Calculation:</b> equation → n = cV → ratio → c = n ÷ V.</li>
+    </ul>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3>Flashcards</h3>
+  <div class="flashdeck stack"><script type="application/json">[
+    ["What is a standard solution?","A solution whose exact concentration is known, so moles = c × V can be calculated."],
+    ["What makes titres concordant?","They are within 0.1 cm³ of each other. Average those for the mean titre."],
+    ["Why calibrate a pH meter, and how?","After storage it may be inaccurate. Put it in a solution of known pH and adjust it."],
+    ["What does the start of a pH curve tell you?","The strength of the acid: ~pH 1 strong, ~pH 3 weak."],
+    ["Equivalence point vs end point?","Equivalence: exactly enough to neutralise (mid-point of the vertical section). End point: the indicator changes colour."],
+    ["Indicator for weak acid + strong base?","Phenolphthalein. Its range is on the high vertical section."],
+    ["Indicator for strong acid + weak base?","Methyl orange. Its range is on the low vertical section."],
+    ["Why no indicator for weak acid + weak base?","There is no vertical section. The pH change is too gradual."]
+  ]</script>
+    <div class="flash" aria-live="polite"><span class="side fl-side"></span><div class="face fl-face"></div></div>
+    <div class="row"><button class="btn" data-flip>Show answer</button><button class="btn quiet" data-fprev>← Previous</button><button class="btn quiet" data-fnext>Next →</button></div>
+  </div>
+
+  <h3>Final quiz</h3>
+  <p class="small muted">Six quick questions, all new, covering every section.</p>
+  <div class="card mcq" data-q="Q1" data-label="Quiz · Measuring 25 cm³" data-answer="a"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">1. Which piece of equipment accurately measures out 25.0 cm³ of the standard solution?</p>
+    <div class="opts"><button data-o="a" data-fb="Correct.">Pipette</button><button data-o="b" data-fb="The burette delivers the other solution and measures the titre.">Burette</button><button data-o="c" data-fb="A beaker isn't accurate enough.">Beaker</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q2" data-label="Quiz · Curve ending pH 9" data-answer="b"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">2. Base is added to an acid and the curve ends at about pH 9. The base is…</p>
+    <div class="opts"><button data-o="a" data-fb="A strong base ends near pH 13.">strong</button><button data-o="b" data-fb="Correct. A weak base ends around pH 9.">weak</button><button data-o="c" data-fb="The end of the curve shows the base's strength.">can't tell</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q3" data-label="Quiz · Equivalence point" data-answer="c"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">3. The equivalence point is…</p>
+    <div class="opts"><button data-o="a" data-fb="That's the end point.">when the indicator changes colour</button><button data-o="b" data-fb="Only for strong acid + strong base.">always at pH 7</button><button data-o="c" data-fb="Correct.">the mid-point of the vertical section</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q4" data-label="Quiz · Indicator for HCl + NH₃" data-answer="a"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">4. The best indicator for HCl + NH₃ is…</p>
+    <div class="opts"><button data-o="a" data-fb="Correct. Strong acid + weak base, so the steep part is low.">methyl orange</button><button data-o="b" data-fb="Phenolphthalein's range (8.3–10) is above this vertical section.">phenolphthalein</button><button data-o="c" data-fb="Methyl orange works here.">neither</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q5" data-label="Quiz · 1:2 ratio" data-answer="b"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">5. 0.0040 mol NaOH reacts exactly with H₂SO₄. How many moles of H₂SO₄ reacted?</p>
+    <div class="opts"><button data-o="a" data-fb="Check the ratio: 1 H₂SO₄ : 2 NaOH.">0.0040</button><button data-o="b" data-fb="Correct. Halve it.">0.0020</button><button data-o="c" data-fb="That's doubling. It should be halved.">0.0080</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q6" data-label="Quiz · Falling curve" data-answer="c"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">6. A pH curve starts at 13 and falls to 1.5. What is happening?</p>
+    <div class="opts"><button data-o="a" data-fb="Adding base would raise the pH.">Strong base added to strong acid</button><button data-o="b" data-fb="A weak acid in excess wouldn't take the pH down to 1.5.">Weak acid added to strong base</button><button data-o="c" data-fb="Correct. Starts at 13 (strong base in the flask) and falls to 1.5 (strong acid in excess).">Strong acid added to strong base</button></div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="S">Mark lesson finished</button><button class="btn" data-go="R">Go to revision list</button></div>
+  <div class="pager"><button class="btn quiet" data-go="E">← Section E</button><a class="btn quiet" href="../" style="text-decoration:none">Back to Chemistry</a></div>
+</section>
+
+<!-- ============ REVISION ============ -->
+<section class="screen stack" data-sec="R" data-name="Revision" hidden>
+  <p class="eyebrow">Revision mode</p>
+  <h2>What to look at again</h2>
+  <p>Questions you got wrong, or marked "Not yet" or "Partly", appear here. Tap one to jump straight to it.</p>
+  <div id="revList" class="stack"></div>
+  <div class="card">
+    <h3>Your progress</h3>
+    <div id="progList" class="stack small"></div>
+  </div>
+  <div class="row"><button class="btn quiet" id="resetBtn">Clear all my progress</button><span id="resetConfirm" hidden class="row"><span class="small">Clear everything?</span><button class="btn" id="resetYes">Yes, clear</button><button class="btn quiet" id="resetNo">Keep it</button></span></div>
+</section>
+</main>
+
+<dialog id="settings" aria-labelledby="setH">
+  <h2 id="setH" style="font-size:1.25rem; margin-bottom:.5rem">Settings</h2>
+  <div class="set"><label id="szL">Text size</label><div class="chips" role="group" aria-labelledby="szL" data-setting="size"><button data-v="m">Normal</button><button data-v="l">Large</button><button data-v="xl">Extra large</button></div></div>
+  <div class="set"><label id="spL">Line spacing</label><div class="chips" role="group" aria-labelledby="spL" data-setting="spacing"><button data-v="normal">Normal</button><button data-v="wide">Wide</button></div></div>
+  <div class="set"><label id="fcL">Calm view</label><p class="small muted">Hides "extra help" labels and read-aloud links.</p><div class="chips" role="group" aria-labelledby="fcL" data-setting="focus"><button data-v="off">Off</button><button data-v="on">On</button></div></div>
+  <div class="set"><label id="mtL">Motion</label><div class="chips" role="group" aria-labelledby="mtL" data-setting="motion"><button data-v="on">Gentle</button><button data-v="off">None</button></div></div>
+  <div class="set"><label id="sdL">Sound effects</label><p class="small muted">Soft tones when you reveal or get an answer right.</p><div class="chips" role="group" aria-labelledby="sdL" data-setting="sound"><button data-v="off">Off</button><button data-v="on">On</button></div></div>
+  <div class="row" style="justify-content:flex-end; margin-top:.75rem"><button class="btn solid" id="closeSettings">Done</button></div>
+</dialog>
+
+<script src="../../assets/lesson.js"></script>
+<script src="../../assets/titration.js"></script>
+</body>
+</html>
