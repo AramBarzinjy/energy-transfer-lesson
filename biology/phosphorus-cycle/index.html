@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1F6B4E">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<link rel="icon" href="../../assets/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Study">
+<title>Phosphorus Cycle · Biology</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap">
+
+
+</head>
+<body data-lesson="phosphorus-cycle-v1">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--muted)"/></marker></defs></svg>
+<header class="bar">
+  <div class="bar-in">
+    <div class="bar-top">
+      <div class="brandwrap"><a class="back" href="../">← Biology</a><span class="brand">Phosphorus cycle</span></div>
+      <div class="prog" role="progressbar" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="progfill"></i></div>
+      <span class="progtxt" id="progtxt">0 of 5 sections</span>
+      <button class="btn quiet" id="openSettings" aria-haspopup="dialog">Settings</button>
+    </div>
+    <nav class="tabs" aria-label="Lesson sections" id="tabs"></nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+<!-- ============ START ============ -->
+<section class="screen stack" data-sec="start" data-name="Start">
+  <p class="eyebrow">AQA A-level Biology · Nutrient cycles, part 2</p>
+  <h1>The phosphorus cycle, mycorrhizae and fertilisers</h1>
+  <p>A short lesson in <b>4 small sections</b>, about 3–5 minutes each. Learn one idea, check it, then stop whenever you like. Your place and answers are saved in this browser.</p>
+  <div id="resumeBox" hidden class="tip"><b>Welcome back</b><span id="resumeTxt"></span> <button class="btn solid" id="resumeBtn" style="margin-top:.5rem">Carry on where I stopped</button></div>
+  <div class="map" id="map"></div>
+  <div class="card">
+    <h3>How the labels work</h3>
+    <div class="row"><span class="tag notes">Class notes</span><span class="small">Taken from the printed notes.</span></div>
+    <div class="row"><span class="tag orig">Original question</span><span class="small">A question from the notes.</span></div>
+    <div class="row"><span class="tag new">New question</span><span class="small">Extra practice written for this lesson.</span></div>
+    <div class="row"><span class="tag extra">Extra help</span><span class="small">Explanations added to fill gaps. Not extra content to learn.</span></div>
+    <p class="small muted">This follows on from <a href="../nutrient-cycles/">Nutrient cycles: the nitrogen cycle</a>.</p>
+  </div>
+  <div class="coming"><h3>Still to come</h3><p class="small"><b>Eutrophication</b> is in the spec box but isn't on these pages (they stop at leaching). It'll be added when those pages come in.</p></div>
+  <div class="card"><h3>Prefer slides?</h3><p class="small">The same lesson as a PowerPoint, with questions on yellow slides and answers on green ones.</p><div class="row"><a class="btn" href="Phosphorus-cycle-lesson.pptx" download style="text-decoration:none">Download the PowerPoint</a></div></div>
+  <div class="pager"><a class="btn quiet" href="../" style="text-decoration:none">← Biology</a><button class="btn solid" data-go="A">Start section A →</button></div>
+</section>
+
+<!-- ============ A ============ -->
+<section class="screen stack" data-sec="A" data-name="A · Phosphorus cycle" data-blurb="How phosphate moves between rocks, water, plants and animals." hidden>
+  <p class="eyebrow">Section A · about 5 minutes</p>
+  <h2>The phosphorus cycle</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Why phosphorus matters</h3><span class="tag notes">Class notes</span></div>
+    <p>Phosphorus is a component of <b>ATP</b>, <b>phospholipids</b> and <b>nucleic acids</b> (DNA and RNA). Life depends on it being constantly recycled.</p>
+    <ul class="clean">
+      <li>In the phosphorus cycle there are <b>no gases involved</b>. <span class="muted small">(Unlike nitrogen, there's no "phosphorus in the air" stage.)</span></li>
+      <li>Phosphorus exists mostly as <b>phosphate ions (PO₄³⁻)</b> in <b>sedimentary rock</b>.</li>
+      <li><b>Weathering and erosion</b> of the rocks help phosphate ions dissolve in water in lakes and rivers. Plants absorb them and build them into their biomass.</li>
+      <li><b>Saprobiotic bacteria</b> decompose the phosphorus compounds in excreta and dead organisms.</li>
+    </ul>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card picker" data-read data-order="ero abs feed exc dec ero2 dep sed">
+    <div class="card-h"><h3>Explore the cycle</h3><span class="tag notes">Class notes · diagram</span></div>
+    <div class="fig">
+      <svg viewBox="0 0 700 420" role="img" aria-labelledby="pcT" class="cyc">
+        <title id="pcT">Phosphorus cycle. Phosphates in rocks are eroded, and fertilisers add phosphate, into dissolved phosphate ions in oceans, lakes and soils. Plants absorb them. Animals get them by feeding and digestion. Animals excrete phosphate into water, and excretion and decomposition put phosphate into wastes and remains such as guano, bones and shells. Wastes are eroded back into water, or deposited to form rock. Dissolved phosphate also forms rock by sedimentation.</title>
+        <g font-size="14">
+          <rect x="35" y="30" width="180" height="56" rx="6" fill="var(--leaf-soft)" stroke="var(--leaf)"/><text x="125" y="54" text-anchor="middle" font-weight="700">Phosphate ions</text><text x="125" y="73" text-anchor="middle" font-weight="700">in plants</text>
+          <rect x="35" y="332" width="180" height="56" rx="6" fill="var(--leaf-soft)" stroke="var(--leaf)"/><text x="125" y="356" text-anchor="middle" font-weight="700">Phosphate ions</text><text x="125" y="375" text-anchor="middle" font-weight="700">in animals</text>
+          <circle cx="350" cy="215" r="72" fill="var(--sun-soft)" stroke="var(--sun)"/><text x="350" y="200" text-anchor="middle" font-weight="700">Dissolved</text><text x="350" y="218" text-anchor="middle" font-weight="700">phosphate ions</text><text x="350" y="236" text-anchor="middle" font-size="12">oceans, lakes, soils</text>
+          <circle cx="595" cy="75" r="58" fill="var(--sun-soft)" stroke="var(--sun)"/><text x="595" y="72" text-anchor="middle" font-weight="700">Phosphates</text><text x="595" y="90" text-anchor="middle" font-weight="700">in rocks</text>
+          <circle cx="595" cy="345" r="68" fill="var(--sun-soft)" stroke="var(--sun)"/><text x="595" y="330" text-anchor="middle" font-weight="700">Wastes &amp;</text><text x="595" y="348" text-anchor="middle" font-weight="700">remains</text><text x="595" y="366" text-anchor="middle" font-size="12">guano, bones, shells</text>
+        </g>
+        <g font-size="13" fill="none">
+          <g data-hl="abs" data-pick="abs" class="flow-node" tabindex="0" role="button" aria-label="Absorption"><path d="M298 165 L218 92" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#ah)"/><text x="268" y="118" font-weight="700" style="fill:var(--ink)">absorption</text></g>
+          <g data-hl="feed" data-pick="feed" class="flow-node" tabindex="0" role="button" aria-label="Feeding and digestion"><path d="M125 88 V326" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#ah)"/><text x="135" y="200" style="fill:var(--ink)">feeding &amp;</text><text x="135" y="216" style="fill:var(--ink)">digestion</text></g>
+          <g data-hl="exc" data-pick="exc" class="flow-node" tabindex="0" role="button" aria-label="Excretion"><path d="M215 332 L295 265" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#ah)"/><text x="262" y="318" style="fill:var(--ink)">excretion</text></g>
+          <g data-hl="dec" data-pick="dec" class="flow-node" tabindex="0" role="button" aria-label="Excretion and decomposition"><path d="M217 368 H521" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#ah)"/><text x="365" y="392" text-anchor="middle" font-weight="700" style="fill:var(--ink)">excretion &amp; decomposition</text></g>
+          <g data-hl="ero2" data-pick="ero2" class="flow-node" tabindex="0" role="button" aria-label="Erosion of wastes and remains"><path d="M535 312 L416 252" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#ah)"/><text x="470" y="308" style="fill:var(--ink)">erosion</text></g>
+          <g data-hl="dep" data-pick="dep" class="flow-node" tabindex="0" role="button" aria-label="Deposition"><path d="M595 276 V137" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#ah)"/><text x="604" y="210" style="fill:var(--ink)">deposition</text></g>
+          <g data-hl="sed" data-pick="sed" class="flow-node" tabindex="0" role="button" aria-label="Sedimentation"><path d="M394 158 L536 86" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#ah)"/><text x="400" y="122" style="fill:var(--ink)">sedimentation</text></g>
+          <g data-hl="ero" data-pick="ero" class="flow-node" tabindex="0" role="button" aria-label="Erosion and use of fertilisers"><path d="M548 112 L420 182" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#ah)"/><text x="470" y="178" style="fill:var(--ink)">erosion &amp;</text><text x="470" y="194" style="fill:var(--ink)">fertilisers</text></g>
+        </g>
+        <g font-size="12" style="fill:var(--muted)"><rect x="30" y="404" width="12" height="12" fill="var(--leaf-soft)" stroke="var(--leaf)"/><text x="48" y="414">living</text><circle cx="110" cy="410" r="6" fill="var(--sun-soft)" stroke="var(--sun)"/><text x="122" y="414">non-living</text></g>
+      </svg>
+    </div>
+    <p class="small muted swipe">Scroll the diagram sideways to see all of it.</p>
+    <div class="chips" role="group" aria-label="Choose a process">
+      <button data-pick="ero" aria-pressed="false">Erosion &amp; fertilisers</button><button data-pick="abs" aria-pressed="false">Absorption</button><button data-pick="feed" aria-pressed="false">Feeding &amp; digestion</button><button data-pick="exc" aria-pressed="false">Excretion</button><button data-pick="dec" aria-pressed="false">Excretion &amp; decomposition</button><button data-pick="ero2" aria-pressed="false">Erosion of remains</button><button data-pick="dep" aria-pressed="false">Deposition</button><button data-pick="sed" aria-pressed="false">Sedimentation</button>
+    </div>
+    <div class="fb explain picker-out" aria-live="polite">Tap a process, or press <b>Follow it step by step</b> to trace one phosphate ion all the way round.</div>
+    <template data-key="ero"><b>Erosion and use of fertilisers</b> · rocks → water<br>Weathering breaks rock up, then erosion moves it (by ice, water, wind or gravity, or chemically). Phosphate ions dissolve into oceans, lakes and soils. Fertilisers add phosphate here too.</template>
+    <template data-key="abs"><b>Absorption</b> · water/soil → plants<br>Plants absorb dissolved phosphate ions and build them into their biomass (ATP, phospholipids, DNA, RNA).</template>
+    <template data-key="feed"><b>Feeding and digestion</b> · plants → animals<br>Animals eat plants, digest them and absorb the phosphate compounds.</template>
+    <template data-key="exc"><b>Excretion</b> · animals → water<br>Animals excrete phosphate, which dissolves back into water and soil.</template>
+    <template data-key="dec"><b>Excretion and decomposition</b> · animals → wastes and remains<br>Phosphate ends up in wastes and remains such as <b>guano</b> (bird droppings), <b>bones</b> and <b>shells</b>. <b>Saprobiotic bacteria</b> decompose phosphorus compounds in excreta and dead organisms into phosphate ions.</template>
+    <template data-key="ero2"><b>Erosion</b> · wastes and remains → water<br>Remains such as bones and shells are eroded, releasing phosphate ions into water.</template>
+    <template data-key="dep"><b>Deposition</b> · wastes and remains → rock<br>Wind, ice, water and gravity carry eroded sediment. When the fluid loses enough kinetic energy, the sediment is <b>deposited</b>, building up layers that become rock.</template>
+    <template data-key="sed"><b>Sedimentation</b> · dissolved phosphate → rock<br>Phosphate in oceans and lakes settles out and forms sedimentary rock, ready to start the cycle again. This part takes a very long time.</template>
+    <div class="row"><button class="btn" data-walk>Follow it step by step</button><button class="btn quiet" data-clear>Clear</button></div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Two definitions</h3><span class="tag notes">Class notes</span></div>
+    <dl class="def"><dt>Erosion</dt><dd>Once rock has been weakened and broken up by weathering, it is ready for erosion. Erosion happens when rocks and sediments are picked up and moved to another place by ice, water, wind or gravity. There can also be chemical erosion.</dd></dl>
+    <dl class="def"><dt>Deposition</dt><dd>The geological process in which sediments, soil and rocks are added to a landform or land mass. Previously eroded sediment is deposited when the fluid carrying it loses enough kinetic energy, building up layers of sediment.</dd></dl>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check A</h3>
+  <div class="card mcq" data-q="A1" data-label="A · Phosphorus vs nitrogen cycle" data-answer="b">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">What is the key difference between the phosphorus cycle and the nitrogen cycle?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Microorganisms matter in both. Saprobiotic bacteria decompose phosphorus compounds.">The phosphorus cycle doesn't involve microorganisms</button>
+      <button data-o="b" data-fb="Correct. No gases are involved. Phosphorus is stored in rocks, not the air.">The phosphorus cycle has no gases involved</button>
+      <button data-o="c" data-fb="Plants absorb phosphate too, and build it into biomass.">Plants don't absorb phosphorus</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="A2" data-label="A · Where phosphate enters water" data-answer="c">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Which process releases phosphate ions from rocks into water?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Sedimentation goes the other way: dissolved phosphate becomes rock.">Sedimentation</button>
+      <button data-o="b" data-fb="Absorption is plants taking phosphate up from water and soil.">Absorption</button>
+      <button data-o="c" data-fb="Correct. Weathering breaks the rock up, and erosion moves it so phosphate ions dissolve.">Weathering and erosion</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="A">Mark section A done</button><span class="small muted">You can take a break here.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="start">← Start</button><button class="btn" data-go="B">Section B →</button></div>
+</section>
+
+<!-- ============ B ============ -->
+<section class="screen stack" data-sec="B" data-name="B · Mycorrhizae" data-blurb="How root fungi help plants take up water and mineral ions." hidden>
+  <p class="eyebrow">Section B · about 3 minutes</p>
+  <h2>The role of mycorrhizae</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>What they are</h3><span class="tag notes">Class notes</span></div>
+    <p><b>Mycorrhizae</b> are associations between specific types of <b>fungi</b> and the <b>root systems of plants</b>. The fungus grows a fine network of threads through the soil around the roots.</p>
+    <p>Mycorrhizae benefit plants by:</p>
+    <ol class="clean" type="a"><li>increasing the total <b>surface area</b> of the plant's roots</li><li>increasing the absorption of <b>water</b></li><li>increasing the absorption of <b>mineral ions</b>, for example <b>phosphates and nitrates</b></li></ol>
+    <p class="small muted">The notes' pictures show this: a tomato plant with mycorrhizae has a much wider root network, and grows bigger with more fruit, than one without.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>A mutualistic relationship</h3><span class="tag notes">Class notes</span></div>
+    <p>The relationship is <b>mutualistic</b>: <b>both</b> benefit.</p>
+    <div class="map" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <div class="def"><dt>The plant gets</dt><dd>more <b>water</b> and <b>mineral ions</b> (phosphates, nitrates), through a bigger absorbing surface area</dd></div>
+      <div class="def"><dt>The fungus gets</dt><dd><b>organic molecules</b> from the plant, e.g. <b>sucrose</b> and <b>amino acids</b></dd></div>
+    </div>
+    <div class="tip"><b>Extra help · why the fungus needs this</b>Fungi can't photosynthesise. The plant makes sugars in its leaves, and passing some to the fungus is the "payment" for the extra water and ions.</div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check B</h3>
+  <div class="card mcq" data-q="B1" data-label="B · What the fungus receives" data-answer="a">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">In a mycorrhizal association, what does the fungus receive from the plant?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Correct. Organic molecules such as sucrose and amino acids.">Organic molecules such as sucrose and amino acids</button>
+      <button data-o="b" data-fb="That's what the plant gets from the fungus.">Water and phosphate ions</button>
+      <button data-o="c" data-fb="Fungi need organic carbon compounds. The plant supplies sucrose.">Nitrogen gas</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card" data-q="B2" data-label="B · How mycorrhizae help plants">
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[2 marks]</span></div>
+    <p class="qtext">Explain how mycorrhizae increase the uptake of phosphate ions by a plant.</p>
+    <textarea aria-label="Your answer"></textarea>
+    <button class="btn" data-model>Compare with model answer</button>
+    <div class="reveal-body" hidden><ol class="clean"><li>The fungal network <b>increases the surface area</b> of the root system. ✔</li><li>So more water and mineral ions, such as phosphate, can be <b>absorbed</b>. ✔</li></ol></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="B">Mark section B done</button><span class="small muted">A good place for a break.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="A">← Section A</button><button class="btn" data-go="C">Section C →</button></div>
+</section>
+
+<!-- ============ C ============ -->
+<section class="screen stack" data-sec="C" data-name="C · Fertilisers" data-blurb="Why farmers add fertilisers, and the environmental impact." hidden>
+  <p class="eyebrow">Section C · about 5 minutes</p>
+  <h2>Fertilisers and their impact</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Why fertilisers are needed</h3><span class="tag notes">Class notes</span></div>
+    <p>Plants need light and CO₂ to photosynthesise, and <b>inorganic ions</b> to make compounds such as proteins. In a natural ecosystem the ions are recycled. In <b>agricultural ecosystems the crops are harvested and removed</b>, so there is less recycling.</p>
+    <ol class="clean steps" data-steps>
+      <li>Crops are <b>harvested and removed</b>, so they don't die and decompose in the field.</li>
+      <li>So <b>fewer inorganic ions</b> are returned to the soil.</li>
+      <li>Nitrogen is needed to make <b>proteins and DNA</b>, both needed for growth. With fewer ions, plants grow more slowly.</li>
+      <li>Slower growth means a smaller <b>leaf area</b>, so <b>less photosynthesis</b> and lower productivity.</li>
+      <li>So the lost ions must be <b>replaced using fertilisers</b>.</li>
+    </ol>
+    <div class="row"><button class="btn" data-stepnext>Show next step</button><button class="btn quiet" data-stepall>Show all</button></div>
+    <div class="tip"><b>Examiner tip (from the notes)</b>Fertilisers commonly contain <b>nitrates, phosphates and potassium ions</b>. You may be asked why plants need them, with examples of molecules containing them. Phosphorus is in <b>DNA, RNA, ATP</b> and the <b>phospholipids</b> that form all cell membranes.</div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Two types of fertiliser</h3><span class="tag notes">Class notes</span></div>
+    <div class="map" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <div class="def"><dt>Natural</dt><dd>Waste materials such as <b>manure</b>.</dd></div>
+      <div class="def"><dt>Artificial</dt><dd><b>Manufactured</b>, man-made powders or pellets made in factories, containing nitrates, phosphates and potassium ions.</dd></div>
+    </div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The environmental impact</h3><span class="tag notes">Class notes</span></div>
+    <dl class="def"><dt>Reduced species diversity</dt><dd>Plants adapted to soils high in nitrate <b>outcompete</b> other species.</dd></dl>
+    <dl class="def"><dt>Leaching</dt><dd>Artificial fertilisers put <b>more ions onto the soil than the plants take up</b>. The ions <b>dissolve in soil water</b> and are <b>washed out of the soil</b> into streams, rivers and lakes.</dd></dl>
+    <p class="small muted">The notes also repeat the main reason fertilisers are used: in agricultural ecosystems crops are removed and there's less decomposition, so less nitrate returns to the soil. Fertilisers replace the nitrates and phosphorus.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check C</h3>
+  <div class="card mcq" data-q="C1" data-label="C · What leaching is" data-answer="b">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">What is leaching?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="That's decomposition. Leaching is about ions being washed away.">Saprobionts breaking down dead plants</button>
+      <button data-o="b" data-fb="Correct. Excess ions dissolve in soil water and are washed into streams, rivers and lakes.">Excess ions dissolving in soil water and being washed out of the soil</button>
+      <button data-o="c" data-fb="Plants absorbing ions is uptake, not leaching.">Plants absorbing too many ions</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="C2" data-label="C · Why diversity falls" data-answer="a">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Why can fertilisers reduce species diversity?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Correct. Plants adapted to high nitrate outcompete other species.">Plants adapted to high-nitrate soil outcompete other species</button>
+      <button data-o="b" data-fb="Fertilisers add ions. They don't remove them.">Fertilisers remove all the ions from the soil</button>
+      <button data-o="c" data-fb="The problem is competition, not the fertiliser killing plants.">Fertilisers are poisonous to most plants</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="C">Mark section C done</button><span class="small muted">Next: exam practice.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="B">← Section B</button><button class="btn" data-go="D">Section D →</button></div>
+</section>
+
+<!-- ============ D ============ -->
+<section class="screen stack" data-sec="D" data-name="D · Exam practice" data-blurb="The 5-mark phosphorus question, plus fertiliser practice." hidden>
+  <p class="eyebrow">Section D · about 5 minutes</p>
+  <h2>Exam practice</h2>
+
+  <div class="card" data-q="D1" data-label="Phosphorus recycling (5 marks)">
+    <div class="card-h"><span class="tag orig">Original question</span><span class="marks">(5)</span></div>
+    <p class="qtext">Describe how phosphorus in dead organisms is recycled so that it becomes available to plants again. (5)</p>
+    <p class="small muted">The notes show only this question's mark scheme. The question wording here is reconstructed to match it.</p>
+    <textarea aria-label="Your answer" style="min-height:8rem"></textarea>
+    <div class="hintbox" data-hints='["Start with what is in dead organisms: which molecules contain phosphorus?","Who breaks them down? Then where do the phosphate ions go?","Finish with rocks: how does phosphate get from rock back to plants?"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the mark scheme and worked answer</button>
+    <div class="reveal-body" hidden>
+      <p><b>Mark scheme (from the notes), 5 max:</b></p>
+      <ol class="clean">
+        <li>Phospholipids, RNA and DNA from dead organisms into phosphate ions;</li>
+        <li>Decomposed by saprobionts;</li>
+        <li>Phosphate ions also found in waste and remains, e.g. guano, bones and shells;</li>
+        <li>Phosphate ions transported by streams, rivers, lakes and oceans;</li>
+        <li>Form sedimentary rock;</li>
+        <li>Weathering and erosion of rocks helps phosphate ions dissolve in oceans, lakes and soils;</li>
+        <li>Phosphates become available for absorption by plants to incorporate into biomass;</li>
+      </ol>
+      <p><b>How to build it:</b> follow the cycle in order. Molecules → saprobionts → phosphate ions → carried by water → rock → weathering and erosion → dissolved → absorbed by plants. Each arrow is a mark.</p>
+      <p><b>Model answer:</b> Saprobionts decompose phospholipids, DNA and RNA in dead organisms, releasing phosphate ions. Phosphate is also found in wastes and remains such as guano, bones and shells. Phosphate ions are carried by streams and rivers into lakes and oceans, where they form sedimentary rock. Weathering and erosion of the rock help phosphate ions dissolve in oceans, lakes and soils, where they are absorbed by plants and incorporated into their biomass.</p>
+    </div>
+  </div>
+
+  <div class="card" data-q="D2" data-label="Why farmers use fertilisers (3 marks)">
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[3 marks]</span></div>
+    <p class="qtext">Explain why farmers add fertilisers containing nitrates to fields of crops.</p>
+    <textarea aria-label="Your answer"></textarea>
+    <button class="btn" data-model>Compare with model answer</button>
+    <div class="reveal-body" hidden><ol class="clean"><li>Crops are <b>harvested and removed</b>, so they don't decompose, and fewer ions are returned to the soil. ✔</li><li>Nitrogen is needed to make <b>proteins and DNA</b>, for growth. ✔</li><li>Faster growth gives a <b>greater leaf area</b>, so more photosynthesis and <b>higher productivity</b>. ✔</li></ol></div></div>
+
+  <div class="card matcher" data-q="D3" data-label="Match the process" data-win="All the cycle processes matched.">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Match each description to its process.</p>
+    <div class="match">
+      <span class="m-l">Phosphate ions move from rock into lakes</span><select aria-label="Process 1" data-answer="ero"><option value="">Choose…</option><option value="ero">Weathering and erosion</option><option value="abs">Absorption</option><option value="dec">Decomposition</option><option value="sed">Sedimentation</option><option value="leach">Leaching</option></select>
+      <span class="m-l">Plants take phosphate into their biomass</span><select aria-label="Process 2" data-answer="abs"><option value="">Choose…</option><option value="ero">Weathering and erosion</option><option value="abs">Absorption</option><option value="dec">Decomposition</option><option value="sed">Sedimentation</option><option value="leach">Leaching</option></select>
+      <span class="m-l">Saprobionts break down DNA in a dead animal</span><select aria-label="Process 3" data-answer="dec"><option value="">Choose…</option><option value="ero">Weathering and erosion</option><option value="abs">Absorption</option><option value="dec">Decomposition</option><option value="sed">Sedimentation</option><option value="leach">Leaching</option></select>
+      <span class="m-l">Dissolved phosphate forms new rock</span><select aria-label="Process 4" data-answer="sed"><option value="">Choose…</option><option value="ero">Weathering and erosion</option><option value="abs">Absorption</option><option value="dec">Decomposition</option><option value="sed">Sedimentation</option><option value="leach">Leaching</option></select>
+      <span class="m-l">Excess fertiliser ions washed into rivers</span><select aria-label="Process 5" data-answer="leach"><option value="">Choose…</option><option value="ero">Weathering and erosion</option><option value="abs">Absorption</option><option value="dec">Decomposition</option><option value="sed">Sedimentation</option><option value="leach">Leaching</option></select>
+    </div>
+    <div class="row"><button class="btn" data-mcheck>Check my matches</button></div>
+    <div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="D">Mark section D done</button><span class="small muted">Nearly there. The summary is next.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="C">← Section C</button><button class="btn" data-go="S">Summary &amp; quiz →</button></div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="screen stack" data-sec="S" data-name="Summary &amp; quiz" data-blurb="Summary, flashcards and a final quiz." hidden>
+  <p class="eyebrow">Wrap-up · about 3 minutes</p>
+  <h2>Summary</h2>
+  <div class="card" data-read>
+    <ul class="clean">
+      <li>Phosphorus is in <b>ATP, phospholipids and nucleic acids</b>. The cycle has <b>no gases</b>.</li>
+      <li>Phosphate is stored in <b>sedimentary rock</b>. <b>Weathering and erosion</b> dissolve it into water; plants <b>absorb</b> it; animals get it by <b>feeding</b>.</li>
+      <li><b>Saprobiotic bacteria</b> decompose excreta and dead organisms. Remains (guano, bones, shells) are eroded or deposited to form rock again.</li>
+      <li><b>Mycorrhizae</b>: fungi + roots. Bigger surface area, more water and mineral ions. <b>Mutualistic</b>: the fungus gets sucrose and amino acids.</li>
+      <li><b>Fertilisers</b> replace ions lost when crops are harvested. Natural (manure) or artificial (nitrates, phosphates, potassium).</li>
+      <li><b>Impact:</b> reduced species diversity, and <b>leaching</b> of excess ions into rivers and lakes.</li>
+    </ul>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3>Flashcards</h3>
+  <div class="flashdeck stack"><script type="application/json">[
+    ["Name three molecules that contain phosphorus.","ATP, phospholipids and nucleic acids (DNA, RNA)."],
+    ["How is the phosphorus cycle different from the nitrogen cycle?","No gases are involved. Phosphorus is stored in sedimentary rock."],
+    ["How does phosphate get from rock into water?","Weathering and erosion help phosphate ions dissolve in oceans, lakes and soils."],
+    ["What are mycorrhizae?","Associations between specific fungi and plant roots."],
+    ["Three benefits of mycorrhizae to plants?","Bigger root surface area; more water absorbed; more mineral ions (phosphates, nitrates) absorbed."],
+    ["Why are fertilisers needed on farms?","Crops are harvested and removed, so fewer ions are recycled back to the soil."],
+    ["What is leaching?","Excess fertiliser ions dissolve in soil water and are washed into streams, rivers and lakes."]
+  ]</script>
+    <div class="flash" aria-live="polite"><span class="side fl-side"></span><div class="face fl-face"></div></div>
+    <div class="row"><button class="btn" data-flip>Show answer</button><button class="btn quiet" data-fprev>← Previous</button><button class="btn quiet" data-fnext>Next →</button></div>
+  </div>
+
+  <h3>Final quiz</h3>
+  <div class="card mcq" data-q="Q1" data-label="Quiz · Phosphorus molecule" data-answer="c"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">1. Which of these contains phosphorus?</p>
+    <div class="opts"><button data-o="a" data-fb="Glucose is only C, H and O.">Glucose</button><button data-o="b" data-fb="Starch is a glucose polymer, so it has no phosphorus.">Starch</button><button data-o="c" data-fb="Correct. Phospholipids form all cell membranes.">Phospholipids</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q2" data-label="Quiz · Guano" data-answer="b"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">2. Guano, bones and shells are examples of…</p>
+    <div class="opts"><button data-o="a" data-fb="Sedimentary rock forms later, by deposition.">sedimentary rock</button><button data-o="b" data-fb="Correct. Wastes and remains containing phosphate.">wastes and remains containing phosphate</button><button data-o="c" data-fb="Fertiliser can be made from manure, but these are wastes and remains in the cycle.">artificial fertilisers</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q3" data-label="Quiz · Mutualism" data-answer="a"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">3. The plant–mycorrhizae relationship is described as…</p>
+    <div class="opts"><button data-o="a" data-fb="Correct. Both benefit.">mutualistic</button><button data-o="b" data-fb="Parasitism harms the host. Here both benefit.">parasitic</button><button data-o="c" data-fb="Both organisms benefit, so it's mutualistic.">competitive</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q4" data-label="Quiz · Natural fertiliser" data-answer="c"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">4. Which is a natural fertiliser?</p>
+    <div class="opts"><button data-o="a" data-fb="Factory-made pellets are artificial.">Pellets of nitrates and phosphates</button><button data-o="b" data-fb="Manufactured powders are artificial.">Manufactured potassium powder</button><button data-o="c" data-fb="Correct. Waste material such as manure.">Manure</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q5" data-label="Quiz · Leaching cause" data-answer="b"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">5. Leaching happens because…</p>
+    <div class="opts"><button data-o="a" data-fb="Decomposition returns ions to the soil. Leaching washes them away.">saprobionts decompose crops</button><button data-o="b" data-fb="Correct. Ions that plants don't take up dissolve and are washed away.">more ions are applied than plants take up</button><button data-o="c" data-fb="Mycorrhizae increase uptake, which would reduce leaching.">mycorrhizae absorb too many ions</button></div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="S">Mark lesson finished</button><button class="btn" data-go="R">Go to revision list</button></div>
+  <div class="pager"><button class="btn quiet" data-go="D">← Section D</button><a class="btn quiet" href="../" style="text-decoration:none">Back to Biology</a></div>
+</section>
+
+<!-- ============ REVISION ============ -->
+<section class="screen stack" data-sec="R" data-name="Revision" hidden>
+  <p class="eyebrow">Revision mode</p>
+  <h2>What to look at again</h2>
+  <p>Questions you got wrong, or marked "Not yet" or "Partly", appear here. Tap one to jump straight to it.</p>
+  <div id="revList" class="stack"></div>
+  <div class="card">
+    <h3>Your progress</h3>
+    <div id="progList" class="stack small"></div>
+  </div>
+  <div class="row"><button class="btn quiet" id="resetBtn">Clear all my progress</button><span id="resetConfirm" hidden class="row"><span class="small">Clear everything?</span><button class="btn" id="resetYes">Yes, clear</button><button class="btn quiet" id="resetNo">Keep it</button></span></div>
+</section>
+</main>
+
+<dialog id="settings" aria-labelledby="setH">
+  <h2 id="setH" style="font-size:1.25rem; margin-bottom:.5rem">Settings</h2>
+  <div class="set"><label id="szL">Text size</label><div class="chips" role="group" aria-labelledby="szL" data-setting="size"><button data-v="m">Normal</button><button data-v="l">Large</button><button data-v="xl">Extra large</button></div></div>
+  <div class="set"><label id="spL">Line spacing</label><div class="chips" role="group" aria-labelledby="spL" data-setting="spacing"><button data-v="normal">Normal</button><button data-v="wide">Wide</button></div></div>
+  <div class="set"><label id="fcL">Calm view</label><p class="small muted">Hides "extra help" labels and read-aloud links.</p><div class="chips" role="group" aria-labelledby="fcL" data-setting="focus"><button data-v="off">Off</button><button data-v="on">On</button></div></div>
+  <div class="set"><label id="mtL">Motion</label><div class="chips" role="group" aria-labelledby="mtL" data-setting="motion"><button data-v="on">Gentle</button><button data-v="off">None</button></div></div>
+  <div class="set"><label id="sdL">Sound effects</label><p class="small muted">Soft tones when you reveal or get an answer right.</p><div class="chips" role="group" aria-labelledby="sdL" data-setting="sound"><button data-v="off">Off</button><button data-v="on">On</button></div></div>
+  <div class="row" style="justify-content:flex-end; margin-top:.75rem"><button class="btn solid" id="closeSettings">Done</button></div>
+</dialog>
+
+<script src="../../assets/lesson.js"></script>
+</body>
+</html>
