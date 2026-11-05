@@ -204,3 +204,68 @@ table.notes th{background:var(--leaf-soft)}
 .gridrow input{max-width:none; width:100%}
 @media (max-width:520px){ .ice input{min-width:4.2rem; padding:.3rem .25rem} .ice th,.ice td{padding:.3rem} .gridrow{grid-template-columns:6rem minmax(0,1fr) auto} }
 @media (max-width:520px){ .ice td:first-child,.ice th:first-child{font-size:.8em} }
+
+/* ---- aqueous ions: 3D viewer ---- */
+.mol3d{display:flex; flex-direction:column; gap:.6rem}
+.mol-top{display:flex; justify-content:space-between; align-items:baseline; gap:.5rem; flex-wrap:wrap}
+.mol-formula{font-family:var(--font-display); font-weight:700; font-size:1.35em}
+.mol-cn{font-size:.85rem; color:var(--muted)}
+.mol-stage{position:relative; height:340px; border-radius:var(--radius); background:radial-gradient(circle at 50% 40%, #2b3b4a, #121a22 75%); overflow:hidden; cursor:grab}
+.mol-stage:active{cursor:grabbing}
+.mol-stage canvas{display:block; width:100%; height:100%}
+.mol-hint{position:absolute; left:.6rem; bottom:.5rem; font-size:.75rem; color:#c9d6df; pointer-events:none}
+.mol-legend{display:flex; flex-wrap:wrap; gap:.4rem .9rem; font-size:.8rem; color:var(--muted)}
+.mol-legend span{display:inline-flex; align-items:center; gap:.3rem}
+.mol-legend i{display:inline-block; width:.8em; height:.8em; border-radius:50%; border:1px solid var(--line)}
+.mol-legend i.arrow{width:1.4em; height:.25em; border-radius:2px; background:#f1b434; border:0}
+.solswatch{display:flex; align-items:center; gap:.6rem}
+.solswatch .sw{width:2.2rem; height:2.2rem; border-radius:50%; border:2px solid var(--line); flex:none}
+.chargebar{display:flex; align-items:center; gap:.35rem; flex-wrap:wrap}
+.chargebar span{width:1.7rem; height:1.7rem; border-radius:50%; display:grid; place-items:center; font-weight:700; border:2px dashed var(--line); color:var(--muted)}
+.chargebar span.on{border:2px solid var(--leaf); background:var(--leaf-soft); color:var(--leaf)}
+.chargebar b{margin-left:.3rem}
+@media (max-width:520px){ .mol-stage{height:300px} }
+
+/* ---- test tubes and lab ---- */
+.lab-grid{display:grid; grid-template-columns:minmax(150px,200px) minmax(0,1fr); gap:1rem; align-items:start}
+@media (max-width:560px){ .lab-grid{grid-template-columns:1fr} }
+.bench{background:#26313b; border-radius:var(--radius); padding:.8rem .6rem .6rem; display:flex; flex-direction:column; align-items:center}
+.tubewrap{width:120px}
+.tube{display:block; width:100%; height:auto; overflow:visible}
+.tube .glass{fill:none; stroke:#dfe8ee; stroke-width:3; stroke-linecap:round}
+.tube .liq{fill:#4f95e0; transition:fill .9s ease}
+.tube .cloud{opacity:0; transition:opacity .9s ease, fill .9s ease}
+.tube .settle{transform-box:fill-box; transform-origin:bottom; transform:scaleY(0); transition:transform 1.4s ease, fill 2.5s ease}
+.tube .settle.on{transform:scaleY(1)}
+.tube .drop{fill:#dfe8ee; opacity:0}
+.tube .drop.fall{animation:dropfall .55s ease-in}
+.tube .bubbles circle{fill:none; stroke:#ffffff; stroke-width:1.2; opacity:0}
+.tube .bubbles.fizz circle{animation:bubble 1.6s ease-in infinite}
+@keyframes dropfall{0%{opacity:1; transform:translateY(0)} 100%{opacity:.9; transform:translateY(105px)}}
+@keyframes bubble{0%{opacity:.9; transform:translateY(0)} 100%{opacity:0; transform:translateY(-105px)}}
+:root[data-motion="off"] .tube *{transition:none!important; animation:none!important}
+:root[data-motion="off"] .tube .bubbles.fizz circle{opacity:.9}
+@media (prefers-reduced-motion: reduce){ .tube *{transition:none!important; animation:none!important} .tube .bubbles.fizz circle{opacity:.9} }
+.tubelabel{color:#e6eef3; font-size:.85rem; text-align:center; margin-top:.4rem; font-weight:700; line-height:1.35}
+.tubelabel .muted{color:#b3c3ce; font-weight:400}
+.lab-out p+p{margin-top:.35rem}
+.eqline{font-family:var(--font-display); font-weight:700; background:var(--leaf-soft); padding:.45rem .6rem; border-radius:8px; overflow-x:auto}
+.rulechip{display:inline-block; font-size:.85rem; font-weight:700; color:var(--leaf); border:1.5px solid var(--leaf); border-radius:99px; padding:.2rem .7rem}
+.minitube{display:inline-block; width:58px; vertical-align:middle}
+.minitubes{display:flex; gap:1rem; flex-wrap:wrap; background:#26313b; border-radius:var(--radius); padding:.8rem; justify-content:center}
+.minitubes figure{margin:0; display:flex; flex-direction:column; align-items:center; gap:.3rem; color:#e6eef3; font-size:.8rem; text-align:center; max-width:120px}
+.clue{background:var(--bg); border:1px solid var(--line); border-radius:var(--radius); padding:.9rem 1rem}
+/* AQA colour table */
+.aqa{border-collapse:collapse; width:100%; font-size:.85em; min-width:620px}
+.aqa th,.aqa td{border:1px solid var(--line); padding:.4rem .45rem; text-align:center; vertical-align:middle}
+.aqa th{background:var(--leaf-soft)}
+.aqa td.c-fe2{background:#3f6e2a; color:#fff} .aqa td.c-fe2s{background:#9cc46a; color:#16241d}
+.aqa td.c-cu{background:#3c86d9; color:#fff} .aqa td.c-cus{background:#2c5fb5; color:#fff} .aqa td.c-cud{background:#1d3fa8; color:#fff} .aqa td.c-cuc{background:#3fa59b; color:#fff}
+.aqa td.c-fe3{background:#8b3f1c; color:#fff} .aqa td.c-fe3s{background:#a98fc4; color:#16241d}
+.aqa td.c-al{background:#ffffff; color:#16241d}
+.aqa td.same{opacity:.75}
+.trick{border:2px solid var(--leaf); border-radius:var(--radius); padding:.8rem 1rem; display:flex; flex-direction:column; gap:.35rem}
+.trick .tt{font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf)}
+.bigrule{font-family:var(--font-display); font-weight:700; font-size:1.2em; text-align:center; padding:.9rem; border-radius:var(--radius); background:var(--leaf); color:var(--surface)}
+.match > *{min-width:0} .match select{width:100%; text-overflow:ellipsis}
+.rulechip{border-radius:10px}
