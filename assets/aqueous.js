@@ -244,12 +244,12 @@ const LAB={
       naohx:{ppt:'#8b3f1c',obs:'Brown precipitate. <b>No further change</b> in excess.',prod:'[Fe(H₂O)₃(OH)₃](s)',eq:'[Fe(H₂O)₆]³⁺ + 3OH⁻ → [Fe(H₂O)₃(OH)₃] + 3H₂O',rule:1,excess:'none'},
       nh3:{ppt:'#8b3f1c',obs:'Yellow-brown solution → <b>brown precipitate</b>.',prod:'[Fe(H₂O)₃(OH)₃](s)',eq:'[Fe(H₂O)₆]³⁺ + 3NH₃ → [Fe(H₂O)₃(OH)₃] + 3NH₄⁺',rule:1},
       nh3x:{ppt:'#8b3f1c',obs:'Brown precipitate. <b>No further change</b> in excess.',prod:'[Fe(H₂O)₃(OH)₃](s)',eq:'[Fe(H₂O)₆]³⁺ + 3NH₃ → [Fe(H₂O)₃(OH)₃] + 3NH₄⁺',rule:1,excess:'none'},
-      co3:{ppt:'#8b3f1c',fizz:1,obs:'<b>Brown precipitate</b> and <b>bubbles of CO₂</b> (fizzing).',prod:'[Fe(H₂O)₃(OH)₃](s) + CO₂(g)',eq:'2[Fe(H₂O)₆]³⁺ + 3CO₃²⁻ → 2[Fe(H₂O)₃(OH)₃] + 3CO₂ + 3H₂O',rule:5}},
+      co3:{ppt:'#8b3f1c',fizz:1,obs:'<b>Brown precipitate</b> and <b>bubbles of CO₂</b> (effervescence).',prod:'[Fe(H₂O)₃(OH)₃](s) + CO₂(g)',eq:'2[Fe(H₂O)₆]³⁺ + 3CO₃²⁻ → 2[Fe(H₂O)₃(OH)₃] + 3CO₂ + 3H₂O',rule:5}},
  al:{naoh:{ppt:'#ffffff',obs:'Colourless solution → <b>white precipitate</b>.',prod:'[Al(H₂O)₃(OH)₃](s)',eq:'[Al(H₂O)₆]³⁺ + 3OH⁻ → [Al(H₂O)₃(OH)₃] + 3H₂O',rule:1},
-     naohx:{ppt:'#ffffff',obs:'White precipitate, then it <b>dissolves</b> → <b>colourless solution</b>.',prod:'[Al(OH)₄]⁻(aq)',eq:'[Al(H₂O)₃(OH)₃] + OH⁻ → [Al(OH)₄]⁻ + 3H₂O',rule:3,excess:'dissolve',after:'#e6edf2'},
+     naohx:{ppt:'#ffffff',obs:'White precipitate, then it <b>dissolves</b> → <b>colourless solution</b>.',prod:'[Al(OH)₄]⁻(aq)',eq:'[Al(H₂O)₃(OH)₃] + OH⁻ → [Al(OH)₄]⁻ + 3H₂O<br><span class="small">all at once: [Al(H₂O)₆]³⁺ + 4OH⁻ → [Al(OH)₄]⁻ + 6H₂O</span>',rule:3,excess:'dissolve',after:'#e6edf2'},
      nh3:{ppt:'#ffffff',obs:'Colourless solution → <b>white precipitate</b>.',prod:'[Al(H₂O)₃(OH)₃](s)',eq:'[Al(H₂O)₆]³⁺ + 3NH₃ → [Al(H₂O)₃(OH)₃] + 3NH₄⁺',rule:1},
      nh3x:{ppt:'#ffffff',obs:'White precipitate. <b>No further change</b> in excess.',prod:'[Al(H₂O)₃(OH)₃](s)',eq:'[Al(H₂O)₆]³⁺ + 3NH₃ → [Al(H₂O)₃(OH)₃] + 3NH₄⁺',rule:1,excess:'none'},
-     co3:{ppt:'#ffffff',fizz:1,obs:'<b>White precipitate</b> and <b>bubbles of CO₂</b> (fizzing).',prod:'[Al(H₂O)₃(OH)₃](s) + CO₂(g)',eq:'2[Al(H₂O)₆]³⁺ + 3CO₃²⁻ → 2[Al(H₂O)₃(OH)₃] + 3CO₂ + 3H₂O',rule:5}}
+     co3:{ppt:'#ffffff',fizz:1,obs:'<b>White precipitate</b> and <b>bubbles of CO₂</b> (effervescence).',prod:'[Al(H₂O)₃(OH)₃](s) + CO₂(g)',eq:'2[Al(H₂O)₆]³⁺ + 3CO₃²⁻ → 2[Al(H₂O)₃(OH)₃] + 3CO₂ + 3H₂O',rule:5}}
 };
 const RULES={1:'Pattern 1 · Base pulls off H⁺ until the complex is neutral → precipitate',2:'Exception · Copper + excess ammonia → ligand substitution → deep blue solution',3:'Exception · Aluminium hydroxide is amphoteric → dissolves in excess OH⁻',4:'Carbonate + 2+ ion → metal carbonate precipitate, no fizz',5:'Carbonate + 3+ ion → hydroxide precipitate + CO₂ fizz (3+ ions are acidic enough)',6:'Chloride ions are bigger → only 4 fit → tetrahedral'};
 const REAGENTS=[['naoh','NaOH, a few drops'],['naohx','NaOH, excess'],['nh3','NH₃, a few drops'],['nh3x','NH₃, excess'],['co3','Na₂CO₃'],['hcl','Conc. HCl']];
