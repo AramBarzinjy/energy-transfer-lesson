@@ -29,7 +29,7 @@
 const TOPICS=[
   {slug:'acids-bases-ph', key:'acids-bases-ph-v1', title:'Acids and bases: pH, Kₐ and K<sub>w</sub>', blurb:'Weak acids and Kₐ, the ionisation of water, strong bases, and n = cV / ICE-box exam questions.', pptx:'Acids-bases-pH-lesson.pptx', sections:7},
   {slug:'titrations', key:'titrations-v1', title:'Titrations, pH curves and indicators', blurb:'Titration method, the four pH curve shapes, choosing an indicator, and titration calculations.', pptx:'Titrations-lesson.pptx', sections:6},
-  {slug:'aqueous-ions', key:'aqueous-ions-v1', title:'Aqueous ions: complexes, colours and reactions', blurb:'Complex ions in 3D, why 3+ ions are acidic, reactions with OH⁻, NH₃ and CO₃²⁻, and a virtual test-tube lab.', pptx:'Aqueous-ions-lesson.pptx', sections:9}
+  {slug:'aqueous-ions', key:'aqueous-ions-v1', title:'Aqueous ions: complexes, colours and reactions', blurb:'Complex ions in 3D, why 3+ ions are acidic, reactions with OH⁻, NH₃ and CO₃²⁻, and a virtual test-tube lab.', pptx:'Aqueous-ions-lesson.pptx', sections:9, flash:'flashcards.html'}
 ];
 const wrap=document.getElementById('topics');
 TOPICS.forEach((t,i)=>{
@@ -40,7 +40,7 @@ TOPICS.forEach((t,i)=>{
   const el=document.createElement('div'); el.className='tile';
   el.innerHTML='<span class="num">TOPIC '+(i+1)+'</span><h3>'+t.title+'</h3><p class="small muted">'+t.blurb+'</p>'+
     '<div class="bar2" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+pct+'"><i style="width:'+pct+'%"></i></div><span class="meta">'+status+'</span>'+
-    '<div class="actions"><a class="btn solid" style="text-decoration:none" href="'+t.slug+'/">'+(started?'Continue':'Open lesson')+'</a><a class="btn quiet" style="text-decoration:none" href="'+t.slug+'/'+t.pptx+'" download>PowerPoint</a></div>';
+    '<div class="actions"><a class="btn solid" style="text-decoration:none" href="'+t.slug+'/">'+(started?'Continue':'Open lesson')+'</a>'+(t.flash?'<a class="btn" style="text-decoration:none" href="'+t.slug+'/'+t.flash+'">Flashcards</a>':'')+'<a class="btn quiet" style="text-decoration:none" href="'+t.slug+'/'+t.pptx+'" download>PowerPoint</a></div>';
   wrap.appendChild(el);
 });
 const soon=document.createElement('div'); soon.className='tile soon';

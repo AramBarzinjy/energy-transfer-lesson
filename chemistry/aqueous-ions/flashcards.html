@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-GB" data-subject="chem">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1E5F86">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<link rel="icon" href="../../assets/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Study">
+<title>Aqueous Ions Flashcards</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap">
+</head>
+<body>
+<header class="bar"><div class="bar-in"><div class="bar-top">
+  <div class="brandwrap"><a class="back" href="../">← Chemistry</a><span class="brand">Aqueous ions · Flashcards</span></div>
+  <a class="btn quiet" href="./" style="text-decoration:none">Open the lesson</a>
+</div></div></header>
+<main class="wrap stack" style="padding-top:1.5rem">
+
+<section id="fc-setup" class="stack">
+  <p class="eyebrow">AQA A-level Chemistry · 3.2.6 Reactions of ions in aqueous solution</p>
+  <h1>Aqueous ions flashcards</h1>
+  <p>Every card is written the way an AQA mark scheme awards marks. Read the question, say or write your answer, flip, and tick the marking points you got. Cards you miss come back sooner; cards you know come back less often.</p>
+
+  <div class="card">
+    <h3>1 · Choose your difficulty</h3>
+    <div class="lvcards" id="fc-levels"></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><h3>2 · Choose topics</h3><span class="row"><button class="btn quiet" id="fc-allsecs">All</button><button class="btn quiet" id="fc-nosecs">None</button></span></div>
+    <div class="chips" id="fc-secs" role="group" aria-label="Topics"></div>
+  </div>
+  <div class="card">
+    <h3>3 · How to practise</h3>
+    <div class="chips" id="fc-mode" role="group" aria-label="Order"></div>
+    <p class="small muted" id="fc-modehelp"></p>
+    <div class="chips" id="fc-len" role="group" aria-label="Session length"></div>
+  </div>
+  <p id="fc-summary"></p>
+  <div class="row"><button class="btn solid" id="fc-start" style="font-size:1.1em;padding:.7rem 1.4rem">Start</button></div>
+
+  <div class="card">
+    <h3>Your progress</h3>
+    <div class="stack" id="fc-stats" style="gap:.5rem"></div>
+    <div class="row"><button class="btn quiet" id="fc-reset">Reset flashcard progress</button><span id="fc-resetask" hidden class="row"><span class="small">Clear all flashcard progress?</span><button class="btn" id="fc-resetyes">Yes, clear</button><button class="btn quiet" id="fc-resetno">Keep it</button></span></div>
+  </div>
+
+  <div class="card">
+    <h3>Print or copy them out</h3>
+    <p class="small">Cut-out cards on A4: questions on one page, answers on the next, lined up for <b>double-sided printing (flip on long edge)</b>. Each card is numbered on both sides (e.g. AQ-12), so fronts and backs still match if she copies them out by hand.</p>
+    <div class="dl">
+      <a class="btn solid" href="Aqueous-ions-flashcards-all.pdf" download>All cards (PDF)</a>
+      <a class="btn" href="Aqueous-ions-flashcards-recall.pdf" download>Recall only</a>
+      <a class="btn" href="Aqueous-ions-flashcards-apply.pdf" download>Apply only</a>
+      <a class="btn" href="Aqueous-ions-flashcards-exam.pdf" download>Exam only</a>
+    </div>
+  </div>
+  <div class="tip"><b>How the marks work</b>Each ticked point is one mark. Bold words are the ones examiners look for, so use them. “Not in your notes yet” cards are in the AQA specification but weren’t in the pages you sent.</div>
+</section>
+
+<section id="fc-play" class="stack" hidden>
+  <div class="fc-top"><span id="fc-count" class="small muted tabnum"></span><button class="btn quiet" id="fc-quit">End session</button></div>
+  <div class="fc-progress"><i id="fc-pbar"></i></div>
+  <div class="fcard" id="fc-card" tabindex="0" aria-live="polite">
+    <div class="fc-badges" id="fc-badges"></div>
+    <div class="fc-q" id="fc-q"></div>
+    <div id="fc-trywrap"><textarea id="fc-try" aria-label="Write your answer first (optional)" placeholder="Optional: write your answer here first"></textarea></div>
+    <button class="btn solid" id="fc-flip">Show answer <span class="small" style="font-weight:400">(Space)</span></button>
+    <div class="fc-back" id="fc-back" hidden>
+      <p class="eyebrow">Mark scheme</p>
+      <ul class="fc-pts" id="fc-pts"></ul>
+      <p class="small muted" id="fc-ptshelp"></p>
+      <div class="tip" id="fc-note" hidden></div>
+    </div>
+  </div>
+  <div id="fc-rate" hidden class="stack" style="gap:.4rem">
+    <p class="small" id="fc-suggest" aria-live="polite"></p>
+    <div class="fc-rate">
+      <button data-r="again">Again<small>see it soon · 1</small></button>
+      <button data-r="nearly">Nearly<small>tomorrow · 2</small></button>
+      <button data-r="got">Got it<small>later · 3</small></button>
+    </div>
+  </div>
+</section>
+
+<section id="fc-done" class="stack" hidden>
+  <h2>Session finished</h2>
+  <div class="card" id="fc-result"></div>
+  <div class="row"><button class="btn solid" id="fc-again">Another session</button><button class="btn quiet" id="fc-back2">Change settings</button><a class="btn quiet" href="../" style="text-decoration:none">Back to Chemistry</a></div>
+</section>
+
+</main>
+<script src="../../assets/cards/aqueous-ions.js"></script>
+<script src="../../assets/flashcards.js"></script>
+</body>
+</html>
