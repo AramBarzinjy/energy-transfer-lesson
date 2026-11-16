@@ -303,3 +303,18 @@ table.notes th{background:var(--leaf-soft)}
 .fc-rate button.sugg{box-shadow:0 0 0 3px var(--focus)}
 .dl{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.5rem}
 .dl a{text-decoration:none; text-align:center}
+
+/* ---- selection and speciation models ---- */
+.sim-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:.8rem; align-items:center}
+@media (max-width:640px){ .sim-grid{grid-template-columns:1fr} }
+.moth-bg{position:relative; aspect-ratio:4/3; border-radius:var(--radius); overflow:hidden; max-width:100%}
+.moth-bg.clean{background:repeating-linear-gradient(80deg,#d9d6c8 0 14px,#cfcbb9 14px 22px,#e3e0d3 22px 34px)}
+.moth-bg.sooty{background:repeating-linear-gradient(80deg,#2d2b28 0 14px,#3a3733 14px 22px,#25231f 22px 34px)}
+.moth{position:absolute; width:22px; height:13px; border-radius:50% 50% 45% 45%/70% 70% 30% 30%; transition:opacity .4s, transform .4s}
+.moth.l{background:radial-gradient(circle at 40% 40%,#f4f1e6,#cfc9b4); box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.moth.d{background:radial-gradient(circle at 40% 40%,#47433d,#1d1b18)}
+.moth.eaten{opacity:.15; outline:2px solid #c0392b}
+.sim-chart svg,.curvefig2 svg,.drift-fig svg{width:100%; height:auto; display:block}
+.gamebar{display:flex; gap:.6rem; align-items:center; flex-wrap:wrap; font-weight:700}
+.moth-bg.hunting .moth{cursor:crosshair} .moth-bg.hunting{cursor:crosshair; box-shadow:0 0 0 3px var(--sun)}
+.moth-bg.hunting .moth::after{content:""; position:absolute; inset:-4px}

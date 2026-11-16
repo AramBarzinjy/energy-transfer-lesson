@@ -29,7 +29,8 @@
 const TOPICS=[
   {slug:'energy-transfer', key:'energy-transfer-v1', title:'Energy transfer between trophic levels', blurb:'GPP and NPP, why energy is lost along food chains, and % efficiency.', pptx:'Energy-transfer-lesson.pptx', sections:5},
   {slug:'nutrient-cycles', key:'nutrient-cycles-v1', title:'Nutrient cycles: the nitrogen cycle', blurb:'Saprobionts, ammonification, nitrification, nitrogen fixation and denitrification.', pptx:'Nutrient-cycles-lesson.pptx', sections:5},
-  {slug:'phosphorus-cycle', key:'phosphorus-cycle-v1', title:'Phosphorus cycle, mycorrhizae and fertilisers', blurb:'Phosphate in rocks, water and living things; root fungi; fertilisers, species diversity and leaching.', pptx:'Phosphorus-cycle-lesson.pptx', sections:5}
+  {slug:'phosphorus-cycle', key:'phosphorus-cycle-v1', title:'Phosphorus cycle, mycorrhizae and fertilisers', blurb:'Phosphate in rocks, water and living things; root fungi; fertilisers, species diversity and leaching.', pptx:'Phosphorus-cycle-lesson.pptx', sections:5},
+  {slug:'selection-speciation', key:'selection-speciation-v1', title:'Selection and speciation', blurb:'Variation, natural selection, the three types of selection, Hardy–Weinberg, genetic drift and how new species form.', pptx:'Selection-speciation-lesson.pptx', sections:8, flash:'flashcards.html'}
 ];
 const wrap=document.getElementById('topics');
 TOPICS.forEach((t,i)=>{
@@ -40,7 +41,7 @@ TOPICS.forEach((t,i)=>{
   const el=document.createElement('div'); el.className='tile';
   el.innerHTML='<span class="num">TOPIC '+(i+1)+'</span><h3>'+t.title+'</h3><p class="small muted">'+t.blurb+'</p>'+
     '<div class="bar2" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+pct+'"><i style="width:'+pct+'%"></i></div><span class="meta">'+status+'</span>'+
-    '<div class="actions"><a class="btn solid" style="text-decoration:none" href="'+t.slug+'/">'+(started?'Continue':'Open lesson')+'</a><a class="btn quiet" style="text-decoration:none" href="'+t.slug+'/'+t.pptx+'" download>PowerPoint</a></div>';
+    '<div class="actions"><a class="btn solid" style="text-decoration:none" href="'+t.slug+'/">'+(started?'Continue':'Open lesson')+'</a>'+(t.flash?'<a class="btn" style="text-decoration:none" href="'+t.slug+'/'+t.flash+'">Flashcards</a>':'')+'<a class="btn quiet" style="text-decoration:none" href="'+t.slug+'/'+t.pptx+'" download>PowerPoint</a></div>';
   wrap.appendChild(el);
 });
 const soon=document.createElement('div'); soon.className='tile soon';

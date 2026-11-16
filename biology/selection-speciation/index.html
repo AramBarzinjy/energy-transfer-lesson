@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1F6B4E">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<link rel="icon" href="../../assets/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Study">
+<title>Selection and Speciation · Biology</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap">
+
+
+</head>
+<body data-lesson="selection-speciation-v1">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--muted)"/></marker></defs></svg>
+<header class="bar">
+  <div class="bar-in">
+    <div class="bar-top">
+      <div class="brandwrap"><a class="back" href="../">← Biology</a><span class="brand">Selection &amp; speciation</span></div>
+      <div class="prog" role="progressbar" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="progfill"></i></div>
+      <span class="progtxt" id="progtxt">0 of 8 sections</span>
+      <button class="btn quiet" id="openSettings" aria-haspopup="dialog">Settings</button>
+    </div>
+    <nav class="tabs" aria-label="Lesson sections" id="tabs"></nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+<!-- ============ START ============ -->
+<section class="screen stack" data-sec="start" data-name="Start">
+  <p class="eyebrow">AQA A-level Biology · 3.7.2 Populations · 3.7.3 Evolution may lead to speciation</p>
+  <h1>Selection and speciation</h1>
+  <p>This topic has lots of words, but it tells <b>one story</b>: living things vary, the environment picks which ones survive, allele frequencies change, and given enough time and isolation you get <b>new species</b>. Each section is one chapter of that story, with models to play with. Stop whenever you like: your place is saved.</p>
+  <div class="bigrule">Variation → selection pressure → differential survival and reproduction → allele frequency changes → (with isolation) new species</div>
+  <div id="resumeBox" hidden class="tip"><b>Welcome back</b><span id="resumeTxt"></span> <button class="btn solid" id="resumeBtn" style="margin-top:.5rem">Carry on where I stopped</button></div>
+  <div class="map" id="map"></div>
+  <div class="warn"><b>Spotted in the notes</b>
+    <span>1. The <b>genetic drift table (p11)</b> pairs “founder effect” with migration. Migration is <b>gene flow</b>. The <b>founder effect</b> is a kind of genetic drift: a small group starts a new population and carries only some of the alleles. Section E sorts this out.</span><br>
+    <span>2. The <b>Hardy–Weinberg list (p10)</b> is blank in the notes. The five conditions are filled in in Section D.</span></div>
+  <div class="card">
+    <h3>How the labels work</h3>
+    <div class="row"><span class="tag notes">Class notes</span><span class="small">From the notes booklet.</span></div>
+    <div class="row"><span class="tag orig">Original question</span><span class="small">A question from the notes, with its mark scheme.</span></div>
+    <div class="row"><span class="tag new">New question</span><span class="small">AQA-style practice written for this lesson.</span></div>
+    <div class="row"><span class="tag extra">Extra help</span><span class="small">Tricks and explanations to make it stick.</span></div>
+  </div>
+  <div class="card"><h3>Flashcards and slides</h3><p class="small">Smart flashcards for the whole of AQA 3.7.2–3.7.3 at three difficulty levels, with printable cards, and the lesson as a PowerPoint.</p><div class="row"><a class="btn solid" href="flashcards.html" style="text-decoration:none">Open flashcards</a><a class="btn" href="Selection-speciation-lesson.pptx" download style="text-decoration:none">Download the PowerPoint</a></div></div>
+  <div class="pager"><a class="btn quiet" href="../" style="text-decoration:none">← Biology</a><button class="btn solid" data-go="A">Start section A →</button></div>
+</section>
+
+<!-- ============ A ============ -->
+<section class="screen stack" data-sec="A" data-name="A · Variation" data-blurb="Where variation comes from, and continuous vs discontinuous." hidden>
+  <p class="eyebrow">Section A · about 5 minutes · chapter 1 of the story</p>
+  <h2>Variation: the raw material</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Why individuals differ</h3><span class="tag notes">Class notes · p3</span></div>
+    <p>Individuals in a population show a wide range of variation in <b>phenotype</b> (what they look like and how they work). This is due to <b>genetic and environmental factors</b>.</p>
+    <p><b>Three causes of genetic variation</b> (in sexual reproduction):</p>
+    <ol class="clean">
+      <li><b>Mutation</b>: the primary source. A sudden change in the base sequence of DNA, which introduces <b>new alleles</b>.</li>
+      <li><b>Meiosis</b>: crossing over and independent segregation shuffle alleles into new combinations.</li>
+      <li><b>Random fertilisation</b>: any gamete can fuse with any other.</li>
+    </ol>
+    <div class="trick"><span class="tt">Memory trick · M M R</span><p><b>M</b>utation makes new alleles. <b>M</b>eiosis mixes them. <b>R</b>andom fertilisation combines them.</p></div>
+    <p>A mutation could give a selective <b>advantage</b>, be <b>neutral</b>, or give a selective <b>disadvantage</b>.</p>
+    <p><b>The environment</b> also affects phenotype: <b>genotype sets the limits; the environment decides where within those limits</b> the organism ends up. Environmental factors include temperature, light intensity, humidity and other abiotic and biotic factors.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Two kinds of variation</h3><span class="tag notes">Class notes · p3–4</span></div>
+    <div class="map" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+      <div class="def"><dt>Discontinuous</dt><dd>A few <b>distinct categories</b>, no in-betweens. Mainly <b>genetic</b>, usually <b>one gene</b>. Plot as a <b>bar chart</b>. E.g. blood group.</dd>
+        <dd><svg viewBox="0 0 200 110" role="img" aria-label="Bar chart of blood groups A, B, AB and O"><g style="fill:var(--leaf)"><rect x="18" y="38" width="30" height="58"/><rect x="62" y="84" width="30" height="12"/><rect x="106" y="92" width="30" height="4"/><rect x="150" y="34" width="30" height="62"/></g><line x1="10" x2="190" y1="96" y2="96" stroke="var(--ink)"/><g font-size="11" text-anchor="middle" style="fill:var(--ink)"><text x="33" y="108">A</text><text x="77" y="108">B</text><text x="121" y="108">AB</text><text x="165" y="108">O</text></g></svg></dd></div>
+      <div class="def"><dt>Continuous</dt><dd>Any value in a <b>range</b>. Controlled by <b>many genes</b> (polygenes) <b>and the environment</b>. Plot as a <b>normal distribution</b> (bell curve). E.g. height, mass.</dd>
+        <dd><svg viewBox="0 0 200 110" role="img" aria-label="Bell-shaped normal distribution of height"><path d="M10 96 C 60 96, 70 10, 100 10 C 130 10, 140 96, 190 96" fill="var(--leaf-soft)" stroke="var(--leaf)" stroke-width="3"/><line x1="10" x2="190" y1="96" y2="96" stroke="var(--ink)"/><text x="100" y="108" font-size="11" text-anchor="middle" style="fill:var(--ink)">height / cm</text></svg></dd></div>
+    </div>
+    <div class="tip"><b>Study tip (from the notes)</b>Recognise discontinuous variation and be able to plot a bar chart from any data you're given. Continuous data gets a histogram or line, never separated bars.</div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check A</h3>
+  <div class="card matcher" data-q="A1" data-label="A · Continuous or discontinuous" data-win="All sorted correctly.">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Sort each characteristic.</p>
+    <div class="match">
+      <span class="m-l">Human blood group</span><select aria-label="Blood group" data-answer="d"><option value="">Choose…</option><option value="d">Discontinuous</option><option value="c">Continuous</option></select>
+      <span class="m-l">Leaf length</span><select aria-label="Leaf length" data-answer="c"><option value="">Choose…</option><option value="d">Discontinuous</option><option value="c">Continuous</option></select>
+      <span class="m-l">Human body mass</span><select aria-label="Body mass" data-answer="c"><option value="">Choose…</option><option value="d">Discontinuous</option><option value="c">Continuous</option></select>
+      <span class="m-l">Flower colour in pea plants (purple or white)</span><select aria-label="Pea flower colour" data-answer="d"><option value="">Choose…</option><option value="d">Discontinuous</option><option value="c">Continuous</option></select>
+    </div>
+    <div class="row"><button class="btn" data-mcheck>Check</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="A2" data-label="A · Primary source of variation" data-answer="b">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">What is the only source of <u>new</u> alleles?</p>
+    <div class="opts">
+      <button data-o="a" data-fb="Meiosis reshuffles alleles that already exist. It can't create new ones.">Meiosis</button>
+      <button data-o="b" data-fb="Correct. Mutation changes the base sequence of DNA, creating new alleles.">Mutation</button>
+      <button data-o="c" data-fb="Fertilisation combines existing alleles. It doesn't make new ones.">Random fertilisation</button>
+    </div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="A">Mark section A done</button><span class="small muted">You can take a break here.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="start">← Start</button><button class="btn" data-go="B">Section B →</button></div>
+</section>
+
+<!-- ============ B ============ -->
+<section class="screen stack" data-sec="B" data-name="B · Natural selection" data-blurb="Be the bird: play natural selection with peppered moths." hidden>
+  <p class="eyebrow">Section B · about 6 minutes · chapter 2</p>
+  <h2>Natural selection</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The definition</h3><span class="tag notes">Class notes · p4</span></div>
+    <dl class="def"><dt>Natural selection</dt><dd>The process by which organisms that are <b>better adapted</b> to their environment <b>survive and reproduce in greater numbers</b>, resulting in an <b>increase in the frequency of the advantageous allele</b> within the population.</dd></dl>
+    <dl class="def"><dt>Evolution</dt><dd>A <b>change in the allele frequencies</b> within a population (over many generations).</dd></dl>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>The chain, one link at a time</h3><span class="tag notes">Class notes · p4–5</span></div>
+    <ol class="clean steps" data-steps>
+      <li><b>Over-production.</b> Organisms produce more offspring than the environment can support.</li>
+      <li><b>Variation</b> exists within the population, caused by mutation (plus meiosis and random fertilisation).</li>
+      <li><b>Selection pressure</b>: predation, disease or <b>competition</b> for limited resources (intraspecific competition). These can be <b>biotic</b> (living) or <b>abiotic</b> (non-living).</li>
+      <li><b>Differential survival</b>: individuals with an advantageous allele are <b>more likely to survive and reproduce</b>. Less well adapted ones are less likely to.</li>
+      <li>They <b>pass on their advantageous alleles</b> to their offspring.</li>
+      <li>Over many generations the <b>frequency of the advantageous allele increases</b> in the population.</li>
+    </ol>
+    <div class="row"><button class="btn" data-stepnext>Show next step</button><button class="btn quiet" data-stepall>Show all</button></div>
+    <div class="trick"><span class="tt">Exam trick · the 4-mark skeleton</span><p><b>Variation (mutation) → selection pressure → better adapted survive and reproduce → pass on allele → allele frequency increases.</b> Almost every natural selection question is this chain with the context's words dropped in.</p></div>
+    <div class="warn"><b>The classic mistake</b>Organisms do <b>not</b> develop a phenotype <i>because</i> the environment changes. The useful allele was <b>already there</b>, from a <b>chance mutation</b>, before the change. Never write “the moths turned dark to hide”.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>Play it: be the bird</h3><span class="tag extra">Extra help · model</span></div>
+    <p class="small">Peppered moths come in pale and dark forms (one gene; dark is dominant). Factory soot blackened tree bark in the 1800s. Press <b>Be the bird</b> and tap the moths you can spot to eat them. Then do it again for the next generation, and watch the graph. Or let nature run it for you.</p>
+    <div class="selsim"></div>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check B</h3>
+  <div class="card" data-q="B1" data-label="B · Explain dark moths (4 marks)">
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[4 marks]</span></div>
+    <p class="qtext">Explain how the proportion of dark peppered moths increased in polluted areas.</p>
+    <textarea aria-label="Your answer"></textarea>
+    <div class="hintbox" data-hints='["Where did the dark allele come from?","What was the selection pressure, and which moths survived?","Finish with allele frequency."]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Compare with model answer</button>
+    <div class="reveal-body" hidden><ol class="clean"><li>The dark allele arose by (random) <b>mutation</b>. ✔</li><li><b>Predation</b> by birds was the selection pressure: dark moths were <b>camouflaged</b> on sooty bark. ✔</li><li>So dark moths were <b>more likely to survive and reproduce</b>. ✔</li><li>They <b>passed on the dark allele</b>, so its <b>frequency increased</b> over generations. ✔</li></ol></div></div>
+  <div class="card mcq" data-q="B2" data-label="B · Biotic or abiotic" data-answer="c">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Which of these is an <b>abiotic</b> selection pressure?</p>
+    <div class="opts"><button data-o="a" data-fb="Predators are living, so predation is biotic.">Predation</button><button data-o="b" data-fb="Disease is caused by living pathogens, so it's biotic.">Disease</button><button data-o="c" data-fb="Correct. Temperature is a non-living factor.">Low temperature</button><button data-o="d" data-fb="Competition is between living organisms: biotic.">Competition for mates</button></div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="B">Mark section B done</button><span class="small muted">A good place for a break.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="A">← Section A</button><button class="btn" data-go="C">Section C →</button></div>
+</section>
+
+<!-- ============ C ============ -->
+<section class="screen stack" data-sec="C" data-name="C · Types of selection" data-blurb="Stabilising, directional and disruptive: watch the curve change." hidden>
+  <p class="eyebrow">Section C · about 6 minutes · chapter 3</p>
+  <h2>Three types of selection</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Read it from the curve</h3><span class="tag extra">Extra help</span></div>
+    <p>Each type of selection is shown by what happens to a <b>normal distribution curve</b>. Ask one question: <b>which part of the curve is being killed off?</b></p>
+    <div class="tablewrap"><table class="notes">
+      <thead><tr><th>Type</th><th>Which phenotypes are favoured?</th><th>What happens to the curve</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><b>Stabilising</b></td><td>The <b>average</b>; both extremes selected against</td><td>Same mean, <b>narrower</b>, taller</td><td>Human birth mass</td></tr>
+        <tr><td><b>Directional</b></td><td><b>One extreme</b></td><td><b>Mean shifts</b> one way</td><td>Fur length in cold; peppered moths</td></tr>
+        <tr><td><b>Disruptive</b></td><td><b>Both extremes</b>; the average selected against</td><td>Splits into <b>two peaks</b></td><td>Mice on sand and grass</td></tr>
+      </tbody></table></div>
+    <div class="trick"><span class="tt">Memory trick</span><p><b>S</b>tabilising <b>S</b>queezes. <b>D</b>irectional <b>D</b>rifts one way. <b>D</b>isruptive <b>D</b>ivides in two.</p></div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>Watch the curve change</h3><span class="tag extra">Extra help · model</span></div>
+    <p class="small">Pick a type, then press <b>Next generation</b> a few times. The red shading shows the phenotypes being selected against.</p>
+    <div class="selcurve"></div>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The details from the notes</h3><span class="tag notes">Class notes · p6–8</span></div>
+    <p><b>Stabilising</b>: occurs where the environment is <b>stable</b>. Selection pressure at <b>both ends</b>; favours the average; reduces variability; <b>reduces the opportunity for evolutionary change</b>. E.g. very heavy or very light babies have higher death rates around birth, so over time there are fewer of them.</p>
+    <p><b>Directional</b>: the mean was the optimum, but an <b>environmental change</b> brings a new selection pressure that favours <b>one extreme</b>. Some individuals already have that phenotype (from a chance mutation); over time it predominates and the <b>mean shifts</b>. E.g. mice: at 10 °C the best fur length is 1.5 cm; if it cools to 5 °C, mice with fur ≥ 2.0 cm survive better, and the mean shifts to 2.0 cm. Then the pressure stops.</p>
+    <p><b>Disruptive</b>: the <b>opposite of stabilising</b>. Favours <b>two extremes</b>; the least common type, but the <b>most important for speciation</b>, because it can split one population into two. E.g. light mice on sand and dark mice in grass; medium mice get eaten.</p>
+    <p class="small muted">The notes say the mean “shifts in both directions” in disruptive selection. Better to say the population <b>splits into two peaks</b>: the overall mean can stay where it was.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check C</h3>
+  <div class="card matcher" data-q="C1" data-label="C · Name the selection" data-win="All three spotted.">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Which type of selection is each?</p>
+    <div class="match">
+      <span class="m-l">Bacteria with an antibiotic-resistance allele survive treatment</span><select aria-label="Antibiotic" data-answer="dir"><option value="">Choose…</option><option value="stab">Stabilising</option><option value="dir">Directional</option><option value="dis">Disruptive</option></select>
+      <span class="m-l">Birds laying the average number of eggs raise the most chicks</span><select aria-label="Eggs" data-answer="stab"><option value="">Choose…</option><option value="stab">Stabilising</option><option value="dir">Directional</option><option value="dis">Disruptive</option></select>
+      <span class="m-l">Finches with very small or very large beaks survive; medium beaks can't crack either seed type</span><select aria-label="Finches" data-answer="dis"><option value="">Choose…</option><option value="stab">Stabilising</option><option value="dir">Directional</option><option value="dis">Disruptive</option></select>
+    </div>
+    <div class="row"><button class="btn" data-mcheck>Check</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card" data-q="C2" data-label="C · Describe stabilising (3 marks)">
+    <div class="card-h"><span class="tag new">New question</span><span class="marks">[3 marks]</span></div>
+    <p class="qtext">Describe stabilising selection and its effect on a normal distribution curve.</p>
+    <textarea aria-label="Your answer"></textarea>
+    <button class="btn" data-model>Compare with model answer</button>
+    <div class="reveal-body" hidden><ol class="clean"><li>Individuals with phenotypes <b>close to the mean</b> (average) are favoured / more likely to survive and reproduce. ✔</li><li>Both <b>extremes are selected against</b>. ✔</li><li>The mean stays the same but the <b>range / standard deviation decreases</b> (narrower, taller curve). ✔</li></ol></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="C">Mark section C done</button><span class="small muted">Halfway through the story.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="B">← Section B</button><button class="btn" data-go="D">Section D →</button></div>
+</section>
+
+<!-- ============ D ============ -->
+<section class="screen stack" data-sec="D" data-name="D · Hardy–Weinberg" data-blurb="Gene pools and the Hardy–Weinberg equations, with endless practice." hidden>
+  <p class="eyebrow">Section D · about 7 minutes · the maths bit</p>
+  <h2>Gene pools and Hardy–Weinberg</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The words</h3><span class="tag notes">Class notes + AQA 3.7.2</span></div>
+    <dl class="def"><dt>Population</dt><dd>All the organisms of <b>one species</b> living in the same place at the same time, which can interbreed.</dd></dl>
+    <dl class="def"><dt>Gene pool</dt><dd>All the <b>alleles of all the genes</b> in a population at one time.</dd></dl>
+    <dl class="def"><dt>Allele frequency</dt><dd>How often an allele occurs in the gene pool, as a proportion (0 to 1).</dd></dl>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The two equations</h3><span class="tag extra">AQA 3.7.2</span></div>
+    <p>For a gene with two alleles, dominant <b>A</b> (frequency <b>p</b>) and recessive <b>a</b> (frequency <b>q</b>):</p>
+    <div class="eqbox"><span class="eq">p + q = 1 &nbsp;&nbsp;<span class="small" style="font-weight:400">(alleles)</span></span></div>
+    <div class="eqbox"><span class="eq">p² + 2pq + q² = 1 &nbsp;&nbsp;<span class="small" style="font-weight:400">(genotypes)</span></span></div>
+    <div class="tablewrap"><table class="notes"><thead><tr><th>Term</th><th>Genotype</th><th>Phenotype</th></tr></thead><tbody><tr><td>p²</td><td>AA homozygous dominant</td><td>dominant</td></tr><tr><td>2pq</td><td>Aa heterozygous (carriers)</td><td>dominant</td></tr><tr><td><b>q²</b></td><td>aa homozygous recessive</td><td><b>recessive: the only one you can see directly</b></td></tr></tbody></table></div>
+    <div class="trick"><span class="tt">The golden rule</span><p><b>Always start from q².</b> The recessive phenotype is the only genotype you can count, because AA and Aa look the same. q² → √ → q → p = 1 − q → then p² and 2pq.</p></div>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>When does it work? The 5 conditions</h3><span class="tag notes">Class notes · p10 (filled in)</span></div>
+    <p>Hardy–Weinberg predicts allele frequencies will <b>stay constant</b> from one generation to the next, as long as:</p>
+    <ol class="clean"><li>The population is <b>large</b>.</li><li>Mating is <b>random</b>.</li><li>There is <b>no mutation</b>.</li><li>There is <b>no migration</b> in or out (no gene flow).</li><li>There is <b>no selection</b> (all genotypes equally likely to survive and reproduce).</li></ol>
+    <div class="trick"><span class="tt">Memory trick · “Large Random Mutant-free Mice, Never Selected”</span><p><b>L</b>arge · <b>R</b>andom mating · no <b>M</b>utation · no <b>M</b>igration · no <b>S</b>election.</p></div>
+    <p class="small">The point: if real allele frequencies <b>do</b> change, one of these conditions is being broken, often <b>selection</b>. That's how Hardy–Weinberg shows evolution happening.</p>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+
+  <div class="card multi" data-q="D1" data-label="Copper grass Hardy–Weinberg 5(a)" data-win="All correct.">
+    <div class="card-h"><span class="tag orig">Original question · textbook Q5(a)</span><span class="marks">[3]</span></div>
+    <p class="qtext">A gene associated with copper tolerance has two alleles, <b>T</b> and <b>t</b>. Varieties of <i>Agrostis tenuis</i> that have both recessive alleles are copper tolerant, while varieties possessing one or more dominant alleles are not. A sample of plants was tested for copper tolerance and 72 plants were found to be copper tolerant while 378 were not.<br>(a) Assuming the Hardy–Weinberg principle applies, calculate the percentage of the sample that have the genotypes TT, Tt and tt.</p>
+    <div class="gridrow"><label for="d1a">tt</label><input id="d1a" type="text" data-answer="16" data-tol="0.5"><span class="small">%</span></div>
+    <div class="gridrow"><label for="d1b">TT</label><input id="d1b" type="text" data-answer="36" data-tol="0.5"><span class="small">%</span></div>
+    <div class="gridrow"><label for="d1c">Tt</label><input id="d1c" type="text" data-answer="48" data-tol="0.5"><span class="small">%</span></div>
+    <div class="row"><button class="btn" data-gcheck>Check my answers</button></div>
+    <div class="fb" hidden aria-live="polite"></div>
+    <div class="hintbox" data-hints='["Total sample = 72 + 378 = 450","q² = 72 ÷ 450 = 0.16, so q = 0.4 and p = 0.6","TT = p², Tt = 2pq"]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the worked answer</button>
+    <div class="reveal-body" hidden><ol class="clean"><li>Total = 72 + 378 = <b>450</b>. Tolerant plants are <b>tt</b>, so q² = 72 ÷ 450 = <b>0.16 → 16%</b></li><li>q = √0.16 = <b>0.4</b>; p = 1 − 0.4 = <b>0.6</b></li><li>TT = p² = 0.6² = 0.36 = <b>36%</b></li><li>Tt = 2pq = 2 × 0.6 × 0.4 = 0.48 = <b>48%</b></li><li>Check: 36 + 48 + 16 = 100 ✓</li></ol></div>
+  </div>
+  <div class="card" data-q="D2" data-label="Copper grass 5(b) why H–W fails">
+    <div class="card-h"><span class="tag orig">Original question · textbook Q5(b)</span><span class="marks">[2]</span></div>
+    <p class="qtext">(b) Justify, giving two reasons, why the Hardy–Weinberg principle does not apply in the situation described here.</p>
+    <textarea aria-label="Your answer"></textarea>
+    <button class="btn" data-model>Compare with model answer</button>
+    <div class="reveal-body" hidden><p>Any two:</p><ol class="clean"><li><b>Selection is happening</b>: copper in the soil favours the tolerant (tt) plants. ✔</li><li><b>Mating may not be random</b>: plants on contaminated soil are more likely to pollinate each other. ✔</li><li><b>Migration / gene flow</b>: pollen and seeds can blow in from plants on uncontaminated soil. ✔</li><li>The <b>sample / population may be small</b>. ✔</li></ol></div></div>
+
+  <div class="card">
+    <div class="card-h"><h3>Endless practice</h3><span class="tag new">New questions</span></div>
+    <p class="small">A new Hardy–Weinberg question every time. Fill in all five boxes, then check.</p>
+    <div class="hwgen"></div>
+  </div>
+
+  <div class="done-row"><button class="btn solid" data-complete="D">Mark section D done</button><span class="small muted">That was the hardest part.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="C">← Section C</button><button class="btn" data-go="E">Section E →</button></div>
+</section>
+
+<!-- ============ E ============ -->
+<section class="screen stack" data-sec="E" data-name="E · Genetic drift" data-blurb="Chance changes in small populations, bottlenecks and the founder effect." hidden>
+  <p class="eyebrow">Section E · about 4 minutes</p>
+  <h2>Genetic drift: evolution by chance</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>What it is</h3><span class="tag notes">Class notes · p11, tidied</span></div>
+    <dl class="def"><dt>Genetic drift</dt><dd>A <b>random</b> (chance) change in allele frequency from one generation to the next. It matters most in <b>small populations</b>, where the chance loss of a few individuals carrying an allele changes its frequency a lot.</dd></dl>
+    <div class="map" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div class="def"><dt>Bottleneck (a type of drift)</dt><dd>A large population is suddenly cut to a few survivors by chance, e.g. a <b>natural disaster</b>: volcanic eruption, tsunami, meteor. The survivors' alleles form the new gene pool, so <b>genetic diversity falls</b>.</dd></div>
+      <div class="def"><dt>Founder effect (a type of drift)</dt><dd>A <b>small group</b> leaves to found a new population, e.g. on an island. It carries only <b>some of the alleles</b> of the original population, by chance.</dd></div>
+      <div class="def"><dt>Gene flow (not drift)</dt><dd>Change in allele frequency due to the <b>migration</b> of fertile individuals between populations.</dd></div>
+    </div>
+    <div class="warn"><b>Correction to the notes (p11)</b>The table puts “founder effect” in the same row as gene flow (migration). They're different: <b>gene flow</b> is migration between populations; the <b>founder effect</b> is genetic drift in a small new population.</div>
+    <div class="trick"><span class="tt">Selection vs drift</span><p><b>Selection</b>: <i>which</i> individuals survive depends on their alleles. <b>Drift</b>: survival is <b>luck</b>. A volcano doesn't care about your fur length.</p></div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>See it happen</h3><span class="tag extra">Extra help · model</span></div>
+    <p class="small">Six populations, each starting with an allele at 0.5, with <b>no selection at all</b>. Try a small population, then a large one, then the disaster. Press run again: chance gives a different result every time.</p>
+    <div class="driftsim"></div>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check E</h3>
+  <div class="card mcq" data-q="E1" data-label="E · Why drift matters in small populations" data-answer="a">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Why does genetic drift have a bigger effect in small populations?</p>
+    <div class="opts"><button data-o="a" data-fb="Correct. With few individuals, a chance loss of one or two carrying an allele changes its frequency a lot.">Chance loss of a few individuals changes allele frequency a lot</button><button data-o="b" data-fb="Selection isn't stronger in small populations. Drift is about chance, not selection.">Selection pressures are stronger</button><button data-o="c" data-fb="Mutation rate per individual isn't higher in small populations.">More mutations occur</button></div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="E">Mark section E done</button><span class="small muted">Next: new species.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="D">← Section D</button><button class="btn" data-go="F">Section F →</button></div>
+</section>
+
+<!-- ============ F ============ -->
+<section class="screen stack" data-sec="F" data-name="F · Speciation" data-blurb="Allopatric and sympatric speciation, and isolating mechanisms." hidden>
+  <p class="eyebrow">Section F · about 7 minutes · the last chapter</p>
+  <h2>Speciation: making new species</h2>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>The key idea</h3><span class="tag notes">Class notes · p10</span></div>
+    <dl class="def"><dt>Species</dt><dd>A group of similar organisms that can <b>interbreed to produce fertile offspring</b>. They share one <b>gene pool</b>.</dd></dl>
+    <dl class="def"><dt>Speciation</dt><dd>The evolution of a <b>new species</b> from an existing species.</dd></dl>
+    <p>If two populations can still interbreed, they <b>won't</b> become separate species: interbreeding keeps mixing their gene pools. So first they must be <b>reproductively isolated</b> (prevented from interbreeding). Then <b>mutations accumulate</b> and <b>different selection pressures</b> act on each, until they're too different to produce fertile offspring.</p>
+    <div class="bigrule" style="font-size:1em">No isolation → no speciation. Isolation is always step one.</div>
+  </div>
+
+  <div class="card stepper">
+    <script type="application/json">{"steps":["Press <b>Show next step</b> to watch allopatric speciation happen.","<b>1 · One population.</b> One species of snail, all interbreeding, one gene pool.","<b>2 · A physical barrier divides it</b>, e.g. a river, mountain or road. Now the two groups can’t interbreed: <b>geographical isolation</b>.","<b>3 · Different selection pressures</b> act on each side (shady forest vs open grass), and <b>different mutations</b> arise in each population.","<b>4 · Natural selection</b> changes the allele frequencies differently on each side. Over many generations genotype and phenotype diverge.","<b>5 · Reunited, they can’t interbreed</b> to produce fertile offspring. They are now <b>separate species</b>, each with its own gene pool."]}</script>
+    <div class="card-h"><h3>Allopatric speciation, step by step</h3><span class="tag notes">Class notes · p11</span></div>
+    <div class="fig narrow">
+      <svg viewBox="0 0 420 220" role="img" aria-labelledby="alloT">
+        <title id="alloT">A population of snails is split by a river. The forest side becomes dark brown snails and the grass side pale banded snails. When a bridge reconnects them they cannot produce fertile offspring.</title>
+        <rect x="0" y="0" width="420" height="220" rx="12" fill="var(--leaf-soft)"/>
+        <g data-step="3"><rect x="0" y="0" width="190" height="220" rx="12" fill="#2f5d3a" opacity=".55"/><text x="12" y="20" font-size="12" font-weight="700" style="fill:var(--ink)">shady forest</text><text x="300" y="20" font-size="12" font-weight="700" style="fill:var(--ink)">open grass</text></g>
+        <g data-step="1"><g transform="translate(57 172)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(68 128)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(318 49)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(279 89)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(39 57)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(55 96)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(134 196)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(341 184)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(319 136)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(88 109)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(296 65)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(312 198)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(116 130)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(384 51)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(336 87)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(274 171)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(173 98)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(112 97)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(173 169)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(273 122)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(393 149)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(97 160)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#c9a27a"/><circle cx="0" cy="0" r="9" fill="#b08a5a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g></g>
+        <path data-step="2" d="M200 0 C 180 60, 240 120, 205 220 L 235 220 C 270 120, 210 60, 230 0 Z" fill="#4a90c8"/>
+        <text data-step="2" x="217" y="112" font-size="11" text-anchor="middle" transform="rotate(80 217 112)" style="fill:#fff" font-weight="700">river</text>
+        <g data-step="4"><g transform="translate(57 172)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(68 128)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(39 57)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(55 96)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(134 196)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(88 109)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(116 130)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(173 98)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(112 97)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(173 169)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(97 160)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#8a6a50"/><circle cx="0" cy="0" r="9" fill="#4a2f1a" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/></g><g transform="translate(318 49)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g><g transform="translate(279 89)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g><g transform="translate(341 184)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g><g transform="translate(319 136)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g><g transform="translate(296 65)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g><g transform="translate(312 198)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g><g transform="translate(384 51)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g><g transform="translate(336 87)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g><g transform="translate(274 171)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g><g transform="translate(273 122)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g><g transform="translate(393 149)"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#d9bf9a"/><circle cx="0" cy="0" r="9" fill="#f1e3b5" stroke="rgba(0,0,0,.35)"/><path d="M-4 0 a4 4 0 1 1 4 4" fill="none" stroke="#c0392b" stroke-width="2.5"/></g></g>
+        <g data-step="5"><rect x="190" y="98" width="60" height="22" rx="4" fill="#8a6a45"/><text x="220" y="113" font-size="10" text-anchor="middle" style="fill:#fff">bridge</text><rect x="160" y="132" width="120" height="44" rx="8" fill="var(--surface)" stroke="var(--heat)" stroke-width="2"/><text x="220" y="152" font-size="18" text-anchor="middle" font-weight="700" style="fill:var(--heat)">✗</text><text x="220" y="169" font-size="11" text-anchor="middle" font-weight="700" style="fill:var(--ink)">no fertile offspring</text></g>
+      </svg>
+    </div>
+    <div class="row"><button class="btn" data-snext>Show next step</button><button class="btn quiet" data-sall>Show all</button></div>
+    <p class="fb explain stepper-out" aria-live="polite"></p>
+    <p class="small"><b>Allopatric</b> = “different countries” = <b>geographical</b> separation. <b>Darwin's finches</b> are the classic example: one mainland ancestor reached the separate Galápagos islands and became many species with different beaks for different foods (seeds, insects, cactus, buds).</p>
+  </div>
+
+  <div class="card" data-read>
+    <div class="card-h"><h3>Sympatric speciation: same place</h3><span class="tag notes">Class notes · p12</span></div>
+    <p><b>Sympatric</b> = “same country”. There is <b>no geographical barrier</b>; the populations live in the same area but become reproductively separated another way, e.g. <b>choice of food</b>, <b>mating season</b>, or becoming active at a different time after hibernation.</p>
+    <div class="map" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div class="def"><dt>Apple maggot fly</dt><dd>Flies mate <b>only on their host plant's fruit</b>. Flies that feed on <b>hawthorn</b> don't meet flies that feed on <b>apples</b>, so the two groups are genetically isolated and are becoming different species.</dd></div>
+      <div class="def"><dt>Lord Howe Island palms</dt><dd>Two palm species on one island, with <b>different flowering times</b>, so they can't pollinate each other.</dd></div>
+    </div>
+    <div class="trick"><span class="tt">Memory trick</span><p><b>Allo</b>patric: <b>all over</b> the place (separated). <b>Sym</b>patric: the <b>same</b> place.</p></div>
+  </div>
+
+  <div class="card picker" data-read data-order="temp eco beh mech gam hyb">
+    <div class="card-h"><h3>Isolating mechanisms: you need to know these</h3><span class="tag notes">Class notes · p13</span></div>
+    <div class="chips" role="group" aria-label="Isolating mechanism"><button data-pick="temp">Temporal</button><button data-pick="eco">Ecological</button><button data-pick="beh">Behavioural</button><button data-pick="mech">Mechanical</button><button data-pick="gam">Gametic</button><button data-pick="hyb">Hybrid</button></div>
+    <div class="fb explain picker-out" aria-live="polite">Tap a mechanism. Each is a different way two groups stop producing fertile offspring together.</div>
+    <template data-key="temp"><b>Temporal</b> ⏰ Organisms breed at <b>different times</b> of year. E.g. the Lord Howe palms flower at different times.</template>
+    <template data-key="eco"><b>Ecological</b> 🌳 Different <b>habitats</b> within the same area, so they rarely meet. E.g. hawthorn vs apple maggot flies.</template>
+    <template data-key="beh"><b>Behavioural</b> 💃 Different behaviour patterns, e.g. <b>courtship</b> displays or songs the other group doesn't respond to.</template>
+    <template data-key="mech"><b>Mechanical</b> 🔩 <b>Anatomical</b> differences make it impossible for the <b>gametes</b> to come together, e.g. genitalia or flower shapes don't fit.</template>
+    <template data-key="gam"><b>Gametic</b> 🧬 Gametes meet but are <b>incompatible</b> (genetically or physiologically), so no hybrid forms.</template>
+    <template data-key="hyb"><b>Hybrid</b> 🐴 They interbreed but the offspring are <b>infertile</b>. E.g. horse + donkey = mule, which is infertile.</template>
+    <div class="row"><button class="btn" data-walk>Go through them all</button></div>
+  </div>
+
+  <h3 style="margin-top:.5rem">Check F</h3>
+  <div class="card matcher" data-q="F1" data-label="F · Name the isolating mechanism" data-win="Every mechanism spotted.">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">Name the isolating mechanism.</p>
+    <div class="match">
+      <span class="m-l">Two frog species call with different mating songs</span><select aria-label="Frogs" data-answer="beh"><option value="">Choose…</option><option value="temp">Temporal</option><option value="beh">Behavioural</option><option value="mech">Mechanical</option><option value="hyb">Hybrid</option></select>
+      <span class="m-l">Two plants flower in different months</span><select aria-label="Plants" data-answer="temp"><option value="">Choose…</option><option value="temp">Temporal</option><option value="beh">Behavioural</option><option value="mech">Mechanical</option><option value="hyb">Hybrid</option></select>
+      <span class="m-l">A horse and a donkey produce an infertile mule</span><select aria-label="Mule" data-answer="hyb"><option value="">Choose…</option><option value="temp">Temporal</option><option value="beh">Behavioural</option><option value="mech">Mechanical</option><option value="hyb">Hybrid</option></select>
+      <span class="m-l">Insects' reproductive organs don't fit together</span><select aria-label="Insects" data-answer="mech"><option value="">Choose…</option><option value="temp">Temporal</option><option value="beh">Behavioural</option><option value="mech">Mechanical</option><option value="hyb">Hybrid</option></select>
+    </div>
+    <div class="row"><button class="btn" data-mcheck>Check</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="F2" data-label="F · Allopatric or sympatric" data-answer="b">
+    <div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">A lake dries into separate pools and the fish in each pool become different species. This is…</p>
+    <div class="opts"><button data-o="a" data-fb="Sympatric means in the same place. Here the pools physically separate them.">Sympatric speciation</button><button data-o="b" data-fb="Correct. A physical (geographical) barrier separates the populations.">Allopatric speciation</button><button data-o="c" data-fb="Drift may play a part, but the speciation type is defined by the geographical separation.">Genetic drift</button></div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="F">Mark section F done</button><span class="small muted">Next: exam questions.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="E">← Section E</button><button class="btn" data-go="G">Section G →</button></div>
+</section>
+
+<!-- ============ G ============ -->
+<section class="screen stack" data-sec="G" data-name="G · Exam practice" data-blurb="The pupfish, copper grass and palm tree questions, with mark schemes." hidden>
+  <p class="eyebrow">Section G · exam questions from the notes</p>
+  <h2>Exam practice</h2>
+  <div class="trick"><span class="tt">How these are marked</span><p>Each “;” in a mark scheme is one marking point. Speciation answers almost always need: <b>isolation → no interbreeding → variation by mutation → different selection pressures → survive and reproduce → allele frequency changes → over a long time → can't produce fertile offspring</b>.</p></div>
+
+  <div class="card" data-q="G1" data-label="Pupfish speciation (6)">
+    <div class="card-h"><span class="tag orig">Original question</span><span class="marks">(6)</span></div>
+    <p class="qtext">Changes in ecosystems can lead to speciation. In Southern California 10 000 years ago a number of interconnecting lakes contained a single species of pupfish. Increasing temperatures caused evaporation and the formation of separate, smaller lakes and streams. This led to the formation of a number of different species of pupfish.<br>Explain how these different species evolved.</p>
+    <textarea aria-label="Your answer" style="min-height:8rem"></textarea>
+    <div class="hintbox" data-hints='["What happened to the lakes? Name the type of isolation.","Why does isolation matter for the gene pools?","Then the selection chain: mutation, different conditions, survive and reproduce, allele frequency, long time."]'><button class="btn quiet" data-hint>Show a hint</button></div>
+    <button class="btn" data-model>Show the mark scheme</button>
+    <div class="reveal-body" hidden><p><b>Mark scheme (from the notes), max 6:</b></p><ol class="clean"><li>Geographical isolation;</li><li>Separate gene pools / no interbreeding (between populations);</li><li>Variation due to mutation;</li><li>Different environmental / abiotic / biotic conditions / selection pressures;</li><li>Selection for different / advantageous features / characteristics / mutation / allele;</li><li>Differential reproductive success / (selected) organisms survive and reproduce;</li><li>Leads to change in allele frequency;</li><li>Occurs over a long period of time;</li></ol></div></div>
+
+  <div class="card" data-q="G2" data-label="Copper grass speciation (6)">
+    <div class="card-h"><span class="tag orig">Original question</span><span class="marks">(6)</span></div>
+    <p class="qtext">Changes in ecosystems can lead to speciation. A high concentration of copper in soil is toxic to most plants. In some areas where the soil is polluted with copper, populations of grasses are found to be growing. These populations of grass belong to a species also found growing on unpolluted soils. It has been suggested that a new species of grass may evolve on soil that has been polluted with copper.<br>Explain how this new species might evolve.</p>
+    <textarea aria-label="Your answer" style="min-height:8rem"></textarea>
+    <button class="btn" data-model>Show the mark scheme</button>
+    <div class="reveal-body" hidden><p><b>Mark scheme (from the notes):</b></p><ol class="clean"><li>Variation / variety;</li><li>(caused by) Mutation;</li><li>Some plants have allele to survive / grow / live in high concentration of copper / polluted soils;</li><li>(Differential) reproductive success / adapted organisms reproduce;</li><li>Increase in frequency of advantageous allele;</li><li>No interbreeding (with other populations) / separate gene pool / gene pool differs (from other populations);</li></ol></div></div>
+
+  <div class="card" data-q="G3" data-label="Lord Howe palms sympatric (6)">
+    <div class="card-h"><span class="tag orig">Original question · model answer in notes</span><span class="marks">(6)</span></div>
+    <p class="qtext">Lord Howe Island in the Tasman Sea possesses two species of palm tree which have arisen via sympatric speciation. The two species diverged from each other after the island was formed 6.5 million years ago. The flowering times of the two species are different.<br>Using this information, suggest how these two species of palm tree arose by sympatric speciation.</p>
+    <textarea aria-label="Your answer" style="min-height:8rem"></textarea>
+    <button class="btn" data-model>Show the mark scheme</button>
+    <div class="reveal-body" hidden><ol class="clean"><li>Occurs in the same habitat / environment / population; <span class="small muted">(accept: not geographically isolated)</span></li><li>Mutation/s cause different flowering times;</li><li>Reproductive separation / isolation OR no gene flow OR gene pools remain separate;</li><li>Different <u>allele/s</u> passed on / selected OR change in frequency of <u>allele/s</u>;</li><li><u>Disruptive</u> (natural) selection;</li><li>Eventually different species cannot (inter)breed to produce fertile offspring;</li></ol><p class="small muted">Notice point 5: sympatric speciation usually involves <b>disruptive</b> selection. That's why the notes call it the most important type for evolution.</p></div></div>
+
+  <h3>Copper tolerance textbook questions</h3>
+  <div class="card" data-read>
+    <div class="card-h"><h3>Figure 2: copper tolerance in <i>Agrostis</i></h3><span class="tag notes">Class notes · p8</span></div>
+    <div class="fig narrow"><svg viewBox="0 0 420 220" role="img" aria-label="Number of plants against tolerance to copper: plants on normal soil form a low broad curve centred at medium tolerance; plants on contaminated soil form a tall narrow curve at high tolerance.">
+      <line x1="40" x2="410" y1="185" y2="185" stroke="var(--ink)"/><line x1="40" x2="40" y1="10" y2="185" stroke="var(--ink)"/>
+      <path d="M50 182 C 110 180, 130 120, 185 118 C 240 118, 270 178, 330 183" fill="none" stroke="var(--leaf)" stroke-width="3"/>
+      <path d="M280 183 C 320 182, 330 30, 345 30 C 360 30, 368 182, 400 183" fill="none" stroke="var(--heat)" stroke-width="3"/>
+      <text x="150" y="108" font-size="11" style="fill:var(--leaf)" font-weight="700">normal soil</text><text x="352" y="26" font-size="11" style="fill:var(--heat)" font-weight="700">contaminated soil</text>
+      <g font-size="11" style="fill:var(--muted)"><text x="50" y="200">low</text><text x="200" y="200">medium</text><text x="370" y="200">high</text><text x="225" y="215" text-anchor="middle" style="fill:var(--ink)">degree of tolerance to copper</text><text x="18" y="100" transform="rotate(-90 18 100)" text-anchor="middle" style="fill:var(--ink)">number of plants</text></g></svg></div>
+  </div>
+  <div class="card" data-q="G4" data-label="Copper textbook Q1–4">
+    <div class="card-h"><span class="tag orig">Original questions 1–4</span></div>
+    <ol class="clean"><li>Identify the types of curve shown in Figure 2.</li><li>Name the type of inheritance these curves suggest.</li><li>Suggest why the population of copper-tolerant varieties where the soil is heavily contaminated with copper is much larger than the population of non-tolerant varieties where the soil is less contaminated.</li><li>Describe how you might determine whether a plant was a variety of <i>Agrostis capillaris</i> rather than a separate species.</li></ol>
+    <textarea aria-label="Your answers"></textarea>
+    <button class="btn" data-model>Show the answers</button>
+    <div class="reveal-body" hidden><ol class="clean"><li><b>Normal distribution</b> (bell-shaped) curves.</li><li><b>Polygenic</b> inheritance (many genes), giving <b>continuous variation</b>.</li><li>On contaminated soil, copper is a strong selection pressure: <b>non-tolerant plants die</b>, so the tolerant ones face <b>little competition</b> and grow in large numbers. On less contaminated soil, many varieties (and species) <b>compete</b>, so no single variety has such a large population.</li><li><b>Cross</b> (breed) it with <i>A. capillaris</i>. If they produce <b>fertile offspring</b>, it's the same species; if not, it's a separate species.</li></ol></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="G">Mark section G done</button><span class="small muted">Nearly there.</span></div>
+  <div class="pager"><button class="btn quiet" data-go="F">← Section F</button><button class="btn" data-go="S">Summary &amp; quiz →</button></div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="screen stack" data-sec="S" data-name="Summary &amp; quiz" data-blurb="The whole story on one page, flashcards and a final quiz." hidden>
+  <p class="eyebrow">Wrap-up · about 4 minutes</p>
+  <h2>The whole story</h2>
+  <div class="card" data-read>
+    <ol class="clean">
+      <li><b>Variation</b>: mutation (new alleles), meiosis, random fertilisation, plus environment. Discontinuous (one gene, categories) vs continuous (polygenes + environment, normal curve).</li>
+      <li><b>Natural selection</b>: selection pressure → better adapted survive and reproduce → pass on alleles → allele frequency increases. Evolution = change in allele frequency.</li>
+      <li><b>Types</b>: stabilising (squeezes), directional (shifts), disruptive (splits).</li>
+      <li><b>Hardy–Weinberg</b>: p + q = 1; p² + 2pq + q² = 1. Start from q². Needs large, random mating, no mutation, migration or selection.</li>
+      <li><b>Genetic drift</b>: chance changes, biggest in small populations (bottleneck, founder effect).</li>
+      <li><b>Speciation</b>: reproductive isolation → separate gene pools → different mutations and selection → can't produce fertile offspring. Allopatric (geographical) or sympatric (same place).</li>
+    </ol>
+    <button class="listen" type="button">Read aloud</button>
+  </div>
+  <div class="card"><h3>Want more practice?</h3><p class="small">The flashcards cover all of AQA 3.7.2–3.7.3 at three levels.</p><div class="row"><a class="btn solid" href="flashcards.html" style="text-decoration:none">Open flashcards</a></div></div>
+
+  <h3>Final quiz</h3>
+  <div class="card mcq" data-q="Q1" data-label="Quiz · gene pool" data-answer="b"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">1. A gene pool is…</p>
+    <div class="opts"><button data-o="a" data-fb="That's a population.">all the individuals of a species in an area</button><button data-o="b" data-fb="Correct.">all the alleles of all the genes in a population</button><button data-o="c" data-fb="That's a genotype.">the alleles one organism carries</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q2" data-label="Quiz · q from 9%" data-answer="c"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">2. 9% of a population shows a recessive phenotype. What is the frequency of the recessive allele?</p>
+    <div class="opts"><button data-o="a" data-fb="0.09 is q², not q.">0.09</button><button data-o="b" data-fb="0.7 is p (1 − q).">0.7</button><button data-o="c" data-fb="Correct. q = √0.09 = 0.3.">0.3</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q3" data-label="Quiz · disruptive" data-answer="a"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">3. Which type of selection is most likely to lead to sympatric speciation?</p>
+    <div class="opts"><button data-o="a" data-fb="Correct. It favours two extremes, splitting one population into two.">Disruptive</button><button data-o="b" data-fb="Stabilising reduces variation, so it works against speciation.">Stabilising</button><button data-o="c" data-fb="Directional shifts the whole population one way. It doesn't split it.">Directional</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q4" data-label="Quiz · species test" data-answer="b"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">4. Two organisms belong to the same species if they…</p>
+    <div class="opts"><button data-o="a" data-fb="Horses and donkeys can breed, but the mule is infertile.">can breed together</button><button data-o="b" data-fb="Correct. Fertile is the key word.">can interbreed to produce fertile offspring</button><button data-o="c" data-fb="Looks can be misleading. The test is fertile offspring.">look very similar</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q5" data-label="Quiz · H-W condition" data-answer="c"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">5. Which is <u>not</u> a Hardy–Weinberg condition?</p>
+    <div class="opts"><button data-o="a" data-fb="This is a condition.">No migration</button><button data-o="b" data-fb="This is a condition.">Random mating</button><button data-o="c" data-fb="Correct. Hardy–Weinberg needs a LARGE population, not a small one.">A small population</button></div><div class="fb" hidden aria-live="polite"></div></div>
+  <div class="card mcq" data-q="Q6" data-label="Quiz · mutation timing" data-answer="b"><div class="card-h"><span class="tag new">New question</span></div>
+    <p class="qtext">6. When did the allele for longer fur first appear in a mouse population that adapted to a colder climate?</p>
+    <div class="opts"><button data-o="a" data-fb="Organisms don't develop a phenotype because the environment changes.">After the climate got colder, because the mice needed it</button><button data-o="b" data-fb="Correct. It arose by chance mutation, before the change; selection then increased its frequency.">Before the change, by a chance mutation</button><button data-o="c" data-fb="Selection doesn't create alleles. It changes how common they are.">During selection</button></div><div class="fb" hidden aria-live="polite"></div></div>
+
+  <div class="done-row"><button class="btn solid" data-complete="S">Mark lesson finished</button><button class="btn" data-go="R">Go to revision list</button></div>
+  <div class="pager"><button class="btn quiet" data-go="G">← Section G</button><a class="btn quiet" href="../" style="text-decoration:none">Back to Biology</a></div>
+</section>
+
+<!-- ============ REVISION ============ -->
+<section class="screen stack" data-sec="R" data-name="Revision" hidden>
+  <p class="eyebrow">Revision mode</p>
+  <h2>What to look at again</h2>
+  <p>Questions you got wrong, or marked "Not yet" or "Partly", appear here. Tap one to jump straight to it.</p>
+  <div id="revList" class="stack"></div>
+  <div class="card">
+    <h3>Your progress</h3>
+    <div id="progList" class="stack small"></div>
+  </div>
+  <div class="row"><button class="btn quiet" id="resetBtn">Clear all my progress</button><span id="resetConfirm" hidden class="row"><span class="small">Clear everything?</span><button class="btn" id="resetYes">Yes, clear</button><button class="btn quiet" id="resetNo">Keep it</button></span></div>
+</section>
+</main>
+
+<dialog id="settings" aria-labelledby="setH">
+  <h2 id="setH" style="font-size:1.25rem; margin-bottom:.5rem">Settings</h2>
+  <div class="set"><label id="szL">Text size</label><div class="chips" role="group" aria-labelledby="szL" data-setting="size"><button data-v="m">Normal</button><button data-v="l">Large</button><button data-v="xl">Extra large</button></div></div>
+  <div class="set"><label id="spL">Line spacing</label><div class="chips" role="group" aria-labelledby="spL" data-setting="spacing"><button data-v="normal">Normal</button><button data-v="wide">Wide</button></div></div>
+  <div class="set"><label id="fcL">Calm view</label><p class="small muted">Hides "extra help" labels and read-aloud links.</p><div class="chips" role="group" aria-labelledby="fcL" data-setting="focus"><button data-v="off">Off</button><button data-v="on">On</button></div></div>
+  <div class="set"><label id="mtL">Motion</label><div class="chips" role="group" aria-labelledby="mtL" data-setting="motion"><button data-v="on">Gentle</button><button data-v="off">None</button></div></div>
+  <div class="set"><label id="sdL">Sound effects</label><p class="small muted">Soft tones when you reveal or get an answer right.</p><div class="chips" role="group" aria-labelledby="sdL" data-setting="sound"><button data-v="off">Off</button><button data-v="on">On</button></div></div>
+  <div class="row" style="justify-content:flex-end; margin-top:.75rem"><button class="btn solid" id="closeSettings">Done</button></div>
+</dialog>
+
+<script src="../../assets/lesson.js"></script>
+<script src="../../assets/evolution.js"></script>
+</body>
+</html>
